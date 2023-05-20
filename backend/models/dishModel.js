@@ -1,26 +1,22 @@
 const mongoose = require("mongoose");
 
-const dishSchema = mongoose.Schema({
+const dishSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: [true, "Please add the dish name"],
+        required: [true, "Per favore aggiungi il nome del piatto!"],
     },
     price: {
         type: Number,
-        required: [true, "Please add the price of the dish"],
+        required: [true, "Per favore aggiungi il prezzo del piatto!"],
     },
     ingredients: [
         {
-            name: {
-                type: String,
-                required: [true, "Please add the name of the ingredient"],
-            },
-            allergens: [
-                {
-                    type: String,
-                    required: [true, "Please add the name of the allergen"],
-                },
-            ],
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "Ingredient",
         },
     ],
 });
+
+const Dish = mongoose.model("Dish", dishSchema);
+
+module.exports = Dish;
