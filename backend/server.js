@@ -17,6 +17,7 @@ app.use(express.json());
 
 app.use("/api/user", require("./routes/userRoutes"));
 app.use("/api/allergens", require("./routes/allergenRoutes"));
+app.use("/api/ingredients", require("./routes/ingredientRoutes"));
 app.use(errorHandler);
 
 app.listen(port, () => {

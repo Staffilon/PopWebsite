@@ -12,17 +12,24 @@ const getAllergens = asyncHandler(async (req, res) => {
 //@desc Create allergen
 //@route POST /api/allergens
 //@access private
-const createAllergen = asyncHandler(async (req, res) => {
-    console.log("The request body is:", req.body);
+const createAllergen = async (req, res, next) => {
     const { name } = req.body;
+
     if (!name) {
         res.status(400);
         throw new Error("Il nome dell'allergene è obbligatorio!");
     }
 
-    const allergen = await allergenService.createAllergen(name);
-    res.status(201).json(allergen);
-});
+    try {
+        const allergen = await allergenService.createAllergen(name);
+        res.status(201).json(allergen);
+    } catch (error) {
+        if (error.statusCode === 11000) {
+            res.status(409);
+        }
+        next(error);
+    }
+};
 
 //@desc Get allergen
 //@route GET /api/allergens/:id
@@ -39,19 +46,24 @@ const getAllergen = asyncHandler(async (req, res) => {
 //@desc Update allergen
 //@route PUT /api/allergens/:id
 //@access private
-const updateAllergen = asyncHandler(async (req, res) => {
+const updateAllergen = asyncHandler(async (req, res, next) => {
     const allergen = await allergenService.getAllergenById(req.params.id);
     if (!allergen) {
         res.status(404);
         throw new Error("Allergene non trovato");
     }
-
-    const updatedAllergen = await allergenService.updateAllergen(
-        req.params.id,
-        req.body
-    );
-
-    res.status(200).json(updatedAllergen);
+    try {
+        const allergen = await allergenService.updateAllergen(
+            req.params.id,
+            req.body
+        );
+        res.status(200).json(allergen);
+    } catch (error) {
+        if (error.statusCode === 11000) {
+            res.status(409);
+        }
+        next(error);
+    }
 });
 
 //@desc Delete allergen

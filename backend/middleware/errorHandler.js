@@ -1,7 +1,8 @@
 const { constants } = require("../constants");
 
 const errorHandler = (err, req, res, next) => {
-    const statusCode = res.statusCode ? res.statusCode : constants.SERVER_ERROR;
+    const statusCode =
+        res.statusCode === 200 ? constants.SERVER_ERROR : res.statusCode;
 
     switch (statusCode) {
         case constants.VALIDATION_ERROR:
@@ -28,6 +29,13 @@ const errorHandler = (err, req, res, next) => {
         case constants.FORBIDDEN:
             res.json({
                 title: "Forbidden",
+                message: err.message,
+                stackTrace: err.stack,
+            });
+            break;
+        case constants.DUPLICATE_ERROR:
+            res.json({
+                title: "Duplicate",
                 message: err.message,
                 stackTrace: err.stack,
             });
