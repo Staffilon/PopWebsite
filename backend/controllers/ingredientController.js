@@ -34,8 +34,8 @@ const createIngredient = asyncHandler(async (req, res, next) => {
     }
 });
 
-//@desc Get allergen
-//@route GET /api/allergens/:id
+//@desc Get ingredient
+//@route GET /api/ingredients/:id
 //@access private
 const getIngredient = asyncHandler(async (req, res) => {
     const ingredient = await ingredientService.getIngredientById(req.params.id);
