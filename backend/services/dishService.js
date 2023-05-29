@@ -6,8 +6,6 @@ const {
     getIngredientById,
 } = require("../services/ingredientService");
 
-const Ingredient = require("../models/ingredientModel");
-
 // Get all dishes
 const getAllDishes = async () => {
     return await Dish.find().populate({
