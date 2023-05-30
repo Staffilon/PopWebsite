@@ -53,8 +53,6 @@ function Header3() {
 
   return (
     <>
-
-
       <header
         ref={headerRef}
         className={

@@ -51,7 +51,7 @@ function Banner3() {
       </div>
       <div className="video-wrap d-flex align-items-center justify-content-center">
         <video autoPlay loop="loop" muted preload="auto">
-          <source src="assets/video/v1.mp4" type="video/mp4" />
+          <source src="assets/video/v2.mp4" type="video/mp4" />
         </video>
         <div className="banner-content text-center">
           <span>

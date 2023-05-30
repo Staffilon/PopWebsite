@@ -1138,11 +1138,11 @@ body.tt-magic-cursor #magic-cursor {
     }
 }
 .primary-btn5{
-    @include font(1.125rem,500,var(--primary-color1));
+    @include font(1.125rem,500, #ed1c24);
     background-color: transparent;
     border-radius: 50px;
     border: 1px solid;
-    border-color: var(--primary-color1);
+    border-color: #ed1c24;
     display: inline-block;
     i{
         margin-right: 8px;
@@ -1162,7 +1162,7 @@ body.tt-magic-cursor #magic-cursor {
       bottom:0;
       opacity:0;
       content:'';
-      background-color: var(--primary-color1);
+      background-color: #ed1c24;
       z-index:-1;
     }
     &:hover {
@@ -1193,9 +1193,9 @@ body.tt-magic-cursor #magic-cursor {
 }
 .primary-btn6{
     @include font(1.125rem,500,var(--white));
-    background-color: var(--primary-color1);
+    background-color: #ed1c24;
     border: 1px solid;
-    border-color: var(--primary-color1);
+    border-color: #ed1c24;
     display: inline-block;
     i{
         margin-right: 8px;
@@ -2808,7 +2808,7 @@ header.style-3 {
                     font-family: var(--font-Jost);
                     transition: 0.35s;
                     &:hover{
-                        color: var(--primary-color1);
+                        color:#ed1c24;
                     }
                 }
             }
@@ -2850,7 +2850,7 @@ header.style-3 {
                         font-family: var(--font-Jost);
                         transition: 0.35s;
                     &:hover{
-                        color: var(--primary-color1);
+                        color: #ed1c24;
                     }
                     }
                 }
@@ -2900,7 +2900,7 @@ header.style-3 {
                 }
                 &:hover{
                     i{
-                     color: var(--primary-color1); 
+                     color: #ed1c24; 
                      font-size: 20px;
                     }
                 }
@@ -2916,12 +2916,12 @@ header.style-3 {
                     transition: all .5s ease-out 0s;
                     position: relative;
                     &:hover {
-                        color: var(--primary-color1); 
+                        color: #ed1c24; 
                     }
                 }
 
                 a.active {
-                    color: var(--primary-color1);
+                    color: #ed1c24;
                     display: inline-block;
                     position: relative;
                   
