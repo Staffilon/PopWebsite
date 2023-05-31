@@ -13,7 +13,6 @@ const getDishes = asyncHandler(async (req, res) => {
 //@route POST /api/dishes
 //@access private
 const createDish = asyncHandler(async (req, res, next) => {
-    console.log("The request body is:", req.body);
     const { name, price, ingredients } = req.body;
     if (!name || !price || !ingredients) {
         res.status(400);

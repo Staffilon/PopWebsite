@@ -7,9 +7,7 @@ const {
     updateBooking,
     deleteBooking,
 } = require("../controllers/bookingController");
-const validateToken = require("../middleware/validateTokenHandler");
 
-router.use(validateToken);
 router.route("/").get(getBookings).post(createBooking);
 router.route("/:id").get(getBooking).put(updateBooking).delete(deleteBooking);
 

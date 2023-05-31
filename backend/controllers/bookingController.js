@@ -13,7 +13,6 @@ const getBookings = asyncHandler(async (req, res) => {
 //@route POST /api/bookings
 //@access private
 const createBooking = asyncHandler(async (req, res, next) => {
-    console.log("The request body is:", req.body);
     const { type, date, time, numberOfPeople, name, surname, cellphoneNumber } =
         req.body;
     if (

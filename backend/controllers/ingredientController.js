@@ -13,7 +13,6 @@ const getIngredients = asyncHandler(async (req, res) => {
 //@route POST /api/ingredients
 //@access private
 const createIngredient = asyncHandler(async (req, res, next) => {
-    console.log("The request body is:", req.body);
     const { name, allergens } = req.body;
     if (!name) {
         res.status(400);
