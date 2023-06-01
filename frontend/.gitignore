@@ -1,1 +1,12 @@
 node_modules/
+.vscode/
+.next/
+out/
+.vscode/
+*.log
+/build/
+/dist/
+/public/
+*.tmp
+*.bak
+.DS_Store
