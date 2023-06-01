@@ -21,11 +21,11 @@ function Login() {
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Email address</label>
+          <label>Nome utente</label>
           <input
             type="email"
             className="form-control"
-            placeholder="Enter email"
+            placeholder="Inserisci nome utente"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -42,7 +42,7 @@ function Login() {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary">Sign in</button>
+        <button type="submit" className="btn btn-primary">Accedi</button>
       </form>
     </div>
   );
