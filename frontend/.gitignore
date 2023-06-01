@@ -1,12 +1,28 @@
+# Node.js
 node_modules/
+npm-debug.log
+yarn-error.log
+
+# Visual Studio Code
 .vscode/
+
+# Next.js
 .next/
 out/
-.vscode/
-*.log
+/.next-server/
+
+# Build output
 /build/
+
+# Compiled files
 /dist/
+
+# Public folder
 /public/
+
+# Temporary files
 *.tmp
 *.bak
+
+# macOS
 .DS_Store
