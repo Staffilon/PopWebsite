@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
-function Login() {
+const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -8,11 +9,14 @@ function Login() {
     event.preventDefault();
 
     try {
-      // Effettua la richiesta al backend e gestisci la risposta
-      console.log('Login eseguito:', email, password);
+      const response = await axios.post('/insert-user', {
+        username: email,
+        password: password,
+      });
+
+      console.log('User inserted:', response.data);
     } catch (error) {
-      console.error(error);
-      // Gestisci eventuali errori durante la richiesta
+      console.error('Error inserting user:', error);
     }
   };
 
@@ -21,11 +25,11 @@ function Login() {
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Nome utente</label>
+          <label>Email address</label>
           <input
             type="email"
             className="form-control"
-            placeholder="Inserisci nome utente"
+            placeholder="Enter email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
@@ -42,7 +46,7 @@ function Login() {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary">Accedi</button>
+        <button type="submit" className="btn btn-primary">Sign in</button>
       </form>
     </div>
   );
