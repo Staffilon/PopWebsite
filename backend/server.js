@@ -3,6 +3,7 @@ const express = require("express");
 const errorHandler = require("./middleware/errorHandler");
 const connectDb = require("./config/dbConnection");
 const dotenv = require("dotenv").config();
+const cors = require("cors");
 
 //connects to database
 connectDb();
@@ -10,6 +11,9 @@ connectDb();
 const app = express();
 
 const port = process.env.PORT || 5000;
+
+// Enable CORS
+app.use(cors());
 
 //middleware that provides a parser that
 //will parse the data from the client to the server side
