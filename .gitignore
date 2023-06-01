@@ -12,15 +12,6 @@ yarn-error.log
 out/
 /.next-server/
 
-# Build output
-/build/
-
-# Compiled files
-/dist/
-
-# Public folder
-/public/
-
 # Temporary files
 *.tmp
 *.bak
