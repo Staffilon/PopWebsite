@@ -10,7 +10,7 @@ const {
 } = require("../controllers/dishController");
 const validateToken = require("../middleware/validateTokenHandler");
 
-router.use(validateToken);
+//router.use(validateToken);
 router.route("/").get(getDishes).post(createDish);
 router.route("/:id").get(getDish).put(updateDish).delete(deleteDish);
 
