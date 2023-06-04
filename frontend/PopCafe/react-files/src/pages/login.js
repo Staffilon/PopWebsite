@@ -1,20 +1,33 @@
 import axios from "axios";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const Login = () => {
-    const [email, setEmail] = useState("");
+    const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const router = useRouter();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try {
-            const response = await axios.post("/insert-user", {
-                username: email,
-                password: password,
-            });
+            const response = await axios.post(
+                "http://localhost:5002/api/user/login",
+                {
+                    username,
+                    password,
+                }
+            );
+
+            const { accessToken } = response.data;
+
+            // Store the JWT token in localStorage
+            localStorage.setItem("jwtToken", accessToken);
 
             console.log("User inserted:", response.data);
+
+            // Redirect to the backoffice page
+            router.push("/backoffice-management");
         } catch (error) {
             console.error("Error inserting user:", error);
         }
@@ -25,13 +38,13 @@ const Login = () => {
             <h1>Login</h1>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label>Email address</label>
+                    <label>Username</label>
                     <input
-                        type="email"
+                        type="username"
                         className="form-control"
-                        placeholder="Enter email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Enter Username"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
                         required
                     />
                 </div>

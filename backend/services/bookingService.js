@@ -32,11 +32,12 @@ const getBookingById = async (id) => {
 const updateBooking = async (id, data) => {
     const { type, date, time, numberOfPeople, name, surname, cellphoneNumber } =
         data;
-
     validateBookingDateTime(date, time);
     validateNumberOfPeople(numberOfPeople);
 
-    await handleDuplicateBookingNameAndDateTime(name, surname, date, time);
+    if (!(await isSameBookingBeingUpdated(id, data))) {
+        await handleDuplicateBookingNameAndDateTime(name, surname, date, time);
+    }
 
     const updatedBooking = await Booking.findByIdAndUpdate(
         id,
@@ -85,6 +86,19 @@ const validateNumberOfPeople = (numberOfPeople) => {
     if (numberOfPeople < 1) {
         throw new Error("Il numero delle persone deve essere maggiore di 0.");
     }
+};
+
+const isSameBookingBeingUpdated = async (id, data) => {
+    const { date, time, name, surname } = data;
+
+    const oldBooking = await Booking.findById(id);
+
+    return (
+        oldBooking.name === name &&
+        oldBooking.surname === surname &&
+        oldBooking.date.getTime() === new Date(date).getTime() &&
+        oldBooking.time === time
+    );
 };
 
 module.exports = {
