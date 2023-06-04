@@ -1378,7 +1378,7 @@ body.tt-magic-cursor #magic-cursor {
 
 .section-title3{
     span{
-        @include font(1.125rem,500,var(--primary-color1));
+        @include font(1.125rem,500,#CF6849);
         line-height: 1.625rem;
         font-family: var(--font-Jost);
         display: inline-block;
@@ -5316,7 +5316,7 @@ footer{
                             content: '';
                             width: 20px;
                             height: 1px;
-                            background-color: var(--primary-color1);
+                            background-color:  #CF6849;
                             position: absolute;
                             left: -30px;
                             top: 50%;
@@ -5330,7 +5330,7 @@ footer{
                                 opacity: 1;
                             }
                             a{
-                                color: var(--primary-color1);
+                                color:   #CF6849;
                             }
                         }
 
@@ -5370,7 +5370,7 @@ footer{
                         content: "";
                         width: 84px;
                         height: 1px;
-                        background-color: var(--primary-color1);
+                        background-color:  #CF6849;
                         position: absolute;
                         left: -95px;
                         top: 13px;
@@ -5379,7 +5379,7 @@ footer{
                         content: "";
                         width: 84px;
                         height: 1px;
-                        background-color: var(--primary-color1);
+                        background-color:  #CF6849;
                         position: absolute;
                         right: -95px;
                         top: 13px;
@@ -5403,7 +5403,7 @@ footer{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            border: 1px solid #BF9444;
+                            border: 1px solid  #CF6849;
                             transition: 0.35s;
                             i{
                                 color: var(--white);
@@ -5425,7 +5425,7 @@ footer{
                     justify-content: center
                 }
                 .title{
-                    @include font(1.125rem,500,var(--primary-color1));
+                    @include font(1.125rem,500,#CF6849);
                     font-family: var(--font-Jost);
                     display: inline-block;
                     margin-right: 10px;
@@ -5439,7 +5439,7 @@ footer{
                         transition: 0.35s;
                         text-align: start;
                         &:hover{
-                            color: var(--primary-color1);
+                            color: #CF6849;
                         }
                     }
                 }
@@ -5465,7 +5465,7 @@ footer{
                     @include font(1rem,400,var(--light-text));
                     transition: 0.35s;
                     &:hover{
-                        color: var(--primary-color1);
+                        color:  #CF6849;
                     }
                 }
             }
@@ -5479,7 +5479,7 @@ footer{
                     font-family: var(--font-Jost);
                     transition: 0.35s;
                     &:hover{
-                        color: var(--primary-color1);
+                        color:  #CF6849;
                     }
                 }
             }
@@ -6448,25 +6448,24 @@ footer{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    border: 1px solid #BF9444;
+                    border: 1px solid white;
                     border-radius: 50%;
                     transition: 0.35s;
                     i{
                         font-size: 16px;
                     }
                     &:hover{
-                        background-color: var(--primary-color1);
+                        background-color: white;
                     }
                 }
             }
         }
     }
     .open-time{
-        background-color: var(--title-color-dark);
+        background-color: #CF6849;
         background-repeat: no-repeat;
         display: flex;
         justify-content: center;
-        max-width: 1107px;
         width: 100%;
         margin: 0 auto;
         position: absolute;
@@ -6716,7 +6715,7 @@ footer{
             
             &::after{
                 content: '';
-                border: 2px dashed #BF9444;
+                border: 2px dashed #CF6849;
                 width: 130px;
                 height: 130px;
                 border-radius: 50%;
@@ -6796,7 +6795,7 @@ footer{
                         content: '';
                         width: 17px;
                         height: 1px;
-                        background-color: var(--primary-color1);
+                        background-color: #CF6849;
                         position: absolute;
                         right: 27px;
                         top: 72%;
@@ -6819,7 +6818,7 @@ footer{
                             content: '';
                             height: 10px;
                             width: 10px;
-                            border: 1px solid var(--primary-color1);
+                            border: 1px solid #CF6849;
                             border-radius: 50%;
                             position: absolute;
                             left: -18px;
@@ -6860,7 +6859,7 @@ footer{
         top: 45%;
         transform: translate(-50%,-50%);
         width: 1px;
-        border-right: 1px dashed var(--primary-color1);
+        border-right: 1px dashed #CF6849;
         height: 75%;
         @include lg-down-device(){
             display: none;
@@ -6905,7 +6904,7 @@ footer{
             }
             &::after{
                 content: '';
-                border: 2px dashed #BF9444;
+                border: 2px dashed #CF6849;
                 width: 212px;
                 height: 212px;
                 border-radius: 50%;
@@ -6958,7 +6957,7 @@ footer{
                 margin-bottom: 5px;
                 .price-tag{
                     span{
-                        @include font(1.5rem,600,var(--primary-color1));
+                        @include font(1.5rem,600,  #CF6849);
                         font-family: var(--font-Jost);
                         del{
                             color: var(--white);
@@ -6972,9 +6971,9 @@ footer{
                         margin-right: 0;
                     }
                     span{
-                        @include font(1.875rem,700,var(--primary-color1));
+                        @include font(1.875rem,700,  #CF6849);
                         font-family: var(--font-Jost);
-                        -webkit-text-stroke:1px var(--primary-color1);
+                        -webkit-text-stroke:1px  #CF6849;
                         color: transparent;
                         opacity: 0.8;
                     }
@@ -6988,7 +6987,7 @@ footer{
                     font-family: var(--font-cormorant);
                     transition: 0.35s;
                     &:hover{
-                        color: var(--primary-color1);
+                        color:  #CF6849;
                     }
                 }
             }
@@ -7028,9 +7027,9 @@ footer{
         }
     }
     .swiper-pagination-bullet-active{
-        background-color: var(--primary-color1);
+        background-color:  #CF6849;
         &::after{
-            border-color: var(--primary-color1);
+            border-color:  #CF6849;
         }
     }
 }
@@ -7630,11 +7629,12 @@ footer{
  7. Home Three Recent Blog
 =======================================*/
 .home3-blog-area{
- 
+    
     .h3-blog-wrap-1{
         .blog-img{
             position: relative;
             margin-bottom: 30px;
+       
             overflow: hidden;
             img{
                 transition: 0.35s;
@@ -7648,7 +7648,7 @@ footer{
                 right: 0;
 
                 a{
-                    @include font(1.125rem,500,var(--primary-color1));
+                    @include font(1.125rem,500, #CF6849);
                     font-family: var(--font-Jost);
                     border-radius: 30px 0px 0px 30px;
                     background-color: var(--white);
@@ -7690,7 +7690,7 @@ footer{
                             align-items: center;
                             transition: 0.35s;
                             &:hover{
-                                color: var(--primary-color1);
+                                color: #CF6849;
                             }
                             img{
                                 margin-right: 8px;
@@ -7713,7 +7713,7 @@ footer{
                     font-family: var(--font-cormorant);
                     transition: 0.35s;
                     &:hover{
-                        color: var(--primary-color1);
+                        color: #CF6849;
                     }
                 }
             }
@@ -7725,7 +7725,7 @@ footer{
             .continue-btn{
                 padding-top: 20px;
                 a{
-                    @include font(1.125rem,400,var(--primary-color1));
+                    @include font(1.125rem,400,#CF6849);
                     font-family: var(--font-Jost);
                     display: flex;
                     align-items: flex-end;
@@ -7781,7 +7781,7 @@ footer{
                     font-family: var(--font-cormorant);
                     transition: 0.35s;
                     &:hover{
-                        color: var(--primary-color1);
+                        color: #CF6849;
                     }
                 }
             }
@@ -7793,7 +7793,7 @@ footer{
             .continue-btn{
                 padding-top: 15px;
                 a{
-                    @include font(1.125rem,400,var(--primary-color1));
+                    @include font(1.125rem,400,#CF6849);
                     font-family: var(--font-Jost);
                     display: flex;
                     align-items: flex-end;

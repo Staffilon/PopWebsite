@@ -1,7 +1,14 @@
 import React from "react";
-
 function MenuList3() {
+    
+  var dataCorrente = new Date();
+  var giorno = dataCorrente.getDate();
+  var mese = dataCorrente.getMonth() + 1; 
+  var anno = dataCorrente.getFullYear();
+  var dataFormattata = giorno + '/' + mese + '/' + anno;
+  
   return (
+  
     <div className="h3-menu-area mb-240">
       <div className="container">
         <div className="row justify-content-center mb-45">
@@ -9,24 +16,15 @@ function MenuList3() {
             <div className="section-title3 text-center">
               <span>
                 {" "}
-                <img
-                  className="left-vec"
-                  src="assets/images/icon/h3-sub-title-vec.svg"
-                  alt=""
-                />{" "}
-                Pop cafè Menu List{" "}
-                <img
-                  className="right-vec"
-                  src="assets/images/icon/h3-sub-title-vec.svg"
-                  alt=""
-                />
+                Il nostro menù
+                {" "}
               </span>
-              <h2>Menu List</h2>
+              <h2>Scopri il menù del Pop Cafè</h2>
             </div>
           </div>
         </div>
-        <div className="row g-4">
-          <div className="col-lg-6">
+        <div >
+          <div className="col-lg1">
             <div className="home3-menu-wrap">
               <div className="left-vector">
                 <img
@@ -41,42 +39,55 @@ function MenuList3() {
                 />
               </div>
               <div className="menu-title text-center">
-                <h2>Break-fast</h2>
-                <img
-                  src="assets/images/icon/h3-menu-tt-bg.svg"
-                  alt="h3-menu-tt-bg"
-                />
+                <h2>Pranzo </h2>  <div className="current-date"> {dataFormattata}</div>
+                
               </div>
               <ul>
+              <li>
+                  <div className="item-name">
+                  <div className="content">
+                    <h2 class="menu-titoli">Primi Piatti</h2>
+                  </div>
+                  </div>
+                </li>
                 <li>
                   <div className="item-name">
-                    <div className="item-img">
-                      <img src="assets/images/bg/h3-menu-food-1.png" alt="" />
-                    </div>
                     <div className="content">
                       <h3>Breakfast Bar</h3>
                       <p>Special Breakfast to make for our customer.</p>
                     </div>
                   </div>
-                  <div className="divider">
-                    <img src="assets/images/icon/h3-menu-divider.svg" alt="" />
-                  </div>
+                
                   <div className="price">
                     <span>$45</span>
                   </div>
                 </li>
+
                 <li>
                   <div className="item-name">
-                    <div className="item-img">
-                      <img src="assets/images/bg/h3-menu-food-2.png" alt="" />
-                    </div>
                     <div className="content">
                       <h3>Frittata Muffins</h3>
                       <p>Special Breakfast to make for our customer.</p>
                     </div>
                   </div>
-                  <div className="divider">
-                    <img src="assets/images/icon/h3-menu-divider.svg" alt="" />
+               
+                  <div className="price">
+                    <span>$45</span>
+                  </div>
+                </li>
+                <li>
+                  <div className="item-name">
+                  <div className="content">
+                    <h2 class="menu-titoli">Piatti Unici</h2>
+                  </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="item-name">
+                  <div className="content">
+                    <h3>Muffins</h3>
+                    <p>Special Breakfast to make for our customer.</p>
+                  </div>
                   </div>
                   <div className="price">
                     <span>$45</span>
@@ -84,92 +95,28 @@ function MenuList3() {
                 </li>
                 <li>
                   <div className="item-name">
-                    <div className="item-img">
-                      <img src="assets/images/bg/h3-menu-food-3.png" alt="" />
-                    </div>
-                    <div className="content">
-                      <h3>Muffins</h3>
-                      <p>Special Breakfast to make for our customer.</p>
-                    </div>
-                  </div>
-                  <div className="divider">
-                    <img src="assets/images/icon/h3-menu-divider.svg" alt="" />
-                  </div>
-                  <div className="price">
-                    <span>$45</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="item-name">
-                    <div className="item-img">
-                      <img src="assets/images/bg/h3-menu-food-4.png" alt="" />
-                    </div>
                     <div className="content">
                       <h3>Smoothies</h3>
                       <p>Special Breakfast to make for our customer.</p>
                     </div>
                   </div>
-                  <div className="divider">
-                    <img src="assets/images/icon/h3-menu-divider.svg" alt="" />
-                  </div>
                   <div className="price">
                     <span>$45</span>
                   </div>
                 </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <div className="home3-menu-wrap">
-              <div className="left-vector">
-                <img
-                  src="assets/images/icon/h3-menu-vec-left.svg"
-                  alt="h3-menu-vec-left"
-                />
-              </div>
-              <div className="right-vector">
-                <img
-                  src="assets/images/icon/h3-menu-vec-right.svg"
-                  alt="h3-menu-vec-right"
-                />
-              </div>
-              <div className="menu-title text-center">
-                <h2>Lunch</h2>
-                <img
-                  src="assets/images/icon/h3-menu-tt-bg.svg"
-                  alt="h3-menu-tt-bg"
-                />
-              </div>
-              <ul>
                 <li>
                   <div className="item-name">
-                    <div className="item-img">
-                      <img src="assets/images/bg/h3-menu-food-5.png" alt="" />
-                    </div>
-                    <div className="content">
-                      <h3>Lemon Rice</h3>
-                      <p>Special Breakfast to make for our customer.</p>
-                    </div>
+                  <div className="content">
+                    <h2 class="menu-titoli">Panini</h2>
                   </div>
-                  <div className="divider">
-                    <img src="assets/images/icon/h3-menu-divider.svg" alt="" />
-                  </div>
-                  <div className="price">
-                    <span>$55</span>
                   </div>
                 </li>
                 <li>
                   <div className="item-name">
-                    <div className="item-img">
-                      <img src="assets/images/bg/h3-menu-food-6.png" alt="" />
-                    </div>
-                    <div className="content">
-                      <h3>Pasta Salad</h3>
-                      <p>Special Breakfast to make for our customer.</p>
-                    </div>
+                  <div className="content">
+                    <h3>Muffins</h3>
+                    <p>Special Breakfast to make for our customer.</p>
                   </div>
-                  <div className="divider">
-                    <img src="assets/images/icon/h3-menu-divider.svg" alt="" />
                   </div>
                   <div className="price">
                     <span>$45</span>
@@ -177,36 +124,13 @@ function MenuList3() {
                 </li>
                 <li>
                   <div className="item-name">
-                    <div className="item-img">
-                      <img src="assets/images/bg/h3-menu-food-7.png" alt="" />
-                    </div>
                     <div className="content">
-                      <h3>Masala Poha</h3>
+                      <h3>Smoothies</h3>
                       <p>Special Breakfast to make for our customer.</p>
                     </div>
                   </div>
-                  <div className="divider">
-                    <img src="assets/images/icon/h3-menu-divider.svg" alt="" />
-                  </div>
                   <div className="price">
-                    <span>$40</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="item-name">
-                    <div className="item-img">
-                      <img src="assets/images/bg/h3-menu-food-8.png" alt="" />
-                    </div>
-                    <div className="content">
-                      <h3>Mongdal Khichdi</h3>
-                      <p>Special Breakfast to make for our customer.</p>
-                    </div>
-                  </div>
-                  <div className="divider">
-                    <img src="assets/images/icon/h3-menu-divider.svg" alt="" />
-                  </div>
-                  <div className="price">
-                    <span>$48</span>
+                    <span>$45</span>
                   </div>
                 </li>
               </ul>

@@ -26,8 +26,9 @@ function Menu2() {
     }, []);
     return (
         <Layout>
-            <Breadcrumb pageName="Menu List-02" pageTitle="Menu List-02" />
+            <Breadcrumb pageName="Menu List" pageTitle="Il nostro Menù" />
             <div className="menu2-area pt-120 mb-120">
+                
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
@@ -51,7 +52,7 @@ function Menu2() {
                                             aria-controls="breakfast"
                                             aria-selected="true"
                                         >
-                                            Breakfast
+                                           Colazione
                                         </button>
                                     </li>
                                     <li
@@ -68,26 +69,10 @@ function Menu2() {
                                             aria-controls="lunch"
                                             aria-selected="false"
                                         >
-                                            Lunch
+                                            Pranzo
                                         </button>
                                     </li>
-                                    <li
-                                        className="nav-item"
-                                        role="presentation"
-                                    >
-                                        <button
-                                            className="nav-link"
-                                            id="dinner-tab"
-                                            data-bs-toggle="tab"
-                                            data-bs-target="#dinner"
-                                            type="button"
-                                            role="tab"
-                                            aria-controls="dinner"
-                                            aria-selected="false"
-                                        >
-                                            Dinner
-                                        </button>
-                                    </li>
+                                    
                                     <li
                                         className="nav-item"
                                         role="presentation"
@@ -102,60 +87,46 @@ function Menu2() {
                                             aria-controls="starter"
                                             aria-selected="false"
                                         >
-                                            Starter
+                                            Piadine
                                         </button>
                                     </li>
+                                    
                                     <li
                                         className="nav-item"
                                         role="presentation"
                                     >
                                         <button
                                             className="nav-link"
-                                            id="beverage-tab"
+                                            id="dinner-tab"
                                             data-bs-toggle="tab"
-                                            data-bs-target="#beverage"
+                                            data-bs-target="#dinner"
                                             type="button"
                                             role="tab"
-                                            aria-controls="beverage"
+                                            aria-controls="dinner"
                                             aria-selected="false"
                                         >
-                                            Berverage
+                                            Aperitivo
                                         </button>
                                     </li>
+                                        
                                     <li
                                         className="nav-item"
                                         role="presentation"
                                     >
                                         <button
                                             className="nav-link"
-                                            id="wines-tab"
+                                            id="drink-tab"
                                             data-bs-toggle="tab"
-                                            data-bs-target="#wines"
+                                            data-bs-target="#drink"
                                             type="button"
                                             role="tab"
-                                            aria-controls="wines"
+                                            aria-controls="drink"
                                             aria-selected="false"
                                         >
-                                            Wines
+                                            Drink list
                                         </button>
                                     </li>
-                                    <li
-                                        className="nav-item"
-                                        role="presentation"
-                                    >
-                                        <button
-                                            className="nav-link"
-                                            id="apitizer-tab"
-                                            data-bs-toggle="tab"
-                                            data-bs-target="#apitizer"
-                                            type="button"
-                                            role="tab"
-                                            aria-controls="apitizer"
-                                            aria-selected="false"
-                                        >
-                                            Apitizer
-                                        </button>
-                                    </li>
+                                
                                 </ul>
                             </div>
                         </div>
@@ -167,145 +138,47 @@ function Menu2() {
                                     role="tabpanel"
                                     aria-labelledby="breakfast-tab"
                                 >
-                                    <div className="row">
-                                        <div className="col-lg-6 p-0">
-                                            <div className="menu2-left-img">
-                                                <img
-                                                    src="assets/images/bg/menu2-left-img-01.png"
-                                                    alt=""
-                                                />
-                                                <div className="overlay">
-                                                    <div className="vec-left">
-                                                        <img
-                                                            src="assets/images/icon/menu1-left-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <div className="vec-right">
-                                                        <img
-                                                            src="assets/images/icon/menu1-right-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <span>Friday Offer</span>
-                                                    <h2>
-                                                        20%{" "}
-                                                        <span>Discount</span>
-                                                    </h2>
-                                                    <h3>Our Breakfast Menu</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 p-0">
-                                            <div className="menu2-wrap">
-                                                <div className="menu-title">
-                                                    <h2>Breakfast</h2>
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Veggie
-                                                                    Burgers
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries
-                                                                    the leap
-                                                                    need.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$80</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Sweet
-                                                                    Peppers
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries,
-                                                                    but also the
-                                                                    electronic.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$40</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Ricotta
-                                                                    Cheese
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries
-                                                                    also the
-                                                                    leap know.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$60</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Black Beans
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$50</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Special
-                                                                    Kabab
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$40</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                     <div className="row">
+                                       
+                                       <div className="col-lg-6 p-0">
+                                           <div className="menu2-wrap">
+                                               <div className="menu-title">
+                                                   <h2>Colazione</h2>
+                                               </div>
+                                               <ul>
+                                               
+                                                   <li>
+                                                       <div className="single-menu">
+                                                           <div className="menu-name">
+                                                               <h4>
+                                                                   Shahi Egg
+                                                                   Curry
+                                                               </h4>
+                                                               <p>
+                                                                   It has
+                                                                   survived not
+                                                                   only five
+                                                                   centuries.
+                                                               </p>
+                                                           </div>
+                                                           <div className="price">
+                                                               <span>$40</span>
+                                                           </div>
+                                                       </div>
+                                                   </li>
+                                               </ul>
+                                           </div>
+                                       </div>
+                                       <div className="col-lg-6 p-0">
+                                           <div className="menu2-left-img">
+                                               <img
+                                                   src="assets/images/bg/menu2-left-img-01.png"
+                                                   alt=""
+                                               />
+                                           </div>
+                                       </div>
+                                   </div>
+                                  
                                 </div>
                                 <div
                                     className="tab-pane fade"
@@ -314,38 +187,11 @@ function Menu2() {
                                     aria-labelledby="lunch-tab"
                                 >
                                     <div className="row">
-                                        <div className="col-lg-6 p-0">
-                                            <div className="menu2-left-img">
-                                                <img
-                                                    src="assets/images/bg/menu2-left-img-01.png"
-                                                    alt=""
-                                                />
-                                                <div className="overlay">
-                                                    <div className="vec-left">
-                                                        <img
-                                                            src="assets/images/icon/menu1-left-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <div className="vec-right">
-                                                        <img
-                                                            src="assets/images/icon/menu1-right-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <span>Friday Offer</span>
-                                                    <h2>
-                                                        15%{" "}
-                                                        <span>Discount</span>
-                                                    </h2>
-                                                    <h3>Our Lunch Menu</h3>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                         <div className="col-lg-6 p-0">
                                             <div className="menu2-wrap">
                                                 <div className="menu-title">
-                                                    <h2>Lunch</h2>
+                                                    <h2>Pranzo</h2>
                                                 </div>
                                                 <ul>
                                                     {menuItems.dishes &&
@@ -433,8 +279,19 @@ function Menu2() {
                                                 </ul>
                                             </div>
                                         </div>
+                                        <div className="col-lg-6 p-0">
+                                        <div className="menu2-left-img">
+                                            <img
+                                                src="assets/images/bg/menu2-left-img-01.png"
+                                                alt=""
+                                            />
+                                        </div>
                                     </div>
+                                    </div>
+                                    
                                 </div>
+                                
+                            
                                 <div
                                     className="tab-pane fade"
                                     id="dinner"
@@ -442,122 +299,14 @@ function Menu2() {
                                     aria-labelledby="dinner-tab"
                                 >
                                     <div className="row">
-                                        <div className="col-lg-6 p-0">
-                                            <div className="menu2-left-img">
-                                                <img
-                                                    src="assets/images/bg/menu2-left-img-01.png"
-                                                    alt=""
-                                                />
-                                                <div className="overlay">
-                                                    <div className="vec-left">
-                                                        <img
-                                                            src="assets/images/icon/menu1-left-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <div className="vec-right">
-                                                        <img
-                                                            src="assets/images/icon/menu1-right-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <span>Friday Offer</span>
-                                                    <h2>
-                                                        25%{" "}
-                                                        <span>Discount</span>
-                                                    </h2>
-                                                    <h3>Our Dinner Menu</h3>
-                                                </div>
-                                            </div>
-                                        </div>
+                                       
                                         <div className="col-lg-6 p-0">
                                             <div className="menu2-wrap">
                                                 <div className="menu-title">
-                                                    <h2>Dinner</h2>
+                                                    <h2>Aperitivo</h2>
                                                 </div>
                                                 <ul>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Lemon
-                                                                    Chicken
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries
-                                                                    the leap
-                                                                    need.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$80</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Chettinad
-                                                                    Fish Fry
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries,
-                                                                    but also the
-                                                                    electronic.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$40</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Dum Aloo
-                                                                    Lakhnawi
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries
-                                                                    also the
-                                                                    leap know.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$60</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Keema
-                                                                    Biryani
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$50</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                
                                                     <li>
                                                         <div className="single-menu">
                                                             <div className="menu-name">
@@ -580,6 +329,63 @@ function Menu2() {
                                                 </ul>
                                             </div>
                                         </div>
+                                        <div className="col-lg-6 p-0">
+                                            <div className="menu2-left-img">
+                                                <img
+                                                    src="assets/images/bg/menu2-left-img-01.png"
+                                                    alt=""
+                                                />
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="drink"
+                                    role="tabpanel"
+                                    aria-labelledby="drink-tab"
+                                >
+                                    <div className="row">
+                                       
+                                        <div className="col-lg-6 p-0">
+                                            <div className="menu2-wrap">
+                                                <div className="menu-title">
+                                                    <h2>Drink list</h2>
+                                                </div>
+                                                <ul>
+                                                
+                                                    <li>
+                                                        <div className="single-menu">
+                                                            <div className="menu-name">
+                                                                <h4>
+                                                                    Shahi Egg
+                                                                    Curry
+                                                                </h4>
+                                                                <p>
+                                                                    It has
+                                                                    survived not
+                                                                    only five
+                                                                    centuries.
+                                                                </p>
+                                                            </div>
+                                                            <div className="price">
+                                                                <span>$40</span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6 p-0">
+                                            <div className="menu2-left-img">
+                                                <img
+                                                    src="assets/images/bg/menu2-left-img-01.png"
+                                                    alt=""
+                                                />
+                                                
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div
@@ -588,143 +394,47 @@ function Menu2() {
                                     role="tabpanel"
                                     aria-labelledby="starter-tab"
                                 >
-                                    <div className="row">
-                                        <div className="col-lg-6 p-0">
-                                            <div className="menu2-left-img">
-                                                <img
-                                                    src="assets/images/bg/menu2-left-img-01.png"
-                                                    alt=""
-                                                />
-                                                <div className="overlay">
-                                                    <div className="vec-left">
-                                                        <img
-                                                            src="assets/images/icon/menu1-left-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <div className="vec-right">
-                                                        <img
-                                                            src="assets/images/icon/menu1-right-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <span>Friday Offer</span>
-                                                    <h2>
-                                                        30%{" "}
-                                                        <span>Discount</span>
-                                                    </h2>
-                                                    <h3>Our Starter Menu</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-6 p-0">
-                                            <div className="menu2-wrap">
-                                                <div className="menu-title">
-                                                    <h2>Starter</h2>
-                                                </div>
-                                                <ul>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Bandage
-                                                                    Cutlets
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries
-                                                                    the leap
-                                                                    need.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$25</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Crispy Corn
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries,
-                                                                    but also the
-                                                                    electronic.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$20</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Veg Momos
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries
-                                                                    also the
-                                                                    leap know.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$17</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Bhara Kabab
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$45</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div className="single-menu">
-                                                            <div className="menu-name">
-                                                                <h4>
-                                                                    Moong Dal
-                                                                    Bhel
-                                                                </h4>
-                                                                <p>
-                                                                    It has
-                                                                    survived not
-                                                                    only five
-                                                                    centuries.
-                                                                </p>
-                                                            </div>
-                                                            <div className="price">
-                                                                <span>$24</span>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                     <div className="row">
+                                       
+                                       <div className="col-lg-6 p-0">
+                                           <div className="menu2-wrap">
+                                               <div className="menu-title">
+                                                   <h2>Piadine</h2>
+                                               </div>
+                                               <ul>
+                                               
+                                                   <li>
+                                                       <div className="single-menu">
+                                                           <div className="menu-name">
+                                                               <h4>
+                                                                   Shahi Egg
+                                                                   Curry
+                                                               </h4>
+                                                               <p>
+                                                                   It has
+                                                                   survived not
+                                                                   only five
+                                                                   centuries.
+                                                               </p>
+                                                           </div>
+                                                           <div className="price">
+                                                               <span>$40</span>
+                                                           </div>
+                                                       </div>
+                                                   </li>
+                                               </ul>
+                                           </div>
+                                       </div>
+                                       <div className="col-lg-6 p-0">
+                                           <div className="menu2-left-img">
+                                               <img
+                                                   src="assets/images/bg/menu2-left-img-01.png"
+                                                   alt=""
+                                               />
+                                             
+                                           </div>
+                                       </div>
+                                   </div>
                                 </div>
                                 <div
                                     className="tab-pane fade"
@@ -733,34 +443,7 @@ function Menu2() {
                                     aria-labelledby="beverage-tab"
                                 >
                                     <div className="row">
-                                        <div className="col-lg-6 p-0">
-                                            <div className="menu2-left-img">
-                                                <img
-                                                    src="assets/images/bg/menu2-left-img-01.png"
-                                                    alt=""
-                                                />
-                                                <div className="overlay">
-                                                    <div className="vec-left">
-                                                        <img
-                                                            src="assets/images/icon/menu1-left-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <div className="vec-right">
-                                                        <img
-                                                            src="assets/images/icon/menu1-right-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <span>Friday Offer</span>
-                                                    <h2>
-                                                        20%{" "}
-                                                        <span>Discount</span>
-                                                    </h2>
-                                                    <h3>Our Berverage Menu</h3>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                         <div className="col-lg-6 p-0">
                                             <div className="menu2-wrap">
                                                 <div className="menu-title">
@@ -874,34 +557,7 @@ function Menu2() {
                                     aria-labelledby="wines-tab"
                                 >
                                     <div className="row">
-                                        <div className="col-lg-6 p-0">
-                                            <div className="menu2-left-img">
-                                                <img
-                                                    src="assets/images/bg/menu2-left-img-01.png"
-                                                    alt=""
-                                                />
-                                                <div className="overlay">
-                                                    <div className="vec-left">
-                                                        <img
-                                                            src="assets/images/icon/menu1-left-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <div className="vec-right">
-                                                        <img
-                                                            src="assets/images/icon/menu1-right-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <span>Friday Offer</span>
-                                                    <h2>
-                                                        20%{" "}
-                                                        <span>Discount</span>
-                                                    </h2>
-                                                    <h3>Our Wines Menu</h3>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                         <div className="col-lg-6 p-0">
                                             <div className="menu2-wrap">
                                                 <div className="menu-title">
@@ -1020,26 +676,7 @@ function Menu2() {
                                                     src="assets/images/bg/menu2-left-img-01.png"
                                                     alt=""
                                                 />
-                                                <div className="overlay">
-                                                    <div className="vec-left">
-                                                        <img
-                                                            src="assets/images/icon/menu1-left-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <div className="vec-right">
-                                                        <img
-                                                            src="assets/images/icon/menu1-right-vec.svg"
-                                                            alt=""
-                                                        />
-                                                    </div>
-                                                    <span>Friday Offer</span>
-                                                    <h2>
-                                                        20%{" "}
-                                                        <span>Discount</span>
-                                                    </h2>
-                                                    <h3>Our Apitizer Menu</h3>
-                                                </div>
+                                            
                                             </div>
                                         </div>
                                         <div className="col-lg-6 p-0">
@@ -1152,6 +789,7 @@ function Menu2() {
                                                     </li>
                                                 </ul>
                                             </div>
+                                          
                                         </div>
                                     </div>
                                 </div>
@@ -1159,8 +797,8 @@ function Menu2() {
                         </div>
                     </div>
                 </div>
+               
             </div>
-            <Home3Testimonial />
         </Layout>
     );
 }

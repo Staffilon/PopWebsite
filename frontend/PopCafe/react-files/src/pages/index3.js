@@ -17,7 +17,7 @@ function Index3Page() {
   return (
     <>
       <Head>
-        <title>PopCafè - Come a casa tua</title>
+        <title>PopCafè</title>
         <meta name="description" content="Pop Cafè"/>
         <link rel="icon" href="assets/images/icon/logo-icon.svg" />
       </Head>

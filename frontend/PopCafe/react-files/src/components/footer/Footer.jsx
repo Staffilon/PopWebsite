@@ -51,12 +51,12 @@ function Footer() {
                 <div className="footer-social">
                   <ul className="social-link d-flex align-items-center justify-content-center">
                     <li>
-                      <a href="https://www.facebook.com/">
+                      <a href="https://www.facebook.com/popcafesoloacamerino">
                         <i className="bx bxl-facebook" />
                       </a>
                     </li>
                     <li>
-                      <a href="https://www.instagram.com/">
+                      <a href="https://www.instagram.com/pop.cafe/">
                         <i className="bx bxl-instagram-alt" />
                       </a>
                     </li>

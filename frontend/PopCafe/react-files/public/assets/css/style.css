@@ -1271,7 +1271,7 @@ body.tt-magic-cursor #magic-cursor {
 .section-title3 span {
   font-size: 1.125rem;
   font-weight: 500;
-  color: var(--primary-color1);
+  color: #CF6849;
   line-height: 1.625rem;
   font-family: var(--font-Jost);
   display: inline-block;
@@ -5426,7 +5426,7 @@ footer .footer-top .social-area .footer-logo span::before {
   content: "";
   width: 84px;
   height: 1px;
-  background-color: var(--primary-color1);
+  background-color: #CF6849;
   position: absolute;
   left: -95px;
   top: 13px;
@@ -5435,7 +5435,7 @@ footer .footer-top .social-area .footer-logo span::after {
   content: "";
   width: 84px;
   height: 1px;
-  background-color: var(--primary-color1);
+  background-color: #CF6849;
   position: absolute;
   right: -95px;
   top: 13px;
@@ -5458,14 +5458,14 @@ footer .footer-top .social-area .footer-social ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #BF9444;
+  border: 1px solid #CF6849;
   transition: 0.35s;
 }
 footer .footer-top .social-area .footer-social ul li a i {
   color: var(--white);
 }
 footer .footer-top .social-area .footer-social ul li a:hover {
-  background-color: var(--primary-color1);
+  background-color: #CF6849;
 }
 footer .footer-top .contact-info .single-contact {
   margin-bottom: 13px;
@@ -5479,7 +5479,7 @@ footer .footer-top .contact-info .single-contact {
 footer .footer-top .contact-info .single-contact .title {
   font-size: 1.125rem;
   font-weight: 500;
-  color: var(--primary-color1);
+  color: #CF6849;
   font-family: var(--font-Jost);
   display: inline-block;
   margin-right: 10px;
@@ -5494,7 +5494,7 @@ footer .footer-top .contact-info .single-contact .content a {
   text-align: start;
 }
 footer .footer-top .contact-info .single-contact .content a:hover {
-  color: var(--primary-color1);
+  color:#CF6849;
 }
 footer .footer-btm .border-ttop {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -6458,7 +6458,7 @@ footer .footer-btm .privacy-policy p a:hover {
   display: inline-block;
 }
 .h2-blog-card .blog-content .read-more-btn a {
-  border: 1px solid #BF9444;
+  border: 1px solid #e3bf9e;
   border-radius: 50px;
   padding: 0px 20px;
   display: inline-block;
@@ -6547,7 +6547,7 @@ footer .footer-btm .privacy-policy p a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #BF9444;
+  border: 1px solid white;
   border-radius: 50%;
   transition: 0.35s;
 }
@@ -6558,11 +6558,12 @@ footer .footer-btm .privacy-policy p a:hover {
   background-color: var(--primary-color1);
 }
 .home3-banner .open-time {
-  background-color: var(--title-color-dark);
+  background-color:  #e3bf9e;
+  opacity: 60%;
+  max-width: 1107px;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  max-width: 1107px;
   width: 100%;
   margin: 0 auto;
   position: absolute;
@@ -6662,7 +6663,7 @@ footer .footer-btm .privacy-policy p a:hover {
 .home3-banner .banner-content span {
   font-size: 1.25;
   font-weight: 400;
-  color: var(--primary-color1);
+  color: white;
   display: inline-block;
 }
 .home3-banner .banner-content span .left-vec {
@@ -7820,7 +7821,7 @@ footer .footer-btm .privacy-policy p a:hover {
 .home3-blog-area .h3-blog-wrap-1 .blog-img .batch a {
   font-size: 1.125rem;
   font-weight: 500;
-  color: var(--primary-color1);
+  color: #CF6849;
   font-family: var(--font-Jost);
   border-radius: 30px 0px 0px 30px;
   background-color: var(--white);
@@ -7865,7 +7866,7 @@ footer .footer-btm .privacy-policy p a:hover {
   transition: 0.35s;
 }
 .home3-blog-area .h3-blog-wrap-1 .blog-content .blog-meta ul li a:hover {
-  color: var(--primary-color1);
+  color: #CF6849;
 }
 .home3-blog-area .h3-blog-wrap-1 .blog-content .blog-meta ul li a img {
   margin-right: 8px;
@@ -7888,7 +7889,7 @@ footer .footer-btm .privacy-policy p a:hover {
   transition: 0.35s;
 }
 .home3-blog-area .h3-blog-wrap-1 .blog-content h3 a:hover {
-  color: var(--primary-color1);
+  color: #CF6849;
 }
 .home3-blog-area .h3-blog-wrap-1 .blog-content p {
   font-size: 1.125rem;
@@ -7903,7 +7904,7 @@ footer .footer-btm .privacy-policy p a:hover {
 .home3-blog-area .h3-blog-wrap-1 .blog-content .continue-btn a {
   font-size: 1.125rem;
   font-weight: 400;
-  color: var(--primary-color1);
+  color: #CF6849;
   font-family: var(--font-Jost);
   display: flex;
   align-items: flex-end;
@@ -7966,7 +7967,7 @@ footer .footer-btm .privacy-policy p a:hover {
   transition: 0.35s;
 }
 .home3-blog-area .blog-card-alfa .blog-content h3 a:hover {
-  color: var(--primary-color1);
+  color: #CF6849;
 }
 .home3-blog-area .blog-card-alfa .blog-content p {
   font-size: 1.125rem;
@@ -7981,7 +7982,7 @@ footer .footer-btm .privacy-policy p a:hover {
 .home3-blog-area .blog-card-alfa .blog-content .continue-btn a {
   font-size: 1.125rem;
   font-weight: 400;
-  color: var(--primary-color1);
+  color: #CF6849;
   font-family: var(--font-Jost);
   display: flex;
   align-items: flex-end;
@@ -8087,16 +8088,16 @@ footer .footer-btm .privacy-policy p a:hover {
   font-family: var(--font-Jost);
 }
 .breadcrumb-section nav ol li a:hover {
-  color: var(--primary-color1);
+  color: #CF6849;
 }
 .breadcrumb-section nav ol li.active {
-  color: var(--primary-color1);
+  color: #CF6849;
   position: relative;
   margin-left: 35px;
 }
 .breadcrumb-section .breadcrumb-item + .breadcrumb-item::before {
   padding-right: 0.5rem;
-  color: var(--primary-color1);
+  color: #CF6849;
   content: "\f280";
   font-family: "Bootstrap-icons";
   font-size: 13px;
@@ -9022,12 +9023,12 @@ footer .footer-btm .privacy-policy p a:hover {
 }
 .menu2-area .menu2-tab .nav .nav-item .nav-link:hover {
   color: var(--white);
-  background-color: var(--primary-color1);
-  border: 1px solid var(--primary-color1);
+  background-color: #CF6849;
+  border: 1px solid #CF6849;
 }
 .menu2-area .menu2-tab .nav-tabs .nav-item.show .nav-link, .menu2-area .menu2-tab .nav-tabs .nav-link.active {
   color: var(--white);
-  background-color: var(--primary-color1);
+  background-color: #CF6849;
 }
 .menu2-area .menu2-left-img {
   border-radius: 5px 0px 0px 5px;
@@ -9127,7 +9128,7 @@ footer .footer-btm .privacy-policy p a:hover {
   position: relative;
 }
 .menu2-area .menu2-wrap::after {
-  content: url("../images/icon/menu2-thumb-icon.svg");
+ 
   position: absolute;
   left: 50%;
   top: 50%;
@@ -12650,3 +12651,11 @@ footer .footer-btm .privacy-policy p a:hover {
   background-color: #bf9444;
   color: #fff;
 }/*# sourceMappingURL=style.css.map */
+
+
+.menu-titoli{
+    font-size: 2.000rem;
+    font-weight: 700;
+    color: #CF6849;
+    font-family: var(--font-cormorant);
+}

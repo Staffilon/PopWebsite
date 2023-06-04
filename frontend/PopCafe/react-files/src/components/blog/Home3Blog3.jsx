@@ -9,18 +9,7 @@ function Home3Blog3() {
           <div className="col-lg-8">
             <div className="section-title3 text-center">
               <span>
-                {" "}
-                <img
-                  className="left-vec"
-                  src="assets/images/icon/h3-sub-title-vec.svg"
-                  alt=""
-                />
                 Pop Cafè Events
-                <img
-                  className="right-vec"
-                  src="assets/images/icon/h3-sub-title-vec.svg"
-                  alt=""
-                />
               </span>
               <h2>I nostri eventi</h2>
             </div>
@@ -36,53 +25,18 @@ function Home3Blog3() {
                   alt=""
                 />
                 <div className="batch">
-                  <Link legacyBehavior href="/blog-grid">
-                    <a>22 June,2022</a>
-                  </Link>
+                    <a>26 Aprile 2023</a>
                 </div>
               </div>
               <div className="blog-content">
-                <div className="blog-meta">
-                  <ul>
-                    <li>
-                      <Link href="/blog-grid" legacyBehavior>
-                        <a>
-                          <img src="assets/images/icon/User2.svg" alt="User2" />
-                          By Admin
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link legacyBehavior href="/blog-grid">
-                        <a>
-                          <img
-                            src="assets/images/icon/Comment2.svg"
-                            alt="Comment2"
-                          />
-                          Comment(10)
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
                 <h3>
-                  <Link legacyBehavior href="/blog-details">
-                    <a>Food is bring to happy &amp; healthy life</a>
-                  </Link>
+                    <a>Il BRUNCH</a>
                 </h3>
                 <p>
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sites still in their
-                  infancy.
+                  Il ritorno del Brunch della domenica, seconda edizione.
+                  Appuntamento unico da non perdere!
+                  Vi aspettiamo domenica 12 febbraio dalle 11:00!
                 </p>
-                <div className="continue-btn">
-                  <Link href="/blog-details" legacyBehavior>
-                    <a>
-                      Continue Reading <i className="bi bi-arrow-right" />
-                    </a>
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
@@ -91,19 +45,15 @@ function Home3Blog3() {
               <div className="col-xxl-12 col-xl-6 col-lg-6 col-sm-6 ">
                 <div className="blog-card-alfa one">
                   <div className="blog-content">
+                  <div className="batch">
+                       <a>27 Gennaio 2023</a>
+                     </div>
                     <h3>
-                      <Link legacyBehavior href="/blog-details">
-                        <a>Food is everywhere, Food is enjoyable zone.</a>
-                      </Link>
+                        <a>Candle Jazz Night</a>
                     </h3>
-                    <p>Many desktop publishing packages web. </p>
-                    <div className="continue-btn">
-                      <Link legacyBehavior href="/blog-details">
-                        <a>
-                          Continue Reading <i className="bi bi-arrow-right" />
-                        </a>
-                      </Link>
-                    </div>
+                    <p>PopCafe non smette mai di sorprendere
+                      Candle jazz night
+                      Apericena a lume di candela, a partire dalle 20.30 & live concert by Jazz quartet</p>
                   </div>
                   <div className="blog-img">
                     <img
@@ -122,31 +72,18 @@ function Home3Blog3() {
                     />
                   </div>
                   <div className="blog-content">
+                  <div className="batch">
+                       <a>10 Marzo 2023</a>
+                     </div>
                     <h3>
-                      <Link legacyBehavior href="/blog-details">
-                        <a>Eat Tasty Food, Food is enjoyable zone.</a>
-                      </Link>
+                        <a>Around Morricone</a>
                     </h3>
-                    <p>Many desktop publishing packages editors.</p>
-                    <div className="continue-btn">
-                      <Link legacyBehavior href="/blog-details">
-                        <a>
-                          Continue Reading <i className="bi bi-arrow-right" />
-                        </a>
-                      </Link>
-                    </div>
+                    <p>APERICENA di pesce e in accompagnamento Jazz quarter. Stefano Conforti Jazz Quartet presenta il concerto “Around Morricone”.</p>
+              
                   </div>
                 </div>
               </div>
-              <div className="col-lg-12 d-flex justify-content-center">
-                <div className="view-btn">
-                  <Link legacyBehavior href="/blog-grid">
-                    <a className="primary-btn7 btn-md2">
-                      <i className="bi bi-arrow-up-right-circle" /> View More
-                    </a>
-                  </Link>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

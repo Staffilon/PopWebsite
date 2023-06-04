@@ -13,17 +13,9 @@ function MenuList2() {
           <div className="col-lg-8">
             <div className="section-title">
               <span>
-                <img
-                  className="left-vec"
-                  src="assets/images/icon/sub-title-vec.svg"
-                  alt="sub-title-vec"
-                />
+                
                 Menu List
-                <img
-                  className="right-vec"
-                  src="assets/images/icon/sub-title-vec.svg"
-                  alt="sub-title-vec"
-                />
+             
               </span>
               <h2>Find Your Food Item</h2>
             </div>
