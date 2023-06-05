@@ -39,7 +39,7 @@ Template Name: Restho - Resturent HTML Template
 }
 
 :root {
-  --primary-color1: #BF9444;
+  --primary-color1: #CF6849;
   --title-color-dark: #09161D;
   --text-color1: #5E5E5E;
   --white: #ffffff;
@@ -11070,7 +11070,7 @@ footer .footer-btm .privacy-policy p a:hover {
   margin-bottom: 35px;
 }
 .contact-page .contact-wrap .contact-content h3::after {
-  content: url(../images/icon/contact-title-vec.svg);
+  
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

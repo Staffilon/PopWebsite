@@ -1,113 +1,72 @@
+import Link from "next/link";
 import React from "react";
 
 function About1() {
   return (
-    <div className="home1-introduction-area pt-120 mb-120">
-      <div className="container-lg container-fluid">
-        <div className="row mb-40">
-          <div className="col-lg-12">
-            <div className="section-title">
+    <div className="introduction-area pt-120 mb-120">
+      <div className="container">
+        <div className="row align-items-end gy-5">
+          <div className="col-lg-7">
+            <div className="section-title3">
               <span>
-                <img
-                  className="left-vec"
-                  src="assets/images/icon/sub-title-vec.svg"
-                  alt="sub-title-vec"
-                />
-                Introduction of Restho
-                <img
-                  className="right-vec"
-                  src="assets/images/icon/sub-title-vec.svg"
-                  alt="sub-title-vec"
-                />
+               
+                Chi siamo
+               
               </span>
-              <h2>We Are Experienced Restaurant.</h2>
+              <h2>Since 2014...</h2>
+            </div>
+            <div className="introduction-content">
+              <p>
+              Pop Cafè ha ufficialmente aperto le sue porte ai clienti nel maggio del 2014, ma la sua origine risale molto prima, nasce infatti dalle mie passioni e dai miei desideri, diventando un progetto realizzato a 360 gradi.
+
+              Il nostro cafè è <b>accessibile a tutte le generazioni</b>, un punto di aggregazione in cui è possibile festeggiare con gli amici o brindare in intimità...
+
+              Nella realtà universitaria di Camerino, la coesione è la chiave di forza e il Pop Cafè, con il suo staff giovane, professionale, attento e sempre disponibile, è un <b>testimone di incontri, piaceri e divertimento.</b>
+<br></br>
+              Offriamo una vasta gamma di servizi, che vanno dalle colazioni ai pranzi veloci e gustosi, dai ricchi aperitivi agli autentici gelati artigianali, dalle serate a tema alle mostre di fotografia e pittura.
+
+              Il <i>Pop Cafè</i> è un locale confortevole in cui non rimarrete delusi!
+              </p>
+              <div className="about-features">
+                <ul>
+                  <li>
+                    <i className="bi bi-chevron-double-right" />
+                    Colazioni
+                  </li>
+                  <li>
+                    <i className="bi bi-chevron-double-right" />
+                    Pranzi
+                  </li>
+                  <li>
+                    <i className="bi bi-chevron-double-right" />
+                    Aperitivi
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <i className="bi bi-chevron-double-right" />
+                    Serate a tema
+                  </li>
+                  <li>
+                    <i className="bi bi-chevron-double-right" />
+                    Tabacchi
+                  </li>
+                  <li>
+                    <i className="bi bi-chevron-double-right" />
+                    E molto altro...
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="container-fluid">
-        <div className="row gy-5">
-          <div className="col-lg-4">
-            <div className="into-left-img magnetic-wrap">
+          <div className="col-lg-5">
+            <div className="h3-into-img-big">
               <img
-                className="img-fluid magnetic-item"
-                src="assets/images/bg/h1-intro-left-img.png"
-                alt="h1-intro-left-img"
+                className="img-fluid"
+                src="assets/images/bg/h3-intro-big.png"
+                alt="h3-intro-big"
               />
-            </div>
-          </div>
-          <div className="col-lg-8">
-            <div className="our-mission">
-              <div className="icon">
-                <img src="assets/images/icon/mission.svg" alt="" />
-                <h4>Our Mission</h4>
-              </div>
-              <div className="description">
-                <p>
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing Lorem Ipsum passages, and more recently with
-                  desktop publishing software like Aldus PageMaker including
-                  versions of Lorem Ipsum.
-                </p>
-              </div>
-            </div>
-            <div className="intro-right">
-              <div className="features-author">
-                <div className="intro-features">
-                  <ul>
-                    <li>
-                      <i className="bi bi-check-circle" />
-                      Delicious Food.
-                    </li>
-                    <li>
-                      <i className="bi bi-check-circle" />
-                      Cost Effective.
-                    </li>
-                    <li>
-                      <i className="bi bi-check-circle" />
-                      Clean Environment.
-                    </li>
-                  </ul>
-                  <ul>
-                    <li>
-                      <i className="bi bi-check-circle" />
-                      Expert Chef.
-                    </li>
-                    <li>
-                      <i className="bi bi-check-circle" />
-                      Letraset Sheets.
-                    </li>
-                    <li>
-                      <i className="bi bi-check-circle" />
-                      Quality Food.{" "}
-                    </li>
-                  </ul>
-                </div>
-                <div className="author-area">
-                  <div className="author-content">
-                    <p>
-                      “Welcome our restaurant! Our Restaurant is the best as
-                      like delicious food, nutrition food etc in world-wide.”{" "}
-                    </p>
-                  </div>
-                  <div className="author-img-name">
-                    <div className="author-img">
-                      <img src="assets/images/bg/h1-intro-author.png" alt="" />
-                    </div>
-                    <div className="author-name">
-                      <h4>Mr. Hamilton</h4>
-                      <span>CEO &amp;Founder</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="intro-right-img magnetic-wrap">
-                <img
-                  className="img-fluid magnetic-item"
-                  src="assets/images/bg/h1-intro-right-img.png"
-                  alt="h1-intro-right-img"
-                />
-              </div>
+             
             </div>
           </div>
         </div>

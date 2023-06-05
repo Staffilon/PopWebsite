@@ -14,29 +14,15 @@ function ContactAddress() {
                 />
               </div>
               <div className="contact-content">
-                <h3>NewYork Branch</h3>
+                <h3>Per informazioni, lauree ed eventi</h3>
                 <ul>
-                  <li>
-                    <div className="icon">
-                      <img
-                        src="assets/images/icon/location.svg"
-                        alt="location"
-                      />
-                    </div>
-                    <div className="content">
-                      <a>
-                        Mirpur DOHS, House-167/170,
-                        <br />
-                        Road No-02, Avenue -01
-                      </a>
-                    </div>
-                  </li>
+                 
                   <li>
                     <div className="icon">
                       <img src="assets/images/icon/phone.svg" alt="phone" />
                     </div>
                     <div className="content">
-                      <a href="#">+990-7782200</a>
+                      <a href="#">+39 333 431 0883</a>
                     </div>
                   </li>
                   <li>
@@ -60,29 +46,15 @@ function ContactAddress() {
                 />
               </div>
               <div className="contact-content">
-                <h3>Italian Branch</h3>
+                <h3>Seguici sui social per restare aggiornato!</h3>
                 <ul>
-                  <li>
-                    <div className="icon">
-                      <img
-                        src="assets/images/icon/location.svg"
-                        alt="location"
-                      />
-                    </div>
-                    <div className="content">
-                      <a>
-                        Khikhet DOHS, House-169/177,
-                        <br />
-                        Road No-04, Avenue -02
-                      </a>
-                    </div>
-                  </li>
+                  
                   <li>
                     <div className="icon">
                       <img src="assets/images/icon/phone.svg" alt="phone" />
                     </div>
                     <div className="content">
-                      <a href="#">+990-7782200</a>
+                      <a href="https://www.facebook.com/popcafesoloacamerino">Pop Cafè on facebook</a>
                     </div>
                   </li>
                   <li>
@@ -90,7 +62,7 @@ function ContactAddress() {
                       <img src="assets/images/icon/envlope.svg" alt="envlope" />
                     </div>
                     <div className="content">
-                      <a href="#">info@example.com</a>
+                      <a href="https://www.instagram.com/pop.cafe/">Pop Cafè on instagram</a>
                     </div>
                   </li>
                 </ul>

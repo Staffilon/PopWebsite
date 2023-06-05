@@ -69,19 +69,11 @@ function Gallery1() {
           <div className="col-lg-8">
             <div className="section-title text-center">
               <span>
-                <img
-                  className="left-vec"
-                  src="assets/images/icon/sub-title-vec.svg"
-                  alt="sub-title-vec"
-                />
+                
                 Gallery
-                <img
-                  className="right-vec"
-                  src="assets/images/icon/sub-title-vec.svg"
-                  alt="sub-title-vec"
-                />
+                
               </span>
-              <h2>Restho’s Gallery</h2>
+              <h2>Il nuovo PopCafè</h2>
             </div>
           </div>
         </div>
@@ -100,24 +92,7 @@ function Gallery1() {
                       }
                     >
                       <img className="img-fluid" src={imageSmalll} alt="" />
-                      <div className="overlay d-flex align-items-center justify-content-center">
-                        <div className="items-content text-center">
-                          <span>
-                            <img
-                              className="left-vec"
-                              src="assets/images/icon/shape-white1.svg"
-                              alt="sub-title-vec"
-                            />
-                            {slideCategoryTitle}
-                            <img
-                              className="right-vec"
-                              src="assets/images/icon/shape-white1.svg"
-                              alt="sub-title-vec"
-                            />
-                          </span>
-                          <h3>{slideTitle}</h3>
-                        </div>
-                      </div>
+                     
                     </div>
                   </SwiperSlide>
                 );

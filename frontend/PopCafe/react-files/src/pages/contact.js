@@ -7,9 +7,9 @@ import Layout from "../layout/Layout";
 function ContactPage() {
   return (
     <Layout>
-      <Breadcrumb pageName="Contact Us" pageTitle="Contact Us" />
+      <Breadcrumb pageName="Contatti" pageTitle="Contatti" />
       <ContactAddress />
-      <ContactForm />
+      
       <ContactMap />
     </Layout>
   );

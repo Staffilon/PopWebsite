@@ -9,18 +9,9 @@ function About3() {
           <div className="col-lg-7">
             <div className="section-title3">
               <span>
-                {" "}
-                <img
-                  className="left-vec"
-                  src="assets/images/icon/h3-sub-title-vec.svg"
-                  alt=""
-                />{" "}
-                Chi siamo{" "}
-                <img
-                  className="right-vec"
-                  src="assets/images/icon/h3-sub-title-vec.svg"
-                  alt=""
-                />
+               
+                Chi siamo
+               
               </span>
               <h2>Since 2014...</h2>
             </div>

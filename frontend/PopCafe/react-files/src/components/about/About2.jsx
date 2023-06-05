@@ -35,59 +35,17 @@ function About2() {
       </div>
       <div className="about-right">
         <div className="section-title">
-          <span>
-            <img
-              className="left-vec"
-              src="assets/images/icon/sub-title-vec.svg"
-              alt="sub-title-vec"
-            />
-            About to Restho
-            <img
-              className="right-vec"
-              src="assets/images/icon/sub-title-vec.svg"
-              alt="sub-title-vec"
-            />
-          </span>
-          <h2>Come to Our Restaurant, Ready Your Food.</h2>
+         
+          <h2>Perchè rinnovare?</h2>
           <p>
-            It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum.
+          Noi del Pop Cafè crediamo nel rinnovamento costante per offrire un'esperienza migliore ai nostri clienti. Abbiamo creato un'atmosfera accogliente, curando gli arredi e l'aspetto visivo. Il nostro obiettivo è garantire comfort e stile, rimanendo al passo con le tendenze attuali, offrendo un'esperienza coinvolgente e memorabile a chi ci sceglie!
           </p>
         </div>
-        <div className="about-featurs">
-          <ul>
-            <li>
-              <div className="features-img">
-                <img src="assets/images/icon/h2-about1.svg" alt="" />
-              </div>
-              <div className="features-content">
-                <h4>Pure Fresh Food.</h4>
-                <p>We are serve different type of fresh food.</p>
-              </div>
-            </li>
-            <li>
-              <div className="features-img">
-                <img src="assets/images/icon/h2-about2.svg" alt="" />
-              </div>
-              <div className="features-content">
-                <h4>Experties Chef.</h4>
-                <p>We are serve different type of fresh food.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <Link legacyBehavior href="/about">
-          <a className="primary-btn5 btn-md2">
-            <i className="bi bi-arrow-up-right-circle" />
-            Discover More
-          </a>
-        </Link>
       </div>
+     
     </div>
+    
+     
   );
 }
 

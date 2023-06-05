@@ -9,7 +9,7 @@ function MenuList3() {
   
   return (
   
-    <div className="h3-menu-area mb-240">
+    <div className="h3-menu-area mb-240" id="menu">
       <div className="container">
         <div className="row justify-content-center mb-45">
           <div className="col-lg-8">

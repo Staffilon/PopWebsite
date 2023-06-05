@@ -15,22 +15,22 @@ function Footer() {
                 <div className="menu-container">
                   <ul>
                     <li>
-                      <Link legacyBehavior href="/menu1">
+                      <Link legacyBehavior href="#servizi">
                         Bar
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="/menu1">
+                      <Link legacyBehavior href="#servizi">
                         Gelateria
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="/reservation">
+                      <Link legacyBehavior href="#menu">
                         Pranzo
                       </Link>
                     </li>
                     <li>
-                      <Link legacyBehavior href="/menu1">
+                      <Link legacyBehavior href="#servizi">
                         Aperitivi
                       </Link>
                     </li>

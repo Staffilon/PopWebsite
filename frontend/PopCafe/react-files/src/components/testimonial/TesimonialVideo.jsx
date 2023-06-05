@@ -12,8 +12,8 @@ function TesimonialVideo() {
             <div className="testi-video-wrap">
               <img
                 className="img-fluid"
-                src="assets/images/bg/testi-video-bg.png"
-                alt=""
+                src="assets/images/bg/videocover.svg"
+                alt="covervideo"
               />
               <div className="video-icon">
                 <a

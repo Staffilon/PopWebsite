@@ -100,8 +100,8 @@ function Header3() {
             <ul className="menu-list">
             <li>
                 <Link
-                  href="/index3"
-                  className={currentRoute === "/index3" ? "active" : ""}
+                  href="/index"
+                  className={currentRoute === "/index" ? "active" : ""}
                 >
                   Home
                 </Link>

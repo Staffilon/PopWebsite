@@ -4,8 +4,8 @@ function ContactMap() {
   return (
     <div className="contact-map">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14599.578237069936!2d90.3654215!3d23.8223482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1668781325239!5m2!1sen!2sbd"
-        style={{ border: 0 }}
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.1766986311895!2d13.075600676050389!3d43.14281867113094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132ddb88f2ffdc01%3A0x4bf64092303b7ec9!2zUG9wIENhZsOo!5e0!3m2!1sit!2sit!4v1685973683283!5m2!1sit!2sit"
+        style={{ border: 0}}
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
