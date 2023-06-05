@@ -19,7 +19,7 @@ function Index3Page() {
       <Head>
         <title>PopCafè</title>
         <meta name="description" content="Pop Cafè"/>
-        <link rel="icon" type="image/vnd.icon" href="assets/images/favicon.ico" />
+        <link rel="icon" type="image/vnd.icon" href="favicon.ico" />
       </Head>
       <Header3 />
       <Banner3 />
