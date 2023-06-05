@@ -18,7 +18,7 @@ const getAllDishes = async () => {
 };
 
 // Create dish
-const createDish = async (name, price, ingredients) => {
+const createDish = async (type, name, price, ingredients) => {
     await handleDuplicateDishName(name);
     const ingredientIds = [];
 
@@ -39,6 +39,7 @@ const createDish = async (name, price, ingredients) => {
     }
 
     const dish = await Dish.create({
+        type,
         name,
         price,
         ingredients: ingredientIds,
@@ -60,9 +61,10 @@ const getDishById = async (id) => {
 
 // Update dishes
 const updateDish = async (id, data) => {
-    const { name, price, ingredients } = data;
+    const { type, name, price, ingredients } = data;
 
     const ingredientIds = await handleDuplicateDishData(
+        type,
         name,
         price,
         ingredients,
@@ -71,7 +73,7 @@ const updateDish = async (id, data) => {
 
     const updatedDish = await Dish.findByIdAndUpdate(
         id,
-        { name, price, ingredients: ingredientIds },
+        { type, name, price, ingredients: ingredientIds },
         { new: true }
     );
 
@@ -94,7 +96,13 @@ const handleDuplicateDishName = async (name) => {
     }
 };
 
-const handleDuplicateDishData = async (name, price, ingredients, dishId) => {
+const handleDuplicateDishData = async (
+    type,
+    name,
+    price,
+    ingredients,
+    dishId
+) => {
     const ingredientIds = await Promise.all(
         ingredients.map(async (ingredientBody) => {
             let ingredient = await getIngredientByName(ingredientBody.name);
@@ -113,10 +121,12 @@ const handleDuplicateDishData = async (name, price, ingredients, dishId) => {
     const existingDish = await Dish.findOne({
         $or: [
             {
+                type,
                 name, // Check for a dish with the same name as the updated dish (Dish B)
                 _id: { $ne: dishId }, // Exclude the current dish being updated
             },
             {
+                type: { $ne: type },
                 name: { $ne: name }, // Exclude dishes with the same name as the updated dish
                 price, // Check for a dish with the same price
                 ingredients: {
@@ -129,7 +139,7 @@ const handleDuplicateDishData = async (name, price, ingredients, dishId) => {
 
     if (existingDish) {
         const error = new Error(
-            "Piatto con lo stesso nome oppure stesso prezzo e ingredienti esiste già"
+            "Piatto con lo stesso nome e tipo, oppure con stesso prezzo e ingredienti esiste già"
         );
         error.statusCode = 11000;
         throw error;

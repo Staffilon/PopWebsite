@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 
 const dishSchema = new mongoose.Schema({
+    type: {
+        type: String,
+        enum: ["Colazione", "Pranzo", "Piadine", "Aperitivo", "Bevande"],
+        required: [true, "Per favore aggiungi il tipo del piatto!"],
+    },
     name: {
         type: String,
         required: [true, "Per favore aggiungi il nome del piatto!"],
@@ -9,6 +14,7 @@ const dishSchema = new mongoose.Schema({
         type: Number,
         required: [true, "Per favore aggiungi il prezzo del piatto!"],
     },
+
     ingredients: [
         {
             type: mongoose.Schema.Types.ObjectId,

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Bookings from "../components/backoffice/bookings";
-import Menu from "../components/backoffice/menu";
+import Bookings from "../components/backoffice/Bookings";
+import Menu from "../components/backoffice/Menu";
 import Breadcrumb from "../components/common/Breadcrumb";
 import Layout from "../layout/Layout";
 

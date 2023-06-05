@@ -4,7 +4,7 @@ import {
     fetchBookings,
     updateBooking,
 } from "../../services/bookingsService";
-import Booking from "./booking";
+import Booking from "./Booking";
 
 const Bookings = () => {
     const [bookings, setBookings] = useState([]);

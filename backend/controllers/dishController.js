@@ -13,14 +13,19 @@ const getDishes = asyncHandler(async (req, res) => {
 //@route POST /api/dishes
 //@access private
 const createDish = asyncHandler(async (req, res, next) => {
-    const { name, price, ingredients } = req.body;
-    if (!name || !price || !ingredients) {
+    const { type, name, price, ingredients } = req.body;
+    if (!type || !name || !price || !ingredients) {
         res.status(400);
         throw new Error("I dati del piatto sono obbligatori!");
     }
 
     try {
-        const dish = await dishService.createDish(name, price, ingredients);
+        const dish = await dishService.createDish(
+            type,
+            name,
+            price,
+            ingredients
+        );
         res.status(201).json(dish);
     } catch (error) {
         if (error.statusCode === 11000) {
