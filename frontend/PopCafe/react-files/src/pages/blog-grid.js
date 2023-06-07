@@ -35,32 +35,14 @@ function Items({ currentItems }) {
             <div className="post-thum">
               <img className="img-fluid" src={item.image} alt="" />
               <div className="batch">
-                <Link legacyBehavior href="/blog-grid">
+                <Link legacyBehavior href="#">
                   <a>{item.date}</a>
                 </Link>
               </div>
             </div>
             <div className="news-content">
-              <div className="news-meta">
-                <div className="publisher">
-                  <Link legacyBehavior href="/blog-grid">
-                    <a>
-                      <img src="assets/images/icon/User.svg" alt="" /> By{" "}
-                      {item.author}
-                    </a>
-                  </Link>
-                </div>
-                <div className="comment">
-                  <Link legacyBehavior href="/blog-grid">
-                    <a>
-                      <img src="assets/images/icon/Comment.svg" alt="" />{" "}
-                      Comment({item.counMassage})
-                    </a>
-                  </Link>
-                </div>
-              </div>
               <h3>
-                <Link legacyBehavior href="/blog-details">
+                <Link legacyBehavior href="https://www.facebook.com/popcafesoloacamerino/events">
                   <a>{item.title}</a>
                 </Link>
               </h3>
