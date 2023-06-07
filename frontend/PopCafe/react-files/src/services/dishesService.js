@@ -3,11 +3,7 @@ import { BASE_DISHES_URL } from "../constants";
 
 const fetchDishes = async () => {
     try {
-        const response = await axios.get(BASE_DISHES_URL, {
-            headers: {
-                Authorization: `Bearer ${localStorage.getItem("jwtToken")}`,
-            },
-        });
+        const response = await axios.get(BASE_DISHES_URL);
         return response.data.dishes;
     } catch (error) {
         console.error("Error fetching dishes:", error);
@@ -47,4 +43,18 @@ const updateDish = async (dishId, updatedDish) => {
     }
 };
 
-export { fetchDishes, deleteDish, updateDish };
+const createDish = async (dishData) => {
+    try {
+        const response = await axios.post(BASE_DISHES_URL, dishData, {
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem("jwtToken")}`,
+            },
+        });
+        return response.data;
+    } catch (error) {
+        console.error("Error creating dish:", error);
+        throw error;
+    }
+};
+
+export { fetchDishes, deleteDish, updateDish, createDish };

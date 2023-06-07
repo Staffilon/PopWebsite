@@ -1,11 +1,6 @@
 const mongoose = require("mongoose");
 
-const dishSchema = new mongoose.Schema({
-    type: {
-        type: String,
-        enum: ["Colazione", "Pranzo", "Piadine", "Aperitivo", "Bevande"],
-        required: [true, "Per favore aggiungi il tipo del piatto!"],
-    },
+const lunchDishSchema = new mongoose.Schema({
     name: {
         type: String,
         required: [true, "Per favore aggiungi il nome del piatto!"],
@@ -30,6 +25,6 @@ const dishSchema = new mongoose.Schema({
     },
 });
 
-const Dish = mongoose.model("Dish", dishSchema);
+const LunchDish = mongoose.model("lunchDish", lunchDishSchema);
 
-module.exports = Dish;
+module.exports = LunchDish;

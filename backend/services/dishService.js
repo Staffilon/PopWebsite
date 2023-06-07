@@ -1,48 +1,23 @@
 const Dish = require("../models/dishModel");
-const {
-    createIngredient,
-    getAllergenByName,
-    getIngredientByName,
-    getIngredientById,
-} = require("../services/ingredientService");
 
 // Get all dishes
 const getAllDishes = async () => {
-    return await Dish.find().populate({
-        path: "ingredients",
-        populate: {
-            path: "allergens",
-            model: "Allergen",
-        },
-    });
+    return await Dish.find();
 };
 
 // Create dish
-const createDish = async (type, name, price, ingredients) => {
+const createDish = async (dishbody) => {
+    const { type, name, price, ingredients, allergens, refrigerated } =
+        dishbody;
     await handleDuplicateDishName(name);
-    const ingredientIds = [];
-
-    if (ingredients && ingredients.length > 0) {
-        for (const ingredient of ingredients) {
-            let existingIngredient = await getIngredientByName(ingredient.name);
-
-            if (!existingIngredient) {
-                // Create a new ingredient if it doesn't exist
-                existingIngredient = await createIngredient(
-                    ingredient.name,
-                    ingredient.allergens
-                );
-            }
-
-            ingredientIds.push(existingIngredient._id);
-        }
-    }
 
     const dish = await Dish.create({
         type,
         name,
         price,
-        ingredients: ingredientIds,
+        ingredients,
+        allergens,
+        refrigerated,
     });
 
     return dish;
@@ -50,30 +25,18 @@ const createDish = async (type, name, price, ingredients) => {
 
 // Get dish by ID
 const getDishById = async (id) => {
-    return await Dish.findById(id).populate({
-        path: "ingredients",
-        populate: {
-            path: "allergens",
-            model: "Allergen",
-        },
-    });
+    return await Dish.findById(id);
 };
 
 // Update dishes
 const updateDish = async (id, data) => {
-    const { type, name, price, ingredients } = data;
+    const { type, name, price, ingredients, allergens, refrigerated } = data;
 
-    const ingredientIds = await handleDuplicateDishData(
-        type,
-        name,
-        price,
-        ingredients,
-        id
-    );
+    await handleDuplicateDishData(type, name, id);
 
     const updatedDish = await Dish.findByIdAndUpdate(
         id,
-        { type, name, price, ingredients: ingredientIds },
+        { type, name, price, ingredients, allergens, refrigerated },
         { new: true }
     );
 
@@ -96,55 +59,17 @@ const handleDuplicateDishName = async (name) => {
     }
 };
 
-const handleDuplicateDishData = async (
-    type,
-    name,
-    price,
-    ingredients,
-    dishId
-) => {
-    const ingredientIds = await Promise.all(
-        ingredients.map(async (ingredientBody) => {
-            let ingredient = await getIngredientByName(ingredientBody.name);
-
-            if (!ingredient) {
-                ingredient = await createIngredient(
-                    ingredientBody.name,
-                    ingredientBody.allergens
-                );
-            }
-
-            return ingredient._id;
-        })
-    );
-
+const handleDuplicateDishData = async (type, name, dishId) => {
     const existingDish = await Dish.findOne({
-        $or: [
-            {
-                type,
-                name, // Check for a dish with the same name as the updated dish (Dish B)
-                _id: { $ne: dishId }, // Exclude the current dish being updated
-            },
-            {
-                type: { $ne: type },
-                name: { $ne: name }, // Exclude dishes with the same name as the updated dish
-                price, // Check for a dish with the same price
-                ingredients: {
-                    $all: ingredientIds, // Check for exact match of ingredients (Dish B has exactly the same ingredients as Dish A)
-                    $size: ingredientIds.length, // Check for the same number of ingredients
-                },
-            },
-        ],
+        _id: { $ne: dishId }, // Exclude the current dish being updated
+        type,
+        name,
     });
 
     if (existingDish) {
-        const error = new Error(
-            "Piatto con lo stesso nome e tipo, oppure con stesso prezzo e ingredienti esiste già"
-        );
+        const error = new Error("Piatto con lo stesso nome e tipo esiste già");
         error.statusCode = 11000;
         throw error;
-    } else {
-        return ingredientIds;
     }
 };
 

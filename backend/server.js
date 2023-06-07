@@ -20,9 +20,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/user", require("./routes/userRoutes"));
-app.use("/api/allergens", require("./routes/allergenRoutes"));
-app.use("/api/ingredients", require("./routes/ingredientRoutes"));
 app.use("/api/dishes", require("./routes/dishRoutes"));
+app.use("/api/lunchDishes", require("./routes/lunchDishRoutes"));
 app.use("/api/bookings", require("./routes/bookingRoutes"));
 app.use(errorHandler);
 

@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import Breadcrumb from "../components/common/Breadcrumb";
 import { BASE_DISHES_URL } from "../constants";
 import Layout from "../layout/Layout";
+import { fetchLunchDishes } from "../services/lunchDishesService";
 
 function Menu2() {
     const [menuItems, setMenuItems] = useState([]);
+    const [lunchDishes, setLunchDishes] = useState([]);
 
     useEffect(() => {
         // Fetch the menu items from the backend
@@ -14,10 +16,17 @@ function Menu2() {
                 setMenuItems(data);
             })
             .catch((error) => console.log(error));
+
+        // Fetch the lunch dishes from the backend
+        fetchLunchDishes()
+            .then((data) => {
+                setLunchDishes(data);
+            })
+            .catch((error) => console.log(error));
     }, []);
 
     const renderDishesByType = (type) => {
-        if (!menuItems || !menuItems.dishes) {
+        if (!menuItems || !menuItems.dishes || menuItems.dishes.length === 0) {
             // Menu items data is still being fetched or not available
             return null;
         }
@@ -41,35 +50,17 @@ function Menu2() {
                                                 {dish.ingredients
                                                     .map(
                                                         (ingredient) =>
-                                                            ingredient.name
+                                                            ingredient
                                                     )
                                                     .join(", ")}
                                             </p>
-                                            {dish.ingredients.some(
-                                                (ingredient) =>
-                                                    ingredient.allergens &&
-                                                    ingredient.allergens
-                                                        .length > 0
-                                            ) && (
-                                                <p>
-                                                    Allergeni:{" "}
-                                                    {dish.ingredients
-                                                        .filter(
-                                                            (ingredient) =>
-                                                                ingredient.allergens &&
-                                                                ingredient
-                                                                    .allergens
-                                                                    .length > 0
-                                                        )
-                                                        .flatMap((ingredient) =>
-                                                            ingredient.allergens.map(
-                                                                (allergen) =>
-                                                                    allergen.name
-                                                            )
-                                                        )
-                                                        .join(", ")}
-                                                </p>
-                                            )}
+                                            <p>
+                                                {dish.allergens && "*"}
+                                                {dish.allergens &&
+                                                    dish.refrigerated &&
+                                                    " "}
+                                                {dish.refrigerated && "**"}
+                                            </p>
                                         </div>
                                     )}
                             </div>
@@ -217,7 +208,7 @@ function Menu2() {
                                     </div>
                                 </div>
                                 <div
-                                    className="tab-pane fade"
+                                    className="tab-pane fade show active"
                                     id="lunch"
                                     role="tabpanel"
                                     aria-labelledby="lunch-tab"
@@ -228,7 +219,57 @@ function Menu2() {
                                                 <div className="menu-title">
                                                     <h2>Pranzo</h2>
                                                 </div>
-                                                {renderDishesByType("Pranzo")}
+                                                <ul>
+                                                    {lunchDishes.map((dish) => (
+                                                        <li key={dish._id}>
+                                                            <div className="single-menu">
+                                                                <div className="menu-name">
+                                                                    <h4>
+                                                                        {
+                                                                            dish.name
+                                                                        }
+                                                                    </h4>
+                                                                    {dish.ingredients &&
+                                                                        dish
+                                                                            .ingredients
+                                                                            .length >
+                                                                            0 && (
+                                                                            <div>
+                                                                                <p>
+                                                                                    Ingredienti:{" "}
+                                                                                    {dish.ingredients
+                                                                                        .map(
+                                                                                            (
+                                                                                                ingredient
+                                                                                            ) =>
+                                                                                                ingredient
+                                                                                        )
+                                                                                        .join(
+                                                                                            ", "
+                                                                                        )}
+                                                                                </p>
+                                                                                <p>
+                                                                                    {dish.allergens &&
+                                                                                        "*"}
+                                                                                    {dish.allergens &&
+                                                                                        dish.refrigerated &&
+                                                                                        " "}
+                                                                                    {dish.refrigerated &&
+                                                                                        "**"}
+                                                                                </p>
+                                                                            </div>
+                                                                        )}
+                                                                </div>
+                                                                <div className="price">
+                                                                    <span>
+                                                                        {"€" +
+                                                                            dish.price}
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    ))}
+                                                </ul>
                                             </div>
                                         </div>
                                         <div className="col-lg-6 p-0">

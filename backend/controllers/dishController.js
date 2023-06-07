@@ -20,12 +20,7 @@ const createDish = asyncHandler(async (req, res, next) => {
     }
 
     try {
-        const dish = await dishService.createDish(
-            type,
-            name,
-            price,
-            ingredients
-        );
+        const dish = await dishService.createDish(req.body);
         res.status(201).json(dish);
     } catch (error) {
         if (error.statusCode === 11000) {
