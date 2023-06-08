@@ -50,19 +50,19 @@ function ContactAddress() {
                 <ul>
                   
                   <li>
-                    <div className="icon">
+                    {/*<div className="icon">
                       <img src="assets/images/icon/phone.svg" alt="phone" />
-                    </div>
+                    </div>*/}
                     <div className="content">
-                      <a href="https://www.facebook.com/popcafesoloacamerino">Pop Cafè on facebook</a>
+                      <a href="https://www.facebook.com/popcafesoloacamerino">Pop Cafè on <b>facebook</b></a>
                     </div>
                   </li>
                   <li>
-                    <div className="icon">
-                      <img src="assets/images/icon/envlope.svg" alt="envlope" />
-                    </div>
+                    {/*<div className="icon">
+                      <img src="assets/images/icon/User.svg" alt="envlope" />
+                    </div>*/}
                     <div className="content">
-                      <a href="https://www.instagram.com/pop.cafe/">Pop Cafè on instagram</a>
+                      <a href="https://www.instagram.com/pop.cafe/">Pop Cafè on <b>instagram</b></a>
                     </div>
                   </li>
                 </ul>

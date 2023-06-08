@@ -66,7 +66,7 @@ const ViewDishes = () => {
 
     return (
         <div>
-            <h2>Dishes</h2>
+          
             <select value={filter} onChange={handleFilterChange}>
                 <option value="">Tutti</option>
                 <option value="Colazione">Colazione</option>
@@ -75,6 +75,7 @@ const ViewDishes = () => {
                 <option value="Aperitivo">Aperitivo</option>
                 <option value="Bevande">Bevande</option>
             </select>
+            <hr></hr>
             {filteredDishes.map((dish) => (
                 <Dish
                     key={dish._id}

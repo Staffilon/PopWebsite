@@ -122,15 +122,7 @@ function Header3() {
                   Menu
                 </Link>
               </li>
-
-              <li>
-                <Link
-                  href="/blog-grid"
-                  className={currentRoute === "/blog-grid" ? "active" : ""}
-                >
-                  Eventi
-                </Link>
-              </li>
+             
             <li>
                 <Link
                   href="/contact"

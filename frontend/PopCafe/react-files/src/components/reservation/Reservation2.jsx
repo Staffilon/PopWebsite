@@ -22,14 +22,14 @@ function Reservation2() {
                   src="assets/images/icon/sub-title-vec.svg"
                   alt="sub-title-vec"
                 />
-                Online Reserve
+                Prenota il tuo tavolo!
                 <img
                   className="right-vec"
                   src="assets/images/icon/sub-title-vec.svg"
                   alt="sub-title-vec"
                 />
               </span>
-              <h2>For Online Reservation</h2>
+              <h2>Completa i campi qui sotto</h2>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ function Reservation2() {
                 </div>
                 <div className="col-lg-6 col-md-6">
                   <div className="form-inner">
-                    <button type="submit">Reserve Now</button>
+                    <button type="submit">Prenota ora</button>
                   </div>
                 </div>
               </div>
