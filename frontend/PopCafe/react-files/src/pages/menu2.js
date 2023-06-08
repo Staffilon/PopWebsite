@@ -208,7 +208,7 @@ function Menu2() {
                                     </div>
                                 </div>
                                 <div
-                                    className="tab-pane fade show active"
+                                    className="tab-pane fade"
                                     id="lunch"
                                     role="tabpanel"
                                     aria-labelledby="lunch-tab"
@@ -282,7 +282,6 @@ function Menu2() {
                                         </div>
                                     </div>
                                 </div>
-
                                 <div
                                     className="tab-pane fade"
                                     id="dinner"
