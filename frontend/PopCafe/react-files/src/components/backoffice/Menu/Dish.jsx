@@ -80,6 +80,7 @@ const Dish = ({ dish, onDelete, onUpdate }) => {
         <div>
             {isEditing ? (
                 <>
+                <div class="selectdish">
                     <select
                         name="type"
                         value={editedDish.type}
@@ -91,8 +92,11 @@ const Dish = ({ dish, onDelete, onUpdate }) => {
                         <option value="Aperitivo">Aperitivo</option>
                         <option value="Bevande">Bevande</option>
                     </select>
+                </div>
                     <br />
+                    
                     <label htmlFor="name">Nome:</label>
+                  
                     <input
                         type="text"
                         name="name"
@@ -100,7 +104,10 @@ const Dish = ({ dish, onDelete, onUpdate }) => {
                         onChange={handleInputChange}
                     />
                     <br />
+              
+                
                     <label>Ingredienti:</label>
+               
                     <ul>
                         {editedDish.ingredients.map((ingredient, index) => (
                             <li key={index}>
@@ -161,10 +168,15 @@ const Dish = ({ dish, onDelete, onUpdate }) => {
                     </p>
                     <p>Allergeni: {dish.allergens ? "Si" : "No"}</p>
                     <p>Prodotti Surgelati: {dish.refrigerated ? "Si" : "No"}</p>
-                    <button onClick={handleEdit}>Modifica</button>
-                    <button onClick={handleDelete}>Elimina Piatto</button>
+                    
+    
+                        <button onClick={handleEdit}>Modifica</button><br></br>  <br></br> 
+                        <button onClick={handleDelete}>Elimina Piatto</button>
+                    <hr></hr>
                 </>
+               
             )}
+            
         </div>
     );
 };

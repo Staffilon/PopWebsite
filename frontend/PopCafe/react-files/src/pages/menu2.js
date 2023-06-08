@@ -175,13 +175,30 @@ function Menu2() {
                                             Drink list
                                         </button>
                                     </li>
+                                    <li
+                                        className="nav-item"
+                                        role="presentation"
+                                    >
+                                        <button
+                                            className="nav-link"
+                                            id="brunch-tab"
+                                            data-bs-toggle="tab"
+                                            data-bs-target="#brunch"
+                                            type="button"
+                                            role="tab"
+                                            aria-controls="brunch"
+                                            aria-selected="false"
+                                        >
+                                            Brunch
+                                        </button>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-lg-12">
                             <div className="tab-content" id="myTabContent">
                                 <div
-                                    className="tab-pane fade show active"
+                                    className="tab-pane fade"
                                     id="breakfast"
                                     role="tabpanel"
                                     aria-labelledby="breakfast-tab"
@@ -347,6 +364,33 @@ function Menu2() {
                                                     <h2>Piadine</h2>
                                                 </div>
                                                 {renderDishesByType("Piadine")}
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-6 p-0">
+                                            <div className="menu2-left-img">
+                                                <img
+                                                    src="assets/images/bg/menu2-left-img-01.png"
+                                                    alt=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="brunch"
+                                    role="tabpanel"
+                                    aria-labelledby="brunch-tab"
+                                >
+                                    <div className="row">
+                                        <div className="col-lg-6 p-0">
+                                            <div className="menu2-wrap">
+                                                <div className="menu-title">
+                                                    <h2>Brunch</h2>
+                                                </div>
+                                                {renderDishesByType(
+                                                    "Aperitivo"
+                                                )}
                                             </div>
                                         </div>
                                         <div className="col-lg-6 p-0">
