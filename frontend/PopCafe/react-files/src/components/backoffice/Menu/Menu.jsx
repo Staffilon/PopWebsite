@@ -22,9 +22,11 @@ const Menu = () => {
         <div>
             <h2>Menu</h2>
             <div>
-                <button onClick={handleShowDishes}>Display Dishes</button>
-                <button onClick={handleShowCreateDishForm}>Create Dish</button>
-                <button onClick={handleShowPranzoDishes}>Pranzo Dishes</button>
+                <button onClick={handleShowDishes}>Mostra Piatti</button>
+                <button onClick={handleShowCreateDishForm}>Crea Piatto</button>
+                <button onClick={handleShowPranzoDishes}>
+                    Seleziona Piatti Pranzo
+                </button>
             </div>
             {displayedComponent === "viewDishes" && (
                 <>

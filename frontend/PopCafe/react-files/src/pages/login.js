@@ -1,6 +1,8 @@
 import axios from "axios";
+import DOMPurify from "dompurify";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import { LOGIN_URL } from "../constants";
 
 const Login = () => {
     const [username, setUsername] = useState("");
@@ -11,13 +13,13 @@ const Login = () => {
         event.preventDefault();
 
         try {
-            const response = await axios.post(
-                "http://localhost:5002/api/user/login",
-                {
-                    username,
-                    password,
-                }
-            );
+            const sanitizedUsername = DOMPurify.sanitize(username);
+            const sanitizedPassword = DOMPurify.sanitize(password);
+
+            const response = await axios.post(LOGIN_URL, {
+                username: sanitizedUsername,
+                password: sanitizedPassword,
+            });
 
             const { accessToken } = response.data;
 

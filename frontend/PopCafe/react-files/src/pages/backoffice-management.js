@@ -36,7 +36,7 @@ const BackofficeManagement = () => {
                                     }`}
                                     onClick={() => handleTabChange("bookings")}
                                 >
-                                    Bookings
+                                    Prenotazioni
                                 </button>
                             </div>
                         </div>

@@ -10,8 +10,10 @@ const {
 } = require("../controllers/dishController");
 const validateToken = require("../middleware/validateTokenHandler");
 
-//router.use(validateToken);
-router.route("/").get(getDishes).post(createDish);
-router.route("/:id").get(getDish).put(updateDish).delete(deleteDish);
+router.get("/", getDishes); // No validateToken middleware applied here
+router.post("/", validateToken, createDish); // validateToken middleware applied only for POST route
+router.get("/:id", validateToken, getDish); // validateToken middleware applied for GET, PUT, DELETE routes
+router.put("/:id", validateToken, updateDish);
+router.delete("/:id", validateToken, deleteDish);
 
 module.exports = router;

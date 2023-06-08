@@ -7,7 +7,6 @@ const {
 } = require("../controllers/lunchDishController");
 const validateToken = require("../middleware/validateTokenHandler");
 
-//router.use(validateToken);
-router.route("/").get(getLunchDishes).post(createLunchDishes);
+router.route("/").get(getLunchDishes).post(validateToken, createLunchDishes);
 
 module.exports = router;

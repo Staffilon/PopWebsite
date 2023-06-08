@@ -68,7 +68,7 @@ const ViewDishes = () => {
         <div>
             <h2>Dishes</h2>
             <select value={filter} onChange={handleFilterChange}>
-                <option value="">All</option>
+                <option value="">Tutti</option>
                 <option value="Colazione">Colazione</option>
                 <option value="Pranzo">Pranzo</option>
                 <option value="Piadine">Piadine</option>
