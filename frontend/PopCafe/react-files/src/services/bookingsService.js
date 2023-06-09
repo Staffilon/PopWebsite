@@ -50,4 +50,21 @@ const updateBooking = async (bookingId, updatedBooking) => {
     }
 };
 
-export { fetchBookings, deleteBooking, updateBooking };
+const createBooking = async (booking) => {
+    try {
+        const response = await axios.post(BASE_BOOKINGS_URL, booking, {
+            headers: {
+                Authorization: `Bearer ${localStorage.getItem("jwtToken")}`,
+            },
+        });
+        return response.data;
+    } catch (error) {
+        console.error(
+            "Errore durante la creazione di una prenotazione:",
+            error
+        );
+        throw error;
+    }
+};
+
+export { fetchBookings, deleteBooking, updateBooking, createBooking };

@@ -1,0 +1,20 @@
+.backoffice-management-tab {
+    background: none;
+}
+
+.menu-lista {
+    background: none;
+}
+.hover-effetto:hover {
+    color: #CF6849;
+    font-weight: bold;
+}
+
+#mostra h3{
+    margin-top:5%;
+    color: #CF6849;
+}
+
+.inbold label{
+    font-weight: bold;
+}

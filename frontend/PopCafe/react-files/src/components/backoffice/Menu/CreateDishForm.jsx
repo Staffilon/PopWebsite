@@ -67,14 +67,13 @@ const CreateDishForm = ({}) => {
 
     return (
         <div>
-            <h2>Create Dish</h2>
-            <label htmlFor="type">Type:</label>
+            <label htmlFor="type">Tipo:</label>
             <select
                 name="type"
                 value={dishData.type}
                 onChange={handleInputChange}
             >
-                <option value="">Select Type</option>
+                <option value="">Seleziona</option>
                 <option value="Colazione">Colazione</option>
                 <option value="Pranzo">Pranzo</option>
                 <option value="Piadine">Piadine</option>
@@ -82,7 +81,7 @@ const CreateDishForm = ({}) => {
                 <option value="Bevande">Bevande</option>
             </select>
             <br />
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">Nome:</label>
             <input
                 type="text"
                 name="name"
@@ -90,7 +89,7 @@ const CreateDishForm = ({}) => {
                 onChange={handleInputChange}
             />
             <br />
-            <label htmlFor="price">Price:</label>
+            <label htmlFor="price">Prezzo:</label>
             <input
                 type="number"
                 name="price"
@@ -117,10 +116,10 @@ const CreateDishForm = ({}) => {
                     ))}
                 </ul>
             </label>
-            <button onClick={handleAddIngredient}>Add Ingredient</button>
+            <button onClick={handleAddIngredient}>Aggiungi ingredienti</button>
             <br />
             <label>
-                Allergens:
+                Allergeni:
                 <input
                     type="checkbox"
                     name="allergens"
@@ -139,7 +138,7 @@ const CreateDishForm = ({}) => {
                 />
             </label>
             <br />
-            <button onClick={handleCreateDish}>Create</button>
+            <button onClick={handleCreateDish}>Inserisci</button>
         </div>
     );
 };
