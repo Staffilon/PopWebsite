@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import TimePicker from "react-time-picker";
+
 import { createBooking } from "../../services/bookingsService";
 
 function ReservationForm() {
@@ -22,6 +24,42 @@ function ReservationForm() {
             ...prevData,
             [name]: value,
         }));
+    };
+
+    const handleDateChange = (date) => {
+        setBookingData((prevData) => ({
+            ...prevData,
+            date: date,
+        }));
+    };
+
+    const handleHourChange = (event) => {
+        const { value } = event.target;
+        setBookingData((prevData) => ({
+            ...prevData,
+            time: `${value}:${prevData.time.split(":")[1] || ""}`,
+        }));
+    };
+
+    const handleMinuteChange = (event) => {
+        const { value } = event.target;
+        setBookingData((prevData) => ({
+            ...prevData,
+            time: `${prevData.time.split(":")[0] || ""}:${value}`,
+        }));
+    };
+
+    const generateOptions = (start, end) => {
+        const options = [];
+        for (let i = start; i <= end; i++) {
+            const value = i.toString().padStart(2, "0");
+            options.push(
+                <option key={value} value={value}>
+                    {value}
+                </option>
+            );
+        }
+        return options;
     };
 
     const handleFormSubmit = (event) => {
@@ -92,7 +130,11 @@ function ReservationForm() {
                                     <div className="form-inner">
                                         <input
                                             type="text"
-                                            placeholder="Numero di Telefono*"
+                                            placeholder="Numero di Telefono"
+                                            name="cellphoneNumber"
+                                            value={bookingData.cellphoneNumber}
+                                            onChange={handleInputChange}
+                                            required
                                         />
                                     </div>
                                 </div>
@@ -109,12 +151,10 @@ function ReservationForm() {
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-6 mb-25">
-                                    <div className="form-inner date-icon">
+                                    <div className="form-inner">
                                         <ReactDatePicker
-                                            selected={startDate1}
-                                            onChange={(date) =>
-                                                setStartDate1(date)
-                                            }
+                                            selected={bookingData.date}
+                                            onChange={handleDateChange}
                                             placeholderText="Data"
                                             className="claender"
                                         />
@@ -122,69 +162,66 @@ function ReservationForm() {
                                 </div>
                                 <div className="col-lg-6 col-md-6 mb-25">
                                     <div className="form-inner">
-                                        <select className="time-select">
-                                            <option value="Ora">
-                                                08 : 00 am
-                                            </option>
-                                            <option>09 : 00 am</option>
-                                            <option value={1}>
-                                                10 : 00 am
-                                            </option>
-                                            <option value={2}>
-                                                11 : 00 am
-                                            </option>
-                                            <option value={3}>
-                                                12 : 00 pm
-                                            </option>
-                                            <option value={4}>
-                                                01 : 00 pm
-                                            </option>
-                                            <option value={5}>
-                                                02 : 00 pm
-                                            </option>
-                                            <option value={6}>
-                                                03 : 00 pm
-                                            </option>
-                                            <option value={7}>
-                                                04 : 00 pm
-                                            </option>
-                                            <option value={8}>
-                                                05 : 00 pm
-                                            </option>
-                                            <option value={9}>
-                                                06 : 00 pm
-                                            </option>
-                                            <option value={10}>
-                                                07 : 00 pm
-                                            </option>
-                                            <option value={11}>
-                                                08 : 00 pm
-                                            </option>
-                                            <option value={12}>
-                                                09 : 00 pm
-                                            </option>
-                                            <option value={13}>
-                                                10 : 00 pm
-                                            </option>
+                                        <select
+                                            className="time-select"
+                                            name="hours"
+                                            value={
+                                                bookingData.time.split(":")[0]
+                                            }
+                                            onChange={handleHourChange}
+                                            required
+                                        >
+                                            {generateOptions(8, 20)}
+                                        </select>
+                                        :
+                                        <select
+                                            className="time-select"
+                                            name="minutes"
+                                            value={
+                                                bookingData.time.split(":")[1]
+                                            }
+                                            onChange={handleMinuteChange}
+                                            required
+                                        >
+                                            <option value="">MM</option>
+                                            <option value="00">00</option>
+                                            <option value="15">15</option>
+                                            <option value="30">30</option>
+                                            <option value="45">45</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-6 mb-25">
                                     <div className="form-inner">
-                                        <input
-                                            type="text"
-                                            placeholder="Tipo"
+                                        <select
+                                            className="time-select"
                                             name="type"
                                             value={bookingData.type}
                                             onChange={handleInputChange}
                                             required
-                                        />
+                                        >
+                                            <option value="">
+                                                Select type
+                                            </option>
+                                            <option value="Apericena">
+                                                Apericena
+                                            </option>
+                                            <option value="Aperitivo">
+                                                Aperitivo
+                                            </option>
+                                            <option value="Pranzo">
+                                                Pranzo
+                                            </option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-inner">
-                                        <button type="submit">
+                                        <button
+                                            type="submit"
+                                            onClick={handleFormSubmit}
+                                        >
                                             Prenota Ora
                                         </button>
                                     </div>

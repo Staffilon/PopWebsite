@@ -52,11 +52,7 @@ const updateBooking = async (bookingId, updatedBooking) => {
 
 const createBooking = async (booking) => {
     try {
-        const response = await axios.post(BASE_BOOKINGS_URL, booking, {
-            headers: {
-                Authorization: `Bearer ${localStorage.getItem("jwtToken")}`,
-            },
-        });
+        const response = await axios.post(BASE_BOOKINGS_URL, booking, {});
         return response.data;
     } catch (error) {
         console.error(
@@ -67,4 +63,4 @@ const createBooking = async (booking) => {
     }
 };
 
-export { fetchBookings, deleteBooking, updateBooking, createBooking };
+export { createBooking, deleteBooking, fetchBookings, updateBooking };
