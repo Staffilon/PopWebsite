@@ -3,7 +3,14 @@ const mongoose = require("mongoose");
 const dishSchema = new mongoose.Schema({
     type: {
         type: String,
-        enum: ["Colazione", "Pranzo", "Piadine", "Aperitivo", "Bevande"],
+        enum: [
+            "Colazione",
+            "Pranzo",
+            "Piadine",
+            "Aperitivo",
+            "Bevande",
+            "Brunch",
+        ],
         required: [true, "Per favore aggiungi il tipo del piatto!"],
     },
     name: {

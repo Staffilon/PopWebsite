@@ -62,7 +62,7 @@ const PranzoDishes = () => {
 
     return (
         <div>
-            <h2>Pranzo Dishes</h2>
+            <h2>Piatti del pranzo</h2>
             <ul>
                 {dishes.map((dish) => (
                     <li key={dish._id}>

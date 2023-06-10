@@ -16,10 +16,13 @@ const Bookings = () => {
         const getBookings = async () => {
             try {
                 const data = await fetchBookings();
-                console.log("Fetched Bookings:", data);
+                console.log("Prenotazioni lette dal server:", data);
                 setBookings(data);
             } catch (error) {
-                console.error("Error fetching bookings:", error);
+                console.error(
+                    "Errore durante la lettura delle prenotazioni:",
+                    error
+                );
             }
         };
 
@@ -45,9 +48,12 @@ const Bookings = () => {
                 return updatedBookings;
             });
 
-            console.log("Updated Booking:", updatedBooking);
+            console.log("Prenotazione aggiornata:", updatedBooking);
         } catch (error) {
-            console.error("Error updating booking:", error);
+            console.error(
+                "Errore durante l'aggiornamento della prenotazione:",
+                error
+            );
         }
     };
 
@@ -55,7 +61,7 @@ const Bookings = () => {
         try {
             // Show confirmation dialog or any other UI element here if needed
             const confirmDelete = window.confirm(
-                "Are you sure you want to delete this booking?"
+                "Sei sicuro di voler cancellare questa prenotazione?"
             );
 
             if (confirmDelete) {
@@ -67,10 +73,13 @@ const Bookings = () => {
                     prevBookings.filter((booking) => booking._id !== bookingId)
                 );
 
-                console.log("Deleted Booking:", bookingId);
+                console.log("Prenotazione cancellata:", bookingId);
             }
         } catch (error) {
-            console.error("Error deleting booking:", error);
+            console.error(
+                "Errore durante la cancellazione della prenotazione:",
+                error
+            );
         }
     };
 

@@ -10,7 +10,7 @@ const fetchBookings = async () => {
         });
         return response.data.bookings;
     } catch (error) {
-        console.error("Error fetching bookings:", error);
+        console.error("Errore durante la lettura delle prenotazioni: ", error);
         throw error;
     }
 };
@@ -27,7 +27,10 @@ const deleteBooking = async (bookingId) => {
         );
         return response.data;
     } catch (error) {
-        console.error("Error deleting booking:", error);
+        console.error(
+            "Errore durante la cancellazione di una prenotazione: ",
+            error
+        );
         throw error;
     }
 };
@@ -45,14 +48,17 @@ const updateBooking = async (bookingId, updatedBooking) => {
         );
         return response.data;
     } catch (error) {
-        console.error("Error updating booking:", error);
+        console.error(
+            "Errore durante la modifica di una prenotazione: ",
+            error
+        );
         throw error;
     }
 };
 
 const createBooking = async (booking) => {
     try {
-        const response = await axios.post(BASE_BOOKINGS_URL, booking, {});
+        const response = await axios.post(BASE_BOOKINGS_URL, booking);
         return response.data;
     } catch (error) {
         console.error(

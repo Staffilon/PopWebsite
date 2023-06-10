@@ -12,6 +12,9 @@ const createBooking = async (data) => {
     validateNumberOfPeople(numberOfPeople);
 
     await handleDuplicateBookingNameAndDateTime(name, surname, date, time);
+
+    const formattedPhoneNumber = formatPhoneNumber(cellphoneNumber);
+
     const booking = await Booking.create({
         type,
         date,
@@ -19,7 +22,7 @@ const createBooking = async (data) => {
         numberOfPeople,
         name,
         surname,
-        cellphoneNumber,
+        cellphoneNumber: formattedPhoneNumber,
     });
 
     return booking;
@@ -70,7 +73,11 @@ const handleDuplicateBookingNameAndDateTime = async (
 };
 
 const validateBookingDateTime = (date, time) => {
-    const dateTime = new Date(`${date}T${time}`);
+    const [hour, minute] = time.split(":");
+    const dateTime = new Date(date);
+    dateTime.setHours(hour);
+    dateTime.setMinutes(minute);
+
     const currentDate = new Date();
 
     if (dateTime < currentDate) {
@@ -80,6 +87,11 @@ const validateBookingDateTime = (date, time) => {
         error.statusCode = 400;
         throw error;
     }
+};
+
+const formatPhoneNumber = (phoneNumber) => {
+    // Remove leading '+39' or '+ 39'
+    return phoneNumber.replace(/^\+?\s?39/, "");
 };
 
 const validateNumberOfPeople = (numberOfPeople) => {
