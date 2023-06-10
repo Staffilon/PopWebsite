@@ -84,8 +84,12 @@ const PranzoDishes = () => {
                     </li>
                 ))}
             </ul>
-            <button onClick={handleConfirm}>Confirm</button>
-            <button onClick={handleClear}>Clear</button>
+            <button onClick={handleConfirm}>Conferma</button>
+            <br/>
+            <br />
+            <button onClick={handleClear}>Cancella piatto</button>
+            <br />
+            <br />
         </div>
     );
 };

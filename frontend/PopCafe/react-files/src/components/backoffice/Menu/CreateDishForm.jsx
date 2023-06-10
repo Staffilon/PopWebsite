@@ -81,6 +81,8 @@ const CreateDishForm = ({}) => {
                 <option value="Bevande">Bevande</option>
             </select>
             <br />
+            
+            <hr></hr>
             <label htmlFor="name">Nome:</label>
             <input
                 type="text"
@@ -88,17 +90,21 @@ const CreateDishForm = ({}) => {
                 value={dishData.name}
                 onChange={handleInputChange}
             />
+            
+            <br />
             <br />
             <label htmlFor="price">Prezzo:</label>
+            
             <input
                 type="number"
                 name="price"
                 value={dishData.price}
                 onChange={handleInputChange}
             />
+            <hr></hr>
             <br />
             <label>
-                Ingredients:
+                Ingredienti:
                 <ul>
                     {dishData.ingredients.map((ingredient, index) => (
                         <li key={index}>
@@ -115,11 +121,14 @@ const CreateDishForm = ({}) => {
                         </li>
                     ))}
                 </ul>
-            </label>
-            <button onClick={handleAddIngredient}>Aggiungi ingredienti</button>
+            </label> 
+           
+            <h6>Clicca qui per aggiungere</h6> <button onClick={handleAddIngredient}>Aggiungi ingredienti</button> 
+          
             <br />
+            <hr></hr>
             <label>
-                Allergeni:
+                Spunta per prodotti - allergeni:
                 <input
                     type="checkbox"
                     name="allergens"
@@ -129,7 +138,7 @@ const CreateDishForm = ({}) => {
             </label>
             <br />
             <label>
-                Refrigerated:
+                Spunta per prodotti surgelati:
                 <input
                     type="checkbox"
                     name="refrigerated"
@@ -139,7 +148,11 @@ const CreateDishForm = ({}) => {
             </label>
             <br />
             <button onClick={handleCreateDish}>Inserisci</button>
+
+            <br />
+            <br />
         </div>
+        
     );
 };
 
