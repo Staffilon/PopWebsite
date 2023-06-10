@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import TimePicker from "react-time-picker";
-
+import PhoneInput from "react-phone-number-input/input";
+import "react-phone-number-input/style.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { createBooking } from "../../services/bookingsService";
 
 function ReservationForm() {
-    const [startDate1, setStartDate1] = useState(false);
-
     const [bookingData, setBookingData] = useState({
         type: "",
         date: null,
         time: "",
-        numberOfPeople: 0,
+        numberOfPeople: "",
         name: "",
         surname: "",
         cellphoneNumber: "",
@@ -51,6 +51,11 @@ function ReservationForm() {
 
     const generateOptions = (start, end) => {
         const options = [];
+        options.push(
+            <option key="" value="">
+                Ora
+            </option>
+        );
         for (let i = start; i <= end; i++) {
             const value = i.toString().padStart(2, "0");
             options.push(
@@ -64,14 +69,34 @@ function ReservationForm() {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        createBooking(bookingData)
+
+        // Convert the date to the local time zone offset
+        const localDate = new Date(bookingData.date);
+        const localOffset = localDate.getTimezoneOffset() * 60000; // Convert minutes to milliseconds
+        const utcDate = new Date(
+            localDate.getTime() - localOffset
+        ).toISOString();
+
+        const bookingDataWithLocalDate = {
+            ...bookingData,
+            date: utcDate,
+        };
+
+        createBooking(bookingDataWithLocalDate)
             .then((data) => {
                 // Handle success or show a success message
-                console.log("Booking created successfully:", data);
+                console.log("Prenotazione creata con successo:", data);
+                toast.success("Prenotazione creata con successo!");
             })
             .catch((error) => {
                 // Handle error or show an error message
-                console.error("Error creating booking:", error);
+                console.error(
+                    "Errore durante la creazione di una prenotazione: ",
+                    error
+                );
+                const errorMessage =
+                    error.response.data.message || "Failed to create booking.";
+                toast.error(errorMessage);
             });
     };
 
@@ -128,12 +153,19 @@ function ReservationForm() {
                                 </div>
                                 <div className="col-lg-6 col-md-6 mb-25">
                                     <div className="form-inner">
-                                        <input
-                                            type="text"
+                                        <PhoneInput
+                                            country="IT"
                                             placeholder="Numero di Telefono"
                                             name="cellphoneNumber"
                                             value={bookingData.cellphoneNumber}
-                                            onChange={handleInputChange}
+                                            onChange={(value) =>
+                                                handleInputChange({
+                                                    target: {
+                                                        name: "cellphoneNumber",
+                                                        value,
+                                                    },
+                                                })
+                                            }
                                             required
                                         />
                                     </div>
@@ -146,6 +178,8 @@ function ReservationForm() {
                                             name="numberOfPeople"
                                             value={bookingData.numberOfPeople}
                                             onChange={handleInputChange}
+                                            min={1}
+                                            max={40}
                                             required
                                         />
                                     </div>
@@ -157,6 +191,7 @@ function ReservationForm() {
                                             onChange={handleDateChange}
                                             placeholderText="Data"
                                             className="claender"
+                                            utcOffset={new Date().getTimezoneOffset()}
                                         />
                                     </div>
                                 </div>
@@ -183,7 +218,7 @@ function ReservationForm() {
                                             onChange={handleMinuteChange}
                                             required
                                         >
-                                            <option value="">MM</option>
+                                            <option value="">Minuti</option>
                                             <option value="00">00</option>
                                             <option value="15">15</option>
                                             <option value="30">30</option>
@@ -201,7 +236,7 @@ function ReservationForm() {
                                             required
                                         >
                                             <option value="">
-                                                Select type
+                                                Seleziona tipo
                                             </option>
                                             <option value="Apericena">
                                                 Apericena
@@ -231,6 +266,7 @@ function ReservationForm() {
                     </div>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 }
