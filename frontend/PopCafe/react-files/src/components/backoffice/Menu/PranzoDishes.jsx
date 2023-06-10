@@ -73,8 +73,8 @@ const PranzoDishes = () => {
                                 onChange={() => handleCheckboxChange(dish._id)}
                             />
                             <h4>{dish.name}</h4>
-                            <p>Price: €{dish.price}</p>
-                            <p>Ingredients: {dish.ingredients.join(", ")}</p>
+                            <p>Prezzi: €{dish.price}</p>
+                            <p>Ingredienti: {dish.ingredients.join(", ")}</p>
                             <p>Allergeni: {dish.allergens ? "Si" : "No"}</p>
                             <p>
                                 Prodotti Surgelati:{" "}
