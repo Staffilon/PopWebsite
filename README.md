@@ -17,8 +17,8 @@ Website created for Pop Cafe in Camerino.
 
 It is a showcase website that displays the services offered by the bar and provides other useful information for customers. In addition to that, two functionalities have been implemented:
 
-Reservation: Customers can make table reservations, and the confirmation of the reservation is sent via email.
-Dynamic daily menu: The chefs can update the "daily menu" by accessing a private area, where they can select dishes from the database or add new ones.
+- Reservation: Customers can make table reservations, and the confirmation of the reservation is sent via email.
+- Dynamic daily menu: The chefs can update the "daily menu" by accessing a private area, where they can select dishes from the database or add new ones.
 The frontend was developed using a template called "Restho" in JSX, along with CSS, and utilizing the Bootstrap 5 framework, including SaaS files.
 
 The backend is built with Node.js and Express.
