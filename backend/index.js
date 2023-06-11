@@ -8,6 +8,7 @@ const hpp = require("hpp");
 const mongoSanitize = require("express-mongo-sanitize");
 const rateLimit = require("express-rate-limit");
 const xss = require("xss-clean");
+const bookingCleanup = require("./tasks/bookingCleanup"); // Import the booking cleanup task
 
 // Connect to the database
 connectDb();

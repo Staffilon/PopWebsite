@@ -1,4 +1,4 @@
-import { format, parse } from "date-fns";
+import { format } from "date-fns";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -115,13 +115,13 @@ const Booking = ({ booking, onDelete, onUpdate }) => {
                 </div>
             ) : (
                 <div>
-                    <p>Name: {booking.name}</p>
-                    <p>Surname: {booking.surname}</p>
-                    <p>Type: {booking.type}</p>
-                    <p>Date: {formatDate(booking.date)}</p>
-                    <p>Time: {booking.time}</p>
-                    <p>Number of People: {booking.numberOfPeople}</p>
-                    <p>Cellphone Number: {booking.cellphoneNumber}</p>
+                    <p>Nome: {booking.name}</p>
+                    <p>Cognome: {booking.surname}</p>
+                    <p>Tipo: {booking.type}</p>
+                    <p>Data: {formatDate(booking.date)}</p>
+                    <p>Ore: {booking.time}</p>
+                    <p>Numero di Persone: {booking.numberOfPeople}</p>
+                    <p>Numero di Cellulare: {booking.cellphoneNumber}</p>
                 </div>
             )}
             <div>

@@ -23,7 +23,6 @@ const BackofficeManagement = () => {
                         <div className="col-lg-12">
                             <div className="section-title3">
                                 <h2>Servizi</h2>
-
                                 <span>Clicca sul servizio desiderato.</span>
                             </div>
                             <hr></hr>
@@ -73,7 +72,12 @@ const BackofficeManagement = () => {
                                 <span>In questa sezione potrai:</span>
                                 {activeTab === "menu" && <Menu />}
 
-                                {activeTab === "bookings" && <Bookings />}
+                                {activeTab === "bookings" && (
+                                    <div>
+                                        <h5>Prenotazioni</h5>
+                                        <Bookings />
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>

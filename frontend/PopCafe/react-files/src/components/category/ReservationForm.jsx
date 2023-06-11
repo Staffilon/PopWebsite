@@ -208,7 +208,7 @@ function ReservationForm() {
                                         >
                                             {generateOptions(8, 20)}
                                         </select>
-                                        :
+
                                         <select
                                             className="time-select"
                                             name="minutes"

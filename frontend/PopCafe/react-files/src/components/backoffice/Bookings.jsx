@@ -1,4 +1,7 @@
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
     deleteBooking,
     fetchBookings,
@@ -11,6 +14,7 @@ const Bookings = () => {
     const [sortBy, setSortBy] = useState("");
     const currentDate = new Date().toISOString().split("T")[0]; // Current date in "yyyy-mm-dd" format
     const [selectedDate, setSelectedDate] = useState(""); // State to store the selected date
+    const router = useRouter();
 
     useEffect(() => {
         const getBookings = async () => {
@@ -23,9 +27,19 @@ const Bookings = () => {
                     "Errore durante la lettura delle prenotazioni:",
                     error
                 );
+
+                if (error.response && error.response.status === 401) {
+                    toast.error(
+                        "Sessione scaduta oppure accesso non autorizzato, verrai inoltrato/a in pochi secondi al login."
+                    );
+                    setTimeout(() => {
+                        router.push("/login");
+                    }, 3000); // Delay of 2 seconds before redirecting
+                } else {
+                    toast.error("E' accaduto un errore, riprova.");
+                }
             }
         };
-
         getBookings();
     }, []);
 
@@ -54,6 +68,17 @@ const Bookings = () => {
                 "Errore durante l'aggiornamento della prenotazione:",
                 error
             );
+
+            if (error.response && error.response.status === 401) {
+                toast.error(
+                    "Sessione scaduta oppure accesso non autorizzato, verrai inoltrato/a in pochi secondi al login."
+                );
+                setTimeout(() => {
+                    router.push("/login");
+                }, 3000); // Delay of 2 seconds before redirecting
+            } else {
+                toast.error("E' accaduto un errore, riprova.");
+            }
         }
     };
 
@@ -80,6 +105,17 @@ const Bookings = () => {
                 "Errore durante la cancellazione della prenotazione:",
                 error
             );
+
+            if (error.response && error.response.status === 401) {
+                toast.error(
+                    "Sessione scaduta oppure accesso non autorizzato, verrai inoltrato/a in pochi secondi al login."
+                );
+                setTimeout(() => {
+                    router.push("/login");
+                }, 3000); // Delay of 2 seconds before redirecting
+            } else {
+                toast.error("E' accaduto un errore, riprova.");
+            }
         }
     };
 
@@ -151,6 +187,7 @@ const Bookings = () => {
 
     return (
         <div>
+            <ToastContainer />
             <h2>Bookings</h2>
             <div>
                 <label htmlFor="sort-by">Sort By:</label>

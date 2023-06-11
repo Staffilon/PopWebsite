@@ -1,7 +1,11 @@
+import { useRouter } from "next/router";
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { createDish } from "../../../services/dishesService";
 
 const CreateDishForm = ({}) => {
+    const router = useRouter();
     const [dishData, setDishData] = useState({
         type: "",
         name: "",
@@ -49,7 +53,7 @@ const CreateDishForm = ({}) => {
         try {
             const createdDish = await createDish(dishData);
             // Show success message using a popup or toast notification
-            alert("Dish created successfully!");
+            toast.success("Piatto creato con successo!");
 
             // Clear out the form fields
             setDishData({
@@ -62,11 +66,22 @@ const CreateDishForm = ({}) => {
             });
         } catch (error) {
             console.error("Error creating dish:", error);
+            if (error.response && error.response.status === 401) {
+                toast.error(
+                    "Sessione scaduta oppure accesso non autorizzato, verrai inoltrato/a in pochi secondi al login."
+                );
+                setTimeout(() => {
+                    router.push("/login");
+                }, 3000); // Delay of 2 seconds before redirecting
+            } else {
+                toast.error("E' accaduto un errore, riprova.");
+            }
         }
     };
 
     return (
         <div>
+            <ToastContainer />
             <label htmlFor="type">Tipo:</label>
             <select
                 name="type"
@@ -81,7 +96,6 @@ const CreateDishForm = ({}) => {
                 <option value="Bevande">Bevande</option>
             </select>
             <br />
-            
             <hr></hr>
             <label htmlFor="name">Nome:</label>
             <input
@@ -90,11 +104,9 @@ const CreateDishForm = ({}) => {
                 value={dishData.name}
                 onChange={handleInputChange}
             />
-            
             <br />
             <br />
             <label htmlFor="price">Prezzo:</label>
-            
             <input
                 type="number"
                 name="price"
@@ -121,10 +133,9 @@ const CreateDishForm = ({}) => {
                         </li>
                     ))}
                 </ul>
-            </label> 
-           
-            <h6>Clicca qui per aggiungere</h6> <button onClick={handleAddIngredient}>Aggiungi ingredienti</button> 
-          
+            </label>
+            <h6>Clicca qui per aggiungere</h6>{" "}
+            <button onClick={handleAddIngredient}>Aggiungi ingredienti</button>
             <br />
             <hr></hr>
             <label>
@@ -147,12 +158,12 @@ const CreateDishForm = ({}) => {
                 />
             </label>
             <br />
-            <button onClick={handleCreateDish} class="button-3">Inserisci</button>
-
+            <button onClick={handleCreateDish} class="button-3">
+                Inserisci
+            </button>
             <br />
             <br />
         </div>
-        
     );
 };
 
