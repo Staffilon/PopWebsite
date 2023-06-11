@@ -147,7 +147,7 @@ const CreateDishForm = ({}) => {
                 />
             </label>
             <br />
-            <button onClick={handleCreateDish}>Inserisci</button>
+            <button onClick={handleCreateDish} class="button-3">Inserisci</button>
 
             <br />
             <br />

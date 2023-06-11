@@ -49,7 +49,7 @@ const BackofficeManagement = () => {
                                     <br></br>
                                     <li class="  menu-lista">
                                         <button
-                                            class="  menu-lista hover-effetto"
+                                            class="menu-lista hover-effetto"
                                             className={`backoffice-management-tab ${
                                                 activeTab === "bookings"
                                                     ? "active"
