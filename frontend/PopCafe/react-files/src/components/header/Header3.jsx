@@ -119,7 +119,7 @@ function Header3() {
                   href="/about"
                   className={currentRoute === "/about" ? "active" : ""}
                 >
-                  About
+                  Chi siamo
                 </Link>
               </li>
               <li>
