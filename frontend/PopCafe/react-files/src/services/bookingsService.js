@@ -8,7 +8,6 @@ const fetchBookings = async () => {
                 Authorization: `Bearer ${localStorage.getItem("jwtToken")}`,
             },
         });
-        console.log("dentro SERVICE blocco try");
         return response.data.bookings;
     } catch (error) {
         console.error("Errore durante la lettura delle prenotazioni: ", error);

@@ -19,7 +19,10 @@ const PranzoDishes = () => {
                 );
                 setDishes(pranzoDishes);
             } catch (error) {
-                console.error("Error fetching dishes:", error);
+                const errorMessage =
+                    error.response.data.message ||
+                    "Non e' stato possibile ottenere i piatti.";
+                toast.error(errorMessage);
             }
         };
 
@@ -64,7 +67,10 @@ const PranzoDishes = () => {
                     router.push("/login");
                 }, 3000); // Delay of 2 seconds before redirecting
             } else {
-                toast.error("E' accaduto un errore, riprova.");
+                const errorMessage =
+                    error.response.data.message ||
+                    "Non e' stato possibile selezionare i piatti.";
+                toast.error(errorMessage);
             }
         }
     };
@@ -116,7 +122,7 @@ const PranzoDishes = () => {
                 </button>
                 <br></br> <br></br>
                 <button class="button-3" onClick={handleClear}>
-                    Cancella piatto
+                    Rimuovi selezione
                 </button>
                 <br></br>
                 <br></br>

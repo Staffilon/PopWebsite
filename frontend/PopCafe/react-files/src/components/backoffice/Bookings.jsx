@@ -36,7 +36,10 @@ const Bookings = () => {
                         router.push("/login");
                     }, 3000); // Delay of 2 seconds before redirecting
                 } else {
-                    toast.error("E' accaduto un errore, riprova.");
+                    const errorMessage =
+                        error.response.data.message ||
+                        "Non e' stato ottenere le prenotazioni.";
+                    toast.error(errorMessage);
                 }
             }
         };
@@ -77,7 +80,10 @@ const Bookings = () => {
                     router.push("/login");
                 }, 3000); // Delay of 2 seconds before redirecting
             } else {
-                toast.error("E' accaduto un errore, riprova.");
+                const errorMessage =
+                    error.response.data.message ||
+                    "Non e' stato possibile modificare la prenotazione.";
+                toast.error(errorMessage);
             }
         }
     };
@@ -114,7 +120,10 @@ const Bookings = () => {
                     router.push("/login");
                 }, 3000); // Delay of 2 seconds before redirecting
             } else {
-                toast.error("E' accaduto un errore, riprova.");
+                const errorMessage =
+                    error.response.data.message ||
+                    "Non e' stato possibile eliminare la prenotazione.";
+                toast.error(errorMessage);
             }
         }
     };
@@ -190,15 +199,15 @@ const Bookings = () => {
             <ToastContainer />
             <h2>Bookings</h2>
             <div>
-                <label htmlFor="sort-by">Sort By:</label>
+                <label htmlFor="sort-by">Filtra per:</label>
                 <select
                     id="sort-by"
                     value={sortBy}
                     onChange={handleSortByChange}
                 >
-                    <option value="">None</option>
-                    <option value="today">Today</option>
-                    <option value="date">By Date</option>
+                    <option value="">Nessun filtro</option>
+                    <option value="today">Oggi</option>
+                    <option value="date">Per Data</option>
                 </select>
             </div>
             {sortBy === "today" && (

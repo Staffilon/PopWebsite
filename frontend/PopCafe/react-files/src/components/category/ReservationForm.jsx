@@ -1,3 +1,4 @@
+import DOMPurify from "dompurify";
 import React, { useState } from "react";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -20,9 +21,10 @@ function ReservationForm() {
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
+        const sanitizedValue = DOMPurify.sanitize(value);
         setBookingData((prevData) => ({
             ...prevData,
-            [name]: value,
+            [name]: sanitizedValue,
         }));
     };
 
@@ -95,7 +97,8 @@ function ReservationForm() {
                     error
                 );
                 const errorMessage =
-                    error.response.data.message || "Failed to create booking.";
+                    error.response.data.message ||
+                    "Non e' stato possibile creare la prenotazione.";
                 toast.error(errorMessage);
             });
     };

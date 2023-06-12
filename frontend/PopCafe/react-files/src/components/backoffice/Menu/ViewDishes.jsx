@@ -21,6 +21,10 @@ const ViewDishes = () => {
                 setDishes(data);
             } catch (error) {
                 console.error("Error fetching dishes:", error);
+                const errorMessage =
+                    error.response.data.message ||
+                    "Non e' stato possibile ottenere i piatti.";
+                toast.error(errorMessage);
             }
         };
 
@@ -49,7 +53,10 @@ const ViewDishes = () => {
                     router.push("/login");
                 }, 3000); // Delay of 2 seconds before redirecting
             } else {
-                toast.error("E' accaduto un errore, riprova.");
+                const errorMessage =
+                    error.response.data.message ||
+                    "Non e' stato possibile modificare il piatto.";
+                toast.error(errorMessage);
             }
         }
     };
@@ -57,7 +64,7 @@ const ViewDishes = () => {
     const handleDeleteDish = async (dishId) => {
         try {
             const confirmDelete = window.confirm(
-                "Are you sure you want to delete this dish?"
+                "Sei sicuro/a di voler eliminare questo piatto?"
             );
             if (confirmDelete) {
                 await deleteDish(dishId);
@@ -75,7 +82,10 @@ const ViewDishes = () => {
                     router.push("/login");
                 }, 3000); // Delay of 2 seconds before redirecting
             } else {
-                toast.error("E' accaduto un errore, riprova.");
+                const errorMessage =
+                    error.response.data.message ||
+                    "Non e' stato possibile eliminare il piatto.";
+                toast.error(errorMessage);
             }
         }
     };

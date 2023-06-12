@@ -42,9 +42,6 @@ const Booking = ({ booking, onDelete, onUpdate }) => {
                 ? format(selectedDate, "yyyy/MM/dd")
                 : "";
 
-            console.log("Selected Date:", selectedDate);
-            console.log("Formatted Date:", formattedDate);
-
             // Update state only if the selected date is different
             if (formattedDate !== editedBooking.date) {
                 setEditedBooking((prevBooking) => ({
@@ -126,9 +123,9 @@ const Booking = ({ booking, onDelete, onUpdate }) => {
             )}
             <div>
                 <button onClick={handleEdit}>
-                    {isEditing ? "Save" : "Edit"}
+                    {isEditing ? "Salva" : "Modifica"}
                 </button>
-                <button onClick={handleDelete}>Delete</button>
+                <button onClick={handleDelete}>Elimina</button>
             </div>
             <hr />
         </div>

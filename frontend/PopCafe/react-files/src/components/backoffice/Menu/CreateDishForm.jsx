@@ -74,7 +74,10 @@ const CreateDishForm = ({}) => {
                     router.push("/login");
                 }, 3000); // Delay of 2 seconds before redirecting
             } else {
-                toast.error("E' accaduto un errore, riprova.");
+                const errorMessage =
+                    error.response.data.message ||
+                    "Non e' stato possibile creare il piatto.";
+                toast.error(errorMessage);
             }
         }
     };
@@ -94,6 +97,7 @@ const CreateDishForm = ({}) => {
                 <option value="Piadine">Piadine</option>
                 <option value="Aperitivo">Aperitivo</option>
                 <option value="Bevande">Bevande</option>
+                <option value="Brunch">Brunch</option>
             </select>
             <br />
             <hr></hr>
@@ -149,7 +153,7 @@ const CreateDishForm = ({}) => {
             </label>
             <br />
             <label>
-                Spunta per prodotti surgelati:
+                Spunta per prodotti - surgelati:
                 <input
                     type="checkbox"
                     name="refrigerated"
