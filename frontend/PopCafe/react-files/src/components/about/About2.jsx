@@ -7,29 +7,29 @@ function About2() {
       <div className="about-left2">
         <img
           className="img-fluid"
-          src="assets/images/bg/h2-about-img-full.png"
+          src="assets/images/bg/mobileversione.png"
           alt="h2-about-img-full"
         />
       </div>
       <div className="about-left">
         <img
           className="img-fluid h2-about-img1"
-          src="assets/images/bg/h2-about-img1.png"
+          src="assets/images/bg/365365.png"
           alt="h2-about-img1"
         />
         <img
           className="img-fluid h2-about-img3"
-          src="assets/images/bg/h2-about-img3.png"
+          src="assets/images/bg/2402402.png"
           alt="h2-about-img3"
         />
         <img
           className="img-fluid h2-about-img2"
-          src="assets/images/bg/h2-about-img2.png"
+          src="assets/images/bg/240240.png"
           alt="h2-about-img2"
         />
         <img
           className="img-fluid h2-about-img4"
-          src="assets/images/bg/h2-about-img4.png"
+          src="assets/images/bg/286286.png"
           alt="h2-about-img4"
         />
       </div>
@@ -42,10 +42,7 @@ function About2() {
           </p>
         </div>
       </div>
-     
-    </div>
-    
-     
+    </div>     
   );
 }
 

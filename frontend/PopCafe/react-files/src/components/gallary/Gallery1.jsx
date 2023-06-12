@@ -70,7 +70,7 @@ function Gallery1() {
             <div className="section-title text-center">
               <span>
                 
-                Gallery
+                Galleria
                 
               </span>
               <h2>Il nuovo PopCafè</h2>

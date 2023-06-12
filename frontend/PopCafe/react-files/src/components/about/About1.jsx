@@ -63,7 +63,7 @@ function About1() {
             <div className="h3-into-img-big">
               <img
                 className="img-fluid"
-                src="assets/images/bg/h3-intro-big.png"
+                src="assets/images/bg/about.png"
                 alt="h3-intro-big"
               />
              

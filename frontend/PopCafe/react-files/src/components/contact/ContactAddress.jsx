@@ -9,7 +9,7 @@ function ContactAddress() {
             <div className="contact-wrap">
               <div className="contact-img">
                 <img
-                  src="assets/images/bg/contact-img-01.png"
+                  src="assets/images/bg/eventi.png"
                   alt="contact-img-01"
                 />
               </div>
@@ -41,7 +41,7 @@ function ContactAddress() {
             <div className="contact-wrap">
               <div className="contact-img">
                 <img
-                  src="assets/images/bg/contact-img-02.png"
+                  src="assets/images/bg/social.png"
                   alt="contact-img-02"
                 />
               </div>

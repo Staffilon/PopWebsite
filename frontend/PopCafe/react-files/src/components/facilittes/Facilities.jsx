@@ -23,19 +23,19 @@ function Facilities() {
               <div className="icon">
               
               </div>
-              <h3>BAR</h3>
+              <h3>Colazioni</h3>
               <div className="facilities-img">
-                <img src="assets/images/bg/capacity.png" alt="capacity" />
+                <img src="assets/images/bg/1.png" alt="capacity" />
               </div>
               <p>Una coccola al mattino, dal dolce al salato per iniziare al meglio la tua giornata!</p>
               <div className="overlay">
-                <div className="overlay-img">
+               
                   <img
                     className="img-fluid"
-                    src="assets/images/bg/capacity2.png"
+                    src="assets/images/bg/colazioni.png"
                     alt=""
                   />
-                </div>
+              
               
               </div>
             </div>
@@ -44,17 +44,17 @@ function Facilities() {
             <div className="h3-facilities-card text-center">
               <h3>Gelateria</h3>
               <div className="facilities-img">
-                <img src="assets/images/bg/car-park2.png" alt="car-park2" />
+                <img src="assets/images/bg/2.png" alt="car-park2" />
               </div>
               <p>Per un'ottima merenda, direttamente dall'Oasi del Gusto di San Severino!</p>
               <div className="overlay">
-                <div className="overlay-img">
+              
                   <img
                     className="img-fluid"
-                    src="assets/images/bg/car-park.png"
+                    src="assets/images/bg/gelateria.png"
                     alt=""
                   />
-                </div>
+            
               </div>
             </div>
           </div>
@@ -63,17 +63,17 @@ function Facilities() {
             
               <h3>Pranzo</h3>
               <div className="facilities-img">
-                <img src="assets/images/bg/play-zone.png" alt="capacity" />
+                <img src="assets/images/bg/3.png" alt="capacity" />
               </div>
               <p>Per una sana e gustosa pausa pranzo, con ottimi primi, piatti unici, panini e molto altro!</p>
               <div className="overlay">
-                <div className="overlay-img">
+              
                   <img
                     className="img-fluid"
-                    src="assets/images/bg/play-zone2.png"
+                    src="assets/images/bg/pranzi.png"
                     alt=""
                   />
-                </div>
+                
                 
               </div>
             </div>
@@ -83,17 +83,17 @@ function Facilities() {
             
               <h3>Aperitivi</h3>
               <div className="facilities-img">
-                <img src="assets/images/bg/wifi.png" alt="capacity" />
+                <img src="assets/images/bg/4.png" alt="capacity" />
               </div>
               <p>Drink e aperitivi da gustare in compagnia, per iniziare al meglio le vostre serate!</p>
               <div className="overlay">
-                <div className="overlay-img">
+               
                   <img
                     className="img-fluid"
-                    src="assets/images/bg/wifi2.png"
+                    src="assets/images/bg/ape.png"
                     alt=""
                   />
-                </div>
+             
                
               </div>
             </div>
