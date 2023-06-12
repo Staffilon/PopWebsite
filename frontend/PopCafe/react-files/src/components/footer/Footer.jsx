@@ -102,20 +102,21 @@ function Footer() {
               <div className="copyright-area">
                 <p>
                   @Copyright by{" "}
-                  <Link legacyBehavior href="#">
-                    Egenslab
+                  <Link legacyBehavior href="https://www.popcafecamerino.it/about">
+                    Pop Cafè  
                   </Link>
                   -2023, All Right Reserved.
                 </p>
-              </div>
+              </div> 
             </div>
             <div className="col-md-4 d-flex justify-content-md-end justify-content-center">
               <div className="privacy-policy">
                 <p>
-                  <Link legacyBehavior href="#">
+                  <Link legacyBehavior href="https://www.iubenda.com/privacy-policy/93217328">
                     Privacy &amp; Policy
                   </Link>{" "}
-                  | <a href="#">Terms and Conditions</a>
+                  | <a href="https://www.iubenda.com/termini-e-condizioni/93217328">Terms and Conditions </a>
+                  | <a href="https://www.iubenda.com/privacy-policy/93217328/cookie-policy">Cookie Policy</a>
                 </p>
               </div>
             </div>
