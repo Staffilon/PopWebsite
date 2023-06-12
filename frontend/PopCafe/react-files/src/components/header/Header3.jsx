@@ -109,6 +109,14 @@ function Header3() {
               <li>
                 <Link
                   href="/about"
+                  className={currentRoute === "/shop-details" ? "active" : ""}
+                >
+                  Servizi
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
                   className={currentRoute === "/about" ? "active" : ""}
                 >
                   About

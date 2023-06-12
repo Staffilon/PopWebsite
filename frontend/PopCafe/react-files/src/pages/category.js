@@ -114,8 +114,6 @@ function Category() {
           </div>
         </div>
       </div>
-      <ReservationForm />
-      <Testimonial3 />
     </Layout>
   );
 }
