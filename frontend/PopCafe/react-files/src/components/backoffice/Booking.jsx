@@ -118,7 +118,7 @@ const Booking = ({ booking, onDelete, onUpdate }) => {
                     <p>Data: {formatDate(booking.date)}</p>
                     <p>Ore: {booking.time}</p>
                     <p>Numero di Persone: {booking.numberOfPeople}</p>
-                    <p>Numero di Cellulare: {booking.email}</p>
+                    <p>Email: {booking.email}</p>
                 </div>
             )}
             <div>
