@@ -105,8 +105,8 @@ const Booking = ({ booking, onDelete, onUpdate }) => {
                     />
                     <input
                         type="text"
-                        name="cellphoneNumber"
-                        value={editedBooking.cellphoneNumber}
+                        name="email"
+                        value={editedBooking.email}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -118,7 +118,7 @@ const Booking = ({ booking, onDelete, onUpdate }) => {
                     <p>Data: {formatDate(booking.date)}</p>
                     <p>Ore: {booking.time}</p>
                     <p>Numero di Persone: {booking.numberOfPeople}</p>
-                    <p>Numero di Cellulare: {booking.cellphoneNumber}</p>
+                    <p>Numero di Cellulare: {booking.email}</p>
                 </div>
             )}
             <div>
