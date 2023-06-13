@@ -5,52 +5,52 @@ const getAllBookings = async () => {
 };
 
 const createBooking = async (data) => {
-    const { type, date, time, numberOfPeople, name, surname, cellphoneNumber } =
-        data;
-
+    const { type, date, time, numberOfPeople, name, surname, email } = data;
+  
     validateBookingDateTime(date, time);
     validateNumberOfPeople(numberOfPeople);
-
+  
     await handleDuplicateBookingNameAndDateTime(name, surname, date, time);
-
-    const formattedPhoneNumber = formatPhoneNumber(cellphoneNumber);
-
+  
+    const formattedEmail = formatEmail(email);
+  
     const booking = await Booking.create({
-        type,
-        date,
-        time,
-        numberOfPeople,
-        name,
-        surname,
-        cellphoneNumber: formattedPhoneNumber,
+      type,
+      date,
+      time,
+      numberOfPeople,
+      name,
+      surname,
+      email: formattedEmail,
     });
-
+  
     return booking;
-};
+  };
 
-const getBookingById = async (id) => {
+  const getBookingById = async (id) => {
     return await Booking.findById(id);
 };
 
-const updateBooking = async (id, data) => {
-    const { type, date, time, numberOfPeople, name, surname, cellphoneNumber } =
-        data;
+  const updateBooking = async (id, data) => {
+    const { type, date, time, numberOfPeople, name, surname, email } = data;
     validateBookingDateTime(date, time);
     validateNumberOfPeople(numberOfPeople);
-
+  
     if (!(await isSameBookingBeingUpdated(id, data))) {
-        await handleDuplicateBookingNameAndDateTime(name, surname, date, time);
+      await handleDuplicateBookingNameAndDateTime(name, surname, date, time);
     }
-
+  
+    const formattedEmail = formatEmail(email);
+  
     const updatedBooking = await Booking.findByIdAndUpdate(
-        id,
-        { type, date, time, numberOfPeople, name, surname, cellphoneNumber },
-        { new: true }
+      id,
+      { type, date, time, numberOfPeople, name, surname, email: formattedEmail },
+      { new: true }
     );
-
+  
     return updatedBooking;
-};
-
+  };
+  
 const deleteBooking = async (id) => {
     return await Booking.findByIdAndDelete(id);
 };
@@ -87,11 +87,6 @@ const validateBookingDateTime = (date, time) => {
         error.statusCode = 400;
         throw error;
     }
-};
-
-const formatPhoneNumber = (phoneNumber) => {
-    // Remove leading '+39' or '+ 39'
-    return phoneNumber.replace(/^\+?\s?39/, "");
 };
 
 const validateNumberOfPeople = (numberOfPeople) => {
