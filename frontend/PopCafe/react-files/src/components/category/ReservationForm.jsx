@@ -2,8 +2,6 @@ import DOMPurify from "dompurify";
 import React, { useState } from "react";
 import ReactDatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import PhoneInput from "react-phone-number-input/input";
-import "react-phone-number-input/style.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { createBooking } from "../../services/bookingsService";
@@ -16,7 +14,7 @@ function ReservationForm() {
         numberOfPeople: "",
         name: "",
         surname: "",
-        cellphoneNumber: "",
+        email: "",
     });
 
     const handleInputChange = (event) => {
@@ -72,12 +70,15 @@ function ReservationForm() {
     const handleFormSubmit = (event) => {
         event.preventDefault();
 
+        if (!bookingData.email) {
+            toast.error("L'email è obbligatoria.");
+            return;
+        }
+
         // Convert the date to the local time zone offset
         const localDate = new Date(bookingData.date);
         const localOffset = localDate.getTimezoneOffset() * 60000; // Convert minutes to milliseconds
-        const utcDate = new Date(
-            localDate.getTime() - localOffset
-        ).toISOString();
+        const utcDate = new Date(localDate.getTime() - localOffset).toISOString();
 
         const bookingDataWithLocalDate = {
             ...bookingData,
@@ -92,10 +93,7 @@ function ReservationForm() {
             })
             .catch((error) => {
                 // Handle error or show an error message
-                console.error(
-                    "Errore durante la creazione di una prenotazione: ",
-                    error
-                );
+                console.error("Errore durante la creazione di una prenotazione: ", error);
                 const errorMessage =
                     error.response.data.message ||
                     "Non e' stato possibile creare la prenotazione.";
@@ -156,19 +154,12 @@ function ReservationForm() {
                                 </div>
                                 <div className="col-lg-6 col-md-6 mb-25">
                                     <div className="form-inner">
-                                        <PhoneInput
-                                            country="IT"
-                                            placeholder="Numero di Telefono"
-                                            name="cellphoneNumber"
-                                            value={bookingData.cellphoneNumber}
-                                            onChange={(value) =>
-                                                handleInputChange({
-                                                    target: {
-                                                        name: "cellphoneNumber",
-                                                        value,
-                                                    },
-                                                })
-                                            }
+                                        <input
+                                            type="email"
+                                            placeholder="Email*"
+                                            name="email"
+                                            value={bookingData.email}
+                                            onChange={handleInputChange}
                                             required
                                         />
                                     </div>
@@ -203,9 +194,7 @@ function ReservationForm() {
                                         <select
                                             className="time-select"
                                             name="hours"
-                                            value={
-                                                bookingData.time.split(":")[0]
-                                            }
+                                            value={bookingData.time.split(":")[0]}
                                             onChange={handleHourChange}
                                             required
                                         >
@@ -215,9 +204,7 @@ function ReservationForm() {
                                         <select
                                             className="time-select"
                                             name="minutes"
-                                            value={
-                                                bookingData.time.split(":")[1]
-                                            }
+                                            value={bookingData.time.split(":")[1]}
                                             onChange={handleMinuteChange}
                                             required
                                         >
