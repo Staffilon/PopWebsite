@@ -13,7 +13,7 @@ const getBookings = asyncHandler(async (req, res) => {
 //@route POST /api/bookings
 //@access private
 const createBooking = asyncHandler(async (req, res, next) => {
-    const { type, date, time, numberOfPeople, name, surname, cellphoneNumber } =
+    const { type, date, time, numberOfPeople, name, surname, email } =
         req.body;
     if (
         !type ||
@@ -22,7 +22,7 @@ const createBooking = asyncHandler(async (req, res, next) => {
         !numberOfPeople.toString() ||
         !name ||
         !surname ||
-        !cellphoneNumber
+        !email
     ) {
         res.status(400);
         throw new Error("I dati della prenotazione sono obbligatori!");
