@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BASE_DISHES_URL } from "../../constants";
+import { fetchDishes } from "../../services/dishesService";
 import { fetchLunchDishes } from "../../services/lunchDishesService";
 
 function MenuList3() {
@@ -10,14 +11,32 @@ function MenuList3() {
     var dataFormattata = giorno + "/" + mese + "/" + anno;
 
     const [lunchDishes, setLunchDishes] = useState([]);
+    const [piadineDishes, setPiadineDishes] = useState([]);
 
     useEffect(() => {
-        // Fetch the lunch dishes from the backend
-        fetchLunchDishes()
-            .then((data) => {
+        const fetchLunchDishesData = async () => {
+            try {
+                // Fetch the lunch dishes from the backend
+                const data = await fetchLunchDishes();
                 setLunchDishes(data);
-            })
-            .catch((error) => console.log(error));
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
+        const fetchPiadineDishesData = async () => {
+            try {
+                // Fetch the Piadine dishes from the backend
+                const data = await fetchDishes();
+                const piadine = data.filter((dish) => dish.type === "Piadine");
+                setPiadineDishes(piadine);
+            } catch (error) {
+                console.log(error);
+            }
+        };
+
+        fetchLunchDishesData();
+        fetchPiadineDishesData();
     }, []);
 
     return (
@@ -56,6 +75,50 @@ function MenuList3() {
                             <ul>
                                 {lunchDishes.map((dish) => (
                                     <li key={dish._id}>
+                                        <div className="item-name">
+                                            <div className="content">
+                                                <h3>{dish.name}</h3>
+                                                {dish.ingredients &&
+                                                    dish.ingredients.length >
+                                                        0 && (
+                                                        <div>
+                                                            <p>
+                                                                Ingredienti:{" "}
+                                                                {dish.ingredients
+                                                                    .map(
+                                                                        (
+                                                                            ingredient
+                                                                        ) =>
+                                                                            ingredient
+                                                                    )
+                                                                    .join(", ")}
+                                                            </p>
+                                                            <p>
+                                                                {dish.allergens &&
+                                                                    "*"}
+                                                                {dish.allergens &&
+                                                                    dish.refrigerated &&
+                                                                    " "}
+                                                                {dish.refrigerated &&
+                                                                    "**"}
+                                                            </p>
+                                                        </div>
+                                                    )}
+                                            </div>
+                                        </div>
+                                        <div className="price">
+                                            <span>{"€" + dish.price}</span>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ul>
+                            <div className="menu-title text-center">
+                                <h2>Piadine </h2>{" "}
+                            </div>
+                            <ul>
+                                {piadineDishes.map((dish) => (
+                                    <li key={dish._id}>
+                                        {/* Display Piadine dish information */}
                                         <div className="item-name">
                                             <div className="content">
                                                 <h3>{dish.name}</h3>
