@@ -66,131 +66,7 @@ function ShopDetails() {
             <div className="shop-details pt-120 mb-120">
                 <div className="container">
                     <div className="row g-lg-5 gy-5">
-                        <div className="col-lg-6">
-                            <div
-                                className="tab-content tab-content1"
-                                id="v-pills-tabContent"
-                            >
-                                <div
-                                    className="tab-pane fade active show"
-                                    id="v-pills-img1"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img1-tab"
-                                >
-                                    <div className="gallery-big-image">
-                                        <img
-                                            className="img-fluid"
-                                            src="assets/images/bg/card-big-01.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img2"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img2-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/card-big-02.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img3"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img3-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/card-big-03.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img4"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img4-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/card-big-04.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            <div
-                                className="nav nav1 nav-pills"
-                                id="v-pills-tab"
-                                role="tablist"
-                                aria-orientation="vertical"
-                            >
-                                <button
-                                    className="nav-link active"
-                                    id="v-pills-img1-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img1"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img1"
-                                    aria-selected="true"
-                                >
-                                    <img
-                                        src="assets/images/bg/card-sm-01.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    className="nav-link"
-                                    id="v-pills-img2-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img2"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img2"
-                                    aria-selected="false"
-                                >
-                                    <img
-                                        src="assets/images/bg/card-sm-02.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    className="nav-link"
-                                    id="v-pills-img3-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img3"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img3"
-                                    aria-selected="false"
-                                >
-                                    <img
-                                        src="assets/images/bg/card-sm-03.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    className="nav-link"
-                                    id="v-pills-img4-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img4"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img4"
-                                    aria-selected="false"
-                                >
-                                    <img
-                                        src="assets/images/bg/card-sm-04.png"
-                                        alt=""
-                                    />
-                                </button>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
+                    <div className="col-lg-6">
                             <div className="prod-details-content">
                                 <h2>Colazioni</h2>
                                 <p>
@@ -209,13 +85,6 @@ function ShopDetails() {
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <hr />
-            <div className="shop-details pt-120 mb-120">
-                <div className="container">
-                    <div className="row g-lg-5 gy-5">
                         <div className="col-lg-6">
                             <div
                                 className="tab-content tab-content1"
@@ -340,24 +209,12 @@ function ShopDetails() {
                                 </button>
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="prod-details-content">
-                                <h2>Gelateria</h2>
-                                <p>
-                                    Da sempre al Pop Cafè trovi il GELATO
-                                    ARTIGIANALE della Gelateria VITTORINI di San
-                                    Severino Marche che da quest’anno oltre allo
-                                    storico gelato amplia la sua offerta con
-                                    torte gelato e semifreddi disponibili e su
-                                    prenotazione, per festeggiare i vostri
-                                    momenti da ricordare.
-                                </p>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
             <hr />
+        
             <div className="shop-details pt-120 mb-120">
                 <div className="container">
                     <div className="row g-lg-5 gy-5">
@@ -511,6 +368,152 @@ function ShopDetails() {
                 </div>
             </div>
             <hr />
+            <div className="shop-details pt-120 mb-120">
+                <div className="container">
+                    <div className="row g-lg-5 gy-5">
+                    <div className="col-lg-6">
+                            <div className="prod-details-content">
+                                <h2>Gelateria</h2>
+                                <p>
+                                    Da sempre al Pop Cafè trovi il GELATO
+                                    ARTIGIANALE della Gelateria VITTORINI di San
+                                    Severino Marche che da quest’anno oltre allo
+                                    storico gelato amplia la sua offerta con
+                                    torte gelato e semifreddi disponibili e su
+                                    prenotazione, per festeggiare i vostri
+                                    momenti da ricordare.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div
+                                className="tab-content tab-content1"
+                                id="v-pills-tabContent"
+                            >
+                                <div
+                                    className="tab-pane fade active show"
+                                    id="v-pills-img1"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img1-tab"
+                                >
+                                    <div className="gallery-big-image">
+                                        <img
+                                            className="img-fluid"
+                                            src="assets/images/bg/card-big-01.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img2"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img2-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/card-big-02.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img3"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img3-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/card-big-03.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img4"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img4-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/card-big-04.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                className="nav nav1 nav-pills"
+                                id="v-pills-tab"
+                                role="tablist"
+                                aria-orientation="vertical"
+                            >
+                                <button
+                                    className="nav-link active"
+                                    id="v-pills-img1-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-img1"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-img1"
+                                    aria-selected="true"
+                                >
+                                    <img
+                                        src="assets/images/bg/card-sm-01.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    className="nav-link"
+                                    id="v-pills-img2-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-img2"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-img2"
+                                    aria-selected="false"
+                                >
+                                    <img
+                                        src="assets/images/bg/card-sm-02.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    className="nav-link"
+                                    id="v-pills-img3-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-img3"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-img3"
+                                    aria-selected="false"
+                                >
+                                    <img
+                                        src="assets/images/bg/card-sm-03.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    className="nav-link"
+                                    id="v-pills-img4-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-img4"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-img4"
+                                    aria-selected="false"
+                                >
+                                    <img
+                                        src="assets/images/bg/card-sm-04.png"
+                                        alt=""
+                                    />
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            < hr />
             <div className="shop-details pt-120 mb-120">
                 <div className="container">
                     <div className="row g-lg-5 gy-5">

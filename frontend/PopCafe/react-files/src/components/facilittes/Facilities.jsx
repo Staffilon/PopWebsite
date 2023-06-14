@@ -40,24 +40,7 @@ function Facilities() {
               </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 col-10">
-            <div className="h3-facilities-card text-center">
-              <h3>Gelateria</h3>
-              <div className="facilities-img">
-                <img src="assets/images/bg/2.png" alt="car-park2" />
-              </div>
-              <p>Per un'ottima merenda, direttamente dall'Oasi del Gusto di San Severino!</p>
-              <div className="overlay">
-              
-                  <img
-                    className="img-fluid"
-                    src="assets/images/bg/gelateria.png"
-                    alt=""
-                  />
-            
-              </div>
-            </div>
-          </div>
+          
           <div className="col-lg-3 col-md-4 col-sm-6 col-10">
             <div className="h3-facilities-card text-center">
             
@@ -78,6 +61,26 @@ function Facilities() {
               </div>
             </div>
           </div>
+
+          <div className="col-lg-3 col-md-4 col-sm-6 col-10">
+            <div className="h3-facilities-card text-center">
+              <h3>Gelateria</h3>
+              <div className="facilities-img">
+                <img src="assets/images/bg/2.png" alt="car-park2" />
+              </div>
+              <p>Per un'ottima merenda, direttamente dall'Oasi del Gusto di San Severino!</p>
+              <div className="overlay">
+              
+                  <img
+                    className="img-fluid"
+                    src="assets/images/bg/gelateria.png"
+                    alt=""
+                  />
+            
+              </div>
+            </div>
+          </div>
+
           <div className="col-lg-3 col-md-4 col-sm-6 col-10">
             <div className="h3-facilities-card text-center">
             
@@ -94,7 +97,6 @@ function Facilities() {
                     alt=""
                   />
              
-               
               </div>
             </div>
           </div>
