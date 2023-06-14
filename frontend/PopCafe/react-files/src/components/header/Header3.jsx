@@ -108,8 +108,8 @@ function Header3() {
               </li>
               <li>
                 <Link
-                  href="/about"
-                  className={currentRoute === "/shop-details" ? "active" : ""}
+                  href="/servizi"
+                  className={currentRoute === "/servizi" ? "active" : ""}
                 >
                   Servizi
                 </Link>
@@ -140,7 +140,7 @@ function Header3() {
                 </Link>
               </li>
             </ul>
-          
+        
             <div className="reservation-btn d-lg-none d-flex">
               <Link href="/reservation" className="primary-btn4 btn-md">
                 Prenota qui!
