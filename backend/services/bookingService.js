@@ -1,4 +1,5 @@
 const Booking = require("../models/bookingModel");
+const emailService = require("./emailService");
 
 const getAllBookings = async () => {
   return await Booking.find();
@@ -23,7 +24,16 @@ const createBooking = async (data) => {
     surname,
     email: formattedEmail,
   });
-
+  
+  await emailService.sendBookingNotification({
+    type,
+    date,
+    time,
+    numberOfPeople,
+    name,
+    surname,
+    email: formattedEmail,
+  });
   return booking;
 };
 
