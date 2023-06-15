@@ -268,6 +268,21 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                     />
                                 </div>
                             </div>
+                            
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="prod-details-content">
+                                <h2>Pranzi</h2>
+                                <p>
+                                Pop Café ha creato uno spazio esclusivo dove immergersi in un'atmosfera calda e familiare, che ti fa sentire come a casa. Qui, potrai gustare piatti genuini e deliziosi, ispirati alle tradizioni culinarie locali.
+
+Ogni giorno, ti offriamo primi piatti veloci ma curati, utilizzando prodotti locali e stagionali per garantirti freschezza e qualità. I nostri ricchi piatti unici sono un'esplosione di sapori autentici, pensati per soddisfare anche i palati più esigenti.
+
+Se preferisci una soluzione più veloce ma altrettanto gustosa, puoi scegliere tra i nostri panini gourmet, preparati con ingredienti selezionati per garantirti una vera esperienza culinaria. Accompagna il tuo pasto con contorni e insalate ricche, pensati per seguirti anche in un regime alimentare sano ed equilibrato anche fuori casa.
+
+Abbiamo pensato anche a formule convenienti per adattarci alle tue esigenze e al ritmo della tua giornata. Potrai optare per il <b>MENU EASY</b>, che include un primo piatto (o un secondo), un contorno a scelta, acqua e caffè, il tutto a soli 11 euro. Oppure, se preferisci un pasto più veloce, puoi scegliere il <b>MENU EASY&GO</b>, che comprende un panino a scelta, acqua e caffè, al prezzo di 7,50 euro.
+                                </p>
+                            </div>
                             <div
                                 className="nav nav1 nav-pills"
                                 id="v-pills-tab"
@@ -336,20 +351,6 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                 </button>
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div className="prod-details-content">
-                                <h2>Pranzi</h2>
-                                <p>
-                                Pop Café ha creato uno spazio esclusivo dove immergersi in un'atmosfera calda e familiare, che ti fa sentire come a casa. Qui, potrai gustare piatti genuini e deliziosi, ispirati alle tradizioni culinarie locali.
-
-Ogni giorno, ti offriamo primi piatti veloci ma curati, utilizzando prodotti locali e stagionali per garantirti freschezza e qualità. I nostri ricchi piatti unici sono un'esplosione di sapori autentici, pensati per soddisfare anche i palati più esigenti.
-
-Se preferisci una soluzione più veloce ma altrettanto gustosa, puoi scegliere tra i nostri panini gourmet, preparati con ingredienti selezionati per garantirti una vera esperienza culinaria. Accompagna il tuo pasto con contorni e insalate ricche, pensati per seguirti anche in un regime alimentare sano ed equilibrato anche fuori casa.
-
-Abbiamo pensato anche a formule convenienti per adattarci alle tue esigenze e al ritmo della tua giornata. Potrai optare per il <b>MENU EASY</b>, che include un primo piatto (o un secondo), un contorno a scelta, acqua e caffè, il tutto a soli 11 euro. Oppure, se preferisci un pasto più veloce, puoi scegliere il <b>MENU EASY&GO</b>, che comprende un panino a scelta, acqua e caffè, al prezzo di 7,50 euro.
-                                </p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -369,6 +370,73 @@ Oltre ai classici gusti di gelato, troverai una selezione variegata di torte gel
 
 Se desideri festeggiare un momento importante o semplicemente regalarti un dolce trattamento, ti invitiamo a prenotare una delle nostre torte gelato o semifreddi. Il nostro team sarà lieto di personalizzare la tua scelta e creare un dessert su misura per te.
                                 </p>
+                            </div>
+                            <div
+                                className="nav nav1 nav-pills"
+                                id="v-pills-tab"
+                                role="tablist"
+                                aria-orientation="vertical"
+                            >
+                                <button
+                                    className="nav-link active"
+                                    id="v-pills-img1-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-img1"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-img1"
+                                    aria-selected="true"
+                                >
+                                    <img
+                                        src="assets/images/bg/card-sm-01.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    className="nav-link"
+                                    id="v-pills-img2-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-img2"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-img2"
+                                    aria-selected="false"
+                                >
+                                    <img
+                                        src="assets/images/bg/card-sm-02.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    className="nav-link"
+                                    id="v-pills-img3-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-img3"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-img3"
+                                    aria-selected="false"
+                                >
+                                    <img
+                                        src="assets/images/bg/card-sm-03.png"
+                                        alt=""
+                                    />
+                                </button>
+                                <button
+                                    className="nav-link"
+                                    id="v-pills-img4-tab"
+                                    data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-img4"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="v-pills-img4"
+                                    aria-selected="false"
+                                >
+                                    <img
+                                        src="assets/images/bg/card-sm-04.png"
+                                        alt=""
+                                    />
+                                </button>
                             </div>
                         </div>
                         <div className="col-lg-6">
@@ -427,73 +495,7 @@ Se desideri festeggiare un momento importante o semplicemente regalarti un dolce
                                     />
                                 </div>
                             </div>
-                            <div
-                                className="nav nav1 nav-pills"
-                                id="v-pills-tab"
-                                role="tablist"
-                                aria-orientation="vertical"
-                            >
-                                <button
-                                    className="nav-link active"
-                                    id="v-pills-img1-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img1"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img1"
-                                    aria-selected="true"
-                                >
-                                    <img
-                                        src="assets/images/bg/card-sm-01.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    className="nav-link"
-                                    id="v-pills-img2-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img2"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img2"
-                                    aria-selected="false"
-                                >
-                                    <img
-                                        src="assets/images/bg/card-sm-02.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    className="nav-link"
-                                    id="v-pills-img3-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img3"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img3"
-                                    aria-selected="false"
-                                >
-                                    <img
-                                        src="assets/images/bg/card-sm-03.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    className="nav-link"
-                                    id="v-pills-img4-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img4"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img4"
-                                    aria-selected="false"
-                                >
-                                    <img
-                                        src="assets/images/bg/card-sm-04.png"
-                                        alt=""
-                                    />
-                                </button>
-                            </div>
+                            
                         </div>
                         
                     </div>
@@ -559,6 +561,19 @@ Se desideri festeggiare un momento importante o semplicemente regalarti un dolce
                                     />
                                 </div>
                             </div>
+                           
+                        </div>
+                        <div className="col-lg-6">
+                            <div className="prod-details-content">
+                                <h2>Aperitivi</h2>
+                                <p>
+                                Pop Café celebra l'aperitivo come un momento di convivialità e relax. Che tu voglia distenderti dopo una giornata lavorativa, fare un pranzo di lavoro, celebrare un'occasione speciale o semplicemente goderti la compagnia di amici e persone care, siamo pronti a offrirti un'esperienza indimenticabile.
+
+La nostra proposta comprende interessanti finger food, perfetti da abbinare a una lista di cocktails e vini, il tutto immerso in un'atmosfera piacevole e accogliente. Abbiamo selezionato per te una ricca varietà di vini e bollicine, per soddisfare anche i palati più esigenti. Inoltre, offriamo una vasta scelta di birre artigianali, garantendo un'esperienza di gusto unica.
+
+Il nostro staff esperto è pronto a deliziarti con cocktail classici, miscelati con maestria, e proposte più estrose e stravaganti. Ti guideremo nella scelta del cocktail perfetto per accompagnare i tuoi momenti di relax e convivialità.
+                                </p>
+                            </div>
                             <div
                                 className="nav nav1 nav-pills"
                                 id="v-pills-tab"
@@ -625,18 +640,6 @@ Se desideri festeggiare un momento importante o semplicemente regalarti un dolce
                                         alt=""
                                     />
                                 </button>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="prod-details-content">
-                                <h2>Aperitivi</h2>
-                                <p>
-                                Pop Café celebra l'aperitivo come un momento di convivialità e relax. Che tu voglia distenderti dopo una giornata lavorativa, fare un pranzo di lavoro, celebrare un'occasione speciale o semplicemente goderti la compagnia di amici e persone care, siamo pronti a offrirti un'esperienza indimenticabile.
-
-La nostra proposta comprende interessanti finger food, perfetti da abbinare a una lista di cocktails e vini, il tutto immerso in un'atmosfera piacevole e accogliente. Abbiamo selezionato per te una ricca varietà di vini e bollicine, per soddisfare anche i palati più esigenti. Inoltre, offriamo una vasta scelta di birre artigianali, garantendo un'esperienza di gusto unica.
-
-Il nostro staff esperto è pronto a deliziarti con cocktail classici, miscelati con maestria, e proposte più estrose e stravaganti. Ti guideremo nella scelta del cocktail perfetto per accompagnare i tuoi momenti di relax e convivialità.
-                                </p>
                             </div>
                         </div>
                     </div>
