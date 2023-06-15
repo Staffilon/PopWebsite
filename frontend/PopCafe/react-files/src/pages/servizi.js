@@ -70,76 +70,12 @@ function ShopDetails() {
                             <div className="prod-details-content">
                                 <h2>Colazioni</h2>
                                 <p>
-                                    Da noi troverete un'ampia selezione di
-                                    prelibatezze per iniziare la giornata nel
-                                    migliore dei modi. I nostri chef esperti
-                                    preparano colazioni fresche e abbondanti,
-                                    utilizzando ingredienti di alta qualità per
-                                    garantire un'esperienza culinaria
-                                    indimenticabile. Scegliete tra una varietà
-                                    di opzioni golose, come croissant appena
-                                    sfornati, pancake soffici e fragranti. Per
-                                    chi ama i sapori più salutari, proponiamo
-                                    anche yogurt con frutta fresca, cereali
-                                    croccanti e smoothie nutrienti.
+                                    Ogni mattina, ti accogliamo con una selezione irresistibile di prodotti freschi e preparati con cura.
+
+Dalle classiche cornetti appena sfornati alle fragranti brioches farcite, dalle crostate artigianali alle golose torte fatte in casa, avrai l'imbarazzo della scelta per soddisfare i tuoi desideri golosi. Accompagna tutto con una tazza di caffè aromatizzato o un succo di frutta fresco per completare l'esperienza.
+
+Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una varietà di opzioni per soddisfare anche i palati più esigenti. Dai croissant salati ai toast gourmet, potrai iniziare la giornata con una colazione salutare e gustosa.
                                 </p>
-                            </div>
-                        </div>
-                        <div className="col-lg-6">
-                            <div
-                                className="tab-content tab-content1"
-                                id="v-pills-tabContent"
-                            >
-                                <div
-                                    className="tab-pane fade active show"
-                                    id="v-pills-img1"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img1-tab"
-                                >
-                                    <div className="gallery-big-image">
-                                        <img
-                                            className="img-fluid"
-                                            src="assets/images/bg/card-big-01.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img2"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img2-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/card-big-02.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img3"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img3-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/card-big-03.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img4"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img4-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/card-big-04.png"
-                                        alt=""
-                                    />
-                                </div>
                             </div>
                             <div
                                 className="nav nav1 nav-pills"
@@ -208,6 +144,64 @@ function ShopDetails() {
                                     />
                                 </button>
                             </div>
+                        </div>
+                        <div className="col-lg-6">
+                            <div
+                                className="tab-content tab-content1"
+                                id="v-pills-tabContent"
+                            >
+                                <div
+                                    className="tab-pane fade active show"
+                                    id="v-pills-img1"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img1-tab"
+                                >
+                                    <div className="gallery-big-image">
+                                        <img
+                                            className="img-fluid"
+                                            src="assets/images/bg/card-big-01.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img2"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img2-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/card-big-02.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img3"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img3-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/card-big-03.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img4"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img4-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/card-big-04.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            
                         </div>
                        
                     </div>
@@ -346,21 +340,13 @@ function ShopDetails() {
                             <div className="prod-details-content">
                                 <h2>Pranzi</h2>
                                 <p>
-                                    Pop cafè ha creato uno spazio esclusivo dove
-                                    immergersi in un’atmosfera calda e familiare
-                                    come a casa ma gustoso e genuino come
-                                    un’osteria locale. Ogni giorno trovi - primi
-                                    piatti veloci ma curati con la ricerca di
-                                    prodotti locali e stagionali - ricchi piatti
-                                    unici - panini gourmet - contorni e insalate
-                                    ricche per seguire un regime alimentare sano
-                                    ed equilibrato anche fuori casa. Puoi
-                                    approfittare anche di formule più adatte a
-                                    te e alla tua giornata scegliendo tra MENU
-                                    EASY( primo piatto+contorno a
-                                    scelta+acqua+caffè) a 11 euro oppure il MENU
-                                    EASY&GO ( panino a scelta+acqua+caffè) a
-                                    7,50 euro.
+                                Pop Café ha creato uno spazio esclusivo dove immergersi in un'atmosfera calda e familiare, che ti fa sentire come a casa. Qui, potrai gustare piatti genuini e deliziosi, ispirati alle tradizioni culinarie locali.
+
+Ogni giorno, ti offriamo primi piatti veloci ma curati, utilizzando prodotti locali e stagionali per garantirti freschezza e qualità. I nostri ricchi piatti unici sono un'esplosione di sapori autentici, pensati per soddisfare anche i palati più esigenti.
+
+Se preferisci una soluzione più veloce ma altrettanto gustosa, puoi scegliere tra i nostri panini gourmet, preparati con ingredienti selezionati per garantirti una vera esperienza culinaria. Accompagna il tuo pasto con contorni e insalate ricche, pensati per seguirti anche in un regime alimentare sano ed equilibrato anche fuori casa.
+
+Abbiamo pensato anche a formule convenienti per adattarci alle tue esigenze e al ritmo della tua giornata. Potrai optare per il <b>MENU EASY</b>, che include un primo piatto (o un secondo), un contorno a scelta, acqua e caffè, il tutto a soli 11 euro. Oppure, se preferisci un pasto più veloce, puoi scegliere il <b>MENU EASY&GO</b>, che comprende un panino a scelta, acqua e caffè, al prezzo di 7,50 euro.
                                 </p>
                             </div>
                         </div>
@@ -375,13 +361,13 @@ function ShopDetails() {
                             <div className="prod-details-content">
                                 <h2>Gelateria</h2>
                                 <p>
-                                    Da sempre al Pop Cafè trovi il GELATO
-                                    ARTIGIANALE della Gelateria VITTORINI di San
-                                    Severino Marche che da quest’anno oltre allo
-                                    storico gelato amplia la sua offerta con
-                                    torte gelato e semifreddi disponibili e su
-                                    prenotazione, per festeggiare i vostri
-                                    momenti da ricordare.
+                                Da sempre al Pop Cafè troverai il gelato artigianale della Gelateria Oasi del Gusto di San Severino Marche. Siamo entusiasti di ampliare la nostra offerta includendo anche torte gelato e semifreddi, disponibili su prenotazione, per rendere i tuoi momenti speciali ancora più memorabili.
+
+La Gelateria Oasi del Gusto è rinomata per la sua maestria nell'arte della creazione del gelato artigianale. Utilizzando ingredienti di alta qualità e seguendo ricette tradizionali, ci impegniamo a offrire un'esperienza gustativa straordinaria a ogni boccone.
+
+Oltre ai classici gusti di gelato, troverai una selezione variegata di torte gelato e semifreddi, perfetti per festeggiare occasioni speciali o semplicemente per deliziare il tuo palato con una dolcezza unica.
+
+Se desideri festeggiare un momento importante o semplicemente regalarti un dolce trattamento, ti invitiamo a prenotare una delle nostre torte gelato o semifreddi. Il nostro team sarà lieto di personalizzare la tua scelta e creare un dessert su misura per te.
                                 </p>
                             </div>
                         </div>
@@ -645,21 +631,11 @@ function ShopDetails() {
                             <div className="prod-details-content">
                                 <h2>Aperitivi</h2>
                                 <p>
-                                    Pop Café celebra il rito dell’aperitivo come
-                                    un momento di convivialità. Per rilassarsi
-                                    al termine di una giornata lavorativa, prima
-                                    di un pranzo di lavoro, per celebrare
-                                    occasioni o solo per godere della compagnia
-                                    di amici e persone care proponiamo
-                                    interessanti finger food da abbinare a una
-                                    lista di cocktails e vini in una piacevole
-                                    atmosfera. Troverete una ricca selezione di
-                                    vini e bollicine, una vasta scelta di birre
-                                    artigianali, dai classici miscelati o più
-                                    estrosi e stravaganti cocktail proposti dal
-                                    nostro Staff. Con la compagnia giusta, nel
-                                    posto giusto hai solo l’imbarazzo della
-                                    scelta!
+                                Pop Café celebra l'aperitivo come un momento di convivialità e relax. Che tu voglia distenderti dopo una giornata lavorativa, fare un pranzo di lavoro, celebrare un'occasione speciale o semplicemente goderti la compagnia di amici e persone care, siamo pronti a offrirti un'esperienza indimenticabile.
+
+La nostra proposta comprende interessanti finger food, perfetti da abbinare a una lista di cocktails e vini, il tutto immerso in un'atmosfera piacevole e accogliente. Abbiamo selezionato per te una ricca varietà di vini e bollicine, per soddisfare anche i palati più esigenti. Inoltre, offriamo una vasta scelta di birre artigianali, garantendo un'esperienza di gusto unica.
+
+Il nostro staff esperto è pronto a deliziarti con cocktail classici, miscelati con maestria, e proposte più estrose e stravaganti. Ti guideremo nella scelta del cocktail perfetto per accompagnare i tuoi momenti di relax e convivialità.
                                 </p>
                             </div>
                         </div>
@@ -699,34 +675,16 @@ function ShopDetails() {
                                                     </a>
                                                 </Link>
                                             </div>
-                                            <div className="pric-tag">
-                                                <span>$17</span>
-                                            </div>
+                                           
                                         </div>
                                         <div className="food-content">
-                                            <ul className="d-flex align-items-center justify-content-center p-0 gap-1">
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                            </ul>
+                                            
                                             <h3>
                                                 <Link
                                                     legacyBehavior
                                                     href="/shop-details"
                                                 >
-                                                    <a>Mutton with Shrimps</a>
+                                                    <a>Candle Jazz Night</a>
                                                 </Link>
                                             </h3>
                                         </div>
@@ -750,34 +708,16 @@ function ShopDetails() {
                                                     </a>
                                                 </Link>
                                             </div>
-                                            <div className="pric-tag">
-                                                <span>$41</span>
-                                            </div>
+                                            
                                         </div>
                                         <div className="food-content">
-                                            <ul className="d-flex align-items-center justify-content-center p-0 gap-1">
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                            </ul>
+                                           
                                             <h3>
                                                 <Link
                                                     href="/shop-details"
                                                     legacyBehavior
                                                 >
-                                                    <a>Mutton Kabab</a>
+                                                    <a>AperiPasqua</a>
                                                 </Link>
                                             </h3>
                                         </div>
@@ -801,34 +741,16 @@ function ShopDetails() {
                                                     </a>
                                                 </Link>
                                             </div>
-                                            <div className="pric-tag">
-                                                <span>$15</span>
-                                            </div>
+                                           
                                         </div>
                                         <div className="food-content">
-                                            <ul className="d-flex align-items-center justify-content-center p-0 gap-1">
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                            </ul>
+                                            
                                             <h3>
                                                 <Link
                                                     href="/shop-details"
                                                     legacyBehavior
                                                 >
-                                                    <a>Burger with Drinks</a>
+                                                    <a>AroundMoricone</a>
                                                 </Link>
                                             </h3>
                                         </div>
@@ -852,34 +774,16 @@ function ShopDetails() {
                                                     </a>
                                                 </Link>
                                             </div>
-                                            <div className="pric-tag">
-                                                <span>$09</span>
-                                            </div>
+                                            
                                         </div>
                                         <div className="food-content">
-                                            <ul className="d-flex align-items-center justify-content-center p-0 gap-1">
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                                <li>
-                                                    <i className="bi bi-star-fill" />
-                                                </li>
-                                            </ul>
+                                          
                                             <h3>
                                                 <Link
                                                     href="/shop-details"
                                                     legacyBehavior
                                                 >
-                                                    <a>Shrimps with Role</a>
+                                                    <a>Brunch</a>
                                                 </Link>
                                             </h3>
                                         </div>
