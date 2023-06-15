@@ -27,7 +27,7 @@ function Facilities() {
                 <img src="assets/images/bg/1.png" alt="capacity" />
               </div>
               </link>
-              <p>Una coccola al mattino, dal dolce al salato per iniziare al meglio la tua giornata!</p>
+              <p>Una coccola al cattivo, dal dolce al salato per iniziare al meglio la tua giornata!</p>
              
             </div>
           </div>
@@ -39,7 +39,7 @@ function Facilities() {
               <div className="facilities-img">
                 <img src="assets/images/bg/3.png" alt="capacity" />
               </div>
-              <p>Per una sana e gustosa pausa pranzo, con ottimi primi, piatti unici, panini e molto altro!</p>
+               <p>Per una sana e gustosa pausa pranzo, con ottimi primi, piatti unici, panini e molto altro!</p>
               </link> 
             </div>
           </div>
