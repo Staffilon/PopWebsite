@@ -28,16 +28,7 @@ function Facilities() {
               </div>
               </link>
               <p>Una coccola al mattino, dal dolce al salato per iniziare al meglio la tua giornata!</p>
-              <div className="overlay">
-               
-                  <img
-                    className="img-fluid"
-                    src="assets/images/bg/colazioni.png"
-                    alt=""
-                  />
-              
-              
-              </div>
+             
             </div>
           </div>
           
