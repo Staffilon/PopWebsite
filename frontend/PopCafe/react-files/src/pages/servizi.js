@@ -94,7 +94,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                     aria-selected="true"
                                 >
                                     <img
-                                        src="assets/images/bg/card-sm-01.png"
+                                        src="assets/images/bg/colazion1p.png"
                                         alt=""
                                     />
                                 </button>
@@ -109,7 +109,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/card-sm-02.png"
+                                        src="assets/images/bg/colazion2p.png"
                                         alt=""
                                     />
                                 </button>
@@ -124,7 +124,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/card-sm-03.png"
+                                        src="assets/images/bg/colazion4p.png"
                                         alt=""
                                     />
                                 </button>
@@ -139,7 +139,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/card-sm-04.png"
+                                        src="assets/images/bg/colazion5p.png"
                                         alt=""
                                     />
                                 </button>
@@ -159,7 +159,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                     <div className="gallery-big-image">
                                         <img
                                             className="img-fluid"
-                                            src="assets/images/bg/card-big-01.png"
+                                            src="assets/images/bg/colazion1.png"
                                             alt=""
                                         />
                                     </div>
@@ -172,7 +172,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                 >
                                     <img
                                         className="img-fluid"
-                                        src="assets/images/bg/card-big-02.png"
+                                        src="assets/images/bg/colazion2.png"
                                         alt=""
                                     />
                                 </div>
@@ -184,7 +184,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                 >
                                     <img
                                         className="img-fluid"
-                                        src="assets/images/bg/card-big-03.png"
+                                        src="assets/images/bg/colazion4.png"
                                         alt=""
                                     />
                                 </div>
@@ -196,7 +196,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                 >
                                     <img
                                         className="img-fluid"
-                                        src="assets/images/bg/card-big-04.png"
+                                        src="assets/images/bg/colazion5.png"
                                         alt=""
                                     />
                                 </div>
@@ -274,14 +274,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                             <div className="prod-details-content">
                                 <h2>Pranzi</h2>
                                 <p>
-                                Pop Café ha creato uno spazio esclusivo dove immergersi in un'atmosfera calda e familiare, che ti fa sentire come a casa. Qui, potrai gustare piatti genuini e deliziosi, ispirati alle tradizioni culinarie locali.
-
-Ogni giorno, ti offriamo primi piatti veloci ma curati, utilizzando prodotti locali e stagionali per garantirti freschezza e qualità. I nostri ricchi piatti unici sono un'esplosione di sapori autentici, pensati per soddisfare anche i palati più esigenti.
-
-Se preferisci una soluzione più veloce ma altrettanto gustosa, puoi scegliere tra i nostri panini gourmet, preparati con ingredienti selezionati per garantirti una vera esperienza culinaria. Accompagna il tuo pasto con contorni e insalate ricche, pensati per seguirti anche in un regime alimentare sano ed equilibrato anche fuori casa.
-
-Abbiamo pensato anche a formule convenienti per adattarci alle tue esigenze e al ritmo della tua giornata. Potrai optare per il <b>MENU EASY</b>, che include un primo piatto (o un secondo), un contorno a scelta, acqua e caffè, il tutto a soli 11 euro. Oppure, se preferisci un pasto più veloce, puoi scegliere il <b>MENU EASY&GO</b>, che comprende un panino a scelta, acqua e caffè, al prezzo di 7,50 euro.
-                                </p>
+                                Al Pop Café, immergiti in un'atmosfera familiare e gustosa. Offriamo primi piatti veloci e curati con prodotti locali e stagionali. I nostri piatti unici sono autentici e ricchi di sapori. Scegli tra panini gourmet, contorni e insalate per un pasto sano. Opta per il MENU EASY a 11 euro o MENU EASY&GO a 7,50 euro, con acqua e caffè inclusi.</p>
                             </div>
                             <div
                                 className="nav nav1 nav-pills"
@@ -362,14 +355,8 @@ Abbiamo pensato anche a formule convenienti per adattarci alle tue esigenze e al
                             <div className="prod-details-content">
                                 <h2>Gelateria</h2>
                                 <p>
-                                Da sempre al Pop Cafè troverai il gelato artigianale della Gelateria Oasi del Gusto di San Severino Marche. Siamo entusiasti di ampliare la nostra offerta includendo anche torte gelato e semifreddi, disponibili su prenotazione, per rendere i tuoi momenti speciali ancora più memorabili.
-
-La Gelateria Oasi del Gusto è rinomata per la sua maestria nell'arte della creazione del gelato artigianale. Utilizzando ingredienti di alta qualità e seguendo ricette tradizionali, ci impegniamo a offrire un'esperienza gustativa straordinaria a ogni boccone.
-
-Oltre ai classici gusti di gelato, troverai una selezione variegata di torte gelato e semifreddi, perfetti per festeggiare occasioni speciali o semplicemente per deliziare il tuo palato con una dolcezza unica.
-
-Se desideri festeggiare un momento importante o semplicemente regalarti un dolce trattamento, ti invitiamo a prenotare una delle nostre torte gelato o semifreddi. Il nostro team sarà lieto di personalizzare la tua scelta e creare un dessert su misura per te.
-                                </p>
+                               
+Al Pop Cafè, troverai il gelato artigianale della Gelateria Oasi del Gusto di San Severino Marche. Oltre ai gusti classici, offriamo anche torte gelato e semifreddi su prenotazione, per rendere i tuoi momenti speciali ancora più memorabili. La Gelateria Oasi del Gusto è rinomata per la qualità dei suoi ingredienti e le ricette tradizionali, garantendo un'esperienza gustativa straordinaria. Scegli tra la nostra selezione di torte gelato e semifreddi per festeggiare o semplicemente deliziarti con una dolcezza unica. Prenota il tuo dessert personalizzato e il nostro team si occuperà di realizzare qualcosa di speciale per te.</p>
                             </div>
                             <div
                                 className="nav nav1 nav-pills"
@@ -567,12 +554,8 @@ Se desideri festeggiare un momento importante o semplicemente regalarti un dolce
                             <div className="prod-details-content">
                                 <h2>Aperitivi</h2>
                                 <p>
-                                Pop Café celebra l'aperitivo come un momento di convivialità e relax. Che tu voglia distenderti dopo una giornata lavorativa, fare un pranzo di lavoro, celebrare un'occasione speciale o semplicemente goderti la compagnia di amici e persone care, siamo pronti a offrirti un'esperienza indimenticabile.
-
-La nostra proposta comprende interessanti finger food, perfetti da abbinare a una lista di cocktails e vini, il tutto immerso in un'atmosfera piacevole e accogliente. Abbiamo selezionato per te una ricca varietà di vini e bollicine, per soddisfare anche i palati più esigenti. Inoltre, offriamo una vasta scelta di birre artigianali, garantendo un'esperienza di gusto unica.
-
-Il nostro staff esperto è pronto a deliziarti con cocktail classici, miscelati con maestria, e proposte più estrose e stravaganti. Ti guideremo nella scelta del cocktail perfetto per accompagnare i tuoi momenti di relax e convivialità.
-                                </p>
+                             
+Al Pop Café, l'aperitivo è un momento conviviale e rilassante. Offriamo finger food deliziosi da abbinare a una selezione di cocktail, vini e birre artigianali. Il nostro staff esperto ti guiderà nella scelta del drink perfetto per accompagnare il tuo momento di relax. Vieni a goderti un'atmosfera piacevole e accogliente, mentre assapori i sapori unici dei nostri cocktails e bevande. </p>
                             </div>
                             <div
                                 className="nav nav1 nav-pills"

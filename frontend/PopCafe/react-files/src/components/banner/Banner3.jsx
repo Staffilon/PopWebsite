@@ -40,9 +40,9 @@ function Banner3() {
           
           </span>
           <h1>BAR &amp; more.</h1>
-          <Link legacyBehavior href="#servizi">
+          <Link legacyBehavior href="menu2">
             <a className="primary-btn7 btn-md2">
-              <i className="bi bi-arrow-up-right-circle" /> Scopri i servizi
+              <i className="bi bi-arrow-up-right-circle" /> Scopri il menù
             </a>
           </Link>
         </div>
