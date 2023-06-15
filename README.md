@@ -2,7 +2,7 @@
 
 Italian Version:
 
-Sito web realizzato per il Pop Cafe di Camerino.
+Sito web realizzato per il Pop Café di Camerino.
 
 Si tratta di un sito vetrina che mostra i servizi del bar ed altre informazioni utili ai clienti. Oltre a questo, si aggiungono due funzionalità:
 
