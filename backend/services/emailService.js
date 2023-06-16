@@ -1,15 +1,11 @@
 const nodemailer = require("nodemailer");
-const sgMail = require("@sendgrid/mail");
-
-// Imposta la chiave API di SendGrid
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 // Configura il trasportatore di Nodemailer con le credenziali del tuo servizio di invio email
 const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
         user: "popcamerino@gmail.com",
-        pass: "password",
+        pass: "pzbbnyfovonenzvg", //2NXk#Cl6j5Fv
     },
 });
 
@@ -40,13 +36,8 @@ const sendBookingNotification = async (bookingData) => {
 
     try {
         // Invia l'email utilizzando il trasportatore di Nodemailer
-        sgMail
-        .send(mailOptions);
+        await transporter.sendMail(mailOptions);
         console.log("Notifica email inviata con successo!");
-
-        // Invia anche la notifica tramite SendGrid
-        await sgMail.send(mailOptions);
-        console.log("Notifica email SendGrid inviata con successo!");
     } catch (error) {
         console.error(
             "Errore durante l'invio della notifica via email:",
