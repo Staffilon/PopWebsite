@@ -331,7 +331,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una varietÃ
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/pranzo3p.png"
+                                        src="assets/images/bg/pranzo5p.png"
                                         alt=""
                                     />
                                 </button>
