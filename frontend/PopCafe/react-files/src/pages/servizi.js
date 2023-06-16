@@ -273,7 +273,7 @@ function ShopDetails() {
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/pranzo3p.png"
+                                        src="assets/images/bg/pranzo4p.png"
                                         alt=""
                                     />
                                 </button>
@@ -321,7 +321,7 @@ function ShopDetails() {
                                 >
                                     <img
                                         className="img-fluid"
-                                        src="assets/images/bg/pranzo3.png"
+                                        src="assets/images/bg/pranzo2.png"
                                         alt=""
                                     />
                                 </div>
