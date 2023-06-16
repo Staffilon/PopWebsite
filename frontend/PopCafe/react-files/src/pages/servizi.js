@@ -226,7 +226,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                     <div className="gallery-big-image">
                                         <img
                                             className="img-fluid"
-                                            src="assets/images/bg/pranzi.png"
+                                            src="assets/images/bg/pranzo.png"
                                             alt=""
                                         />
                                     </div>
@@ -301,7 +301,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                     aria-selected="true"
                                 >
                                     <img
-                                        src="assets/images/bg/pranzip.png"
+                                        src="assets/images/bg/pranzop.png"
                                         alt=""
                                     />
                                 </button>
