@@ -226,7 +226,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                     <div className="gallery-big-image">
                                         <img
                                             className="img-fluid"
-                                            src="assets/images/bg/pranzo.png"
+                                            src="assets/images/bg/pranzi.png"
                                             alt=""
                                         />
                                     </div>
@@ -279,9 +279,10 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                  Scegli tra panini gourmet, contorni e insalate per un pasto sano.
                                 <br>
                                 </br> 
-                                Opta per il <b>MENU EASY</b> a 11 euro, che comprende un primo o un secondo a scelta, un contorno, una bevanda e il caff√®, oppure il nostro<br></br>
+                                Opta per il<br>
+                                </br> <b>MENU EASY</b> a 11 euro, che comprende un primo o un secondo a scelta, un contorno, una bevanda e il caff√®, oppure il nostro<br></br>
                                 
-                                MENU EASY&GO a 7,50 euro, con panino del giorno, acqua e caff√® inclusi!</p>
+                               <b> MENU EASY&GO </b>a 7,50 euro, con panino del giorno, acqua e caff√® inclusi!</p>
                             </div>
                             <div
                                 className="nav nav1 nav-pills"
@@ -300,7 +301,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                     aria-selected="true"
                                 >
                                     <img
-                                        src="assets/images/bg/pranzop.png"
+                                        src="assets/images/bg/pranzip.png"
                                         alt=""
                                     />
                                 </button>
@@ -387,7 +388,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                     aria-selected="true"
                                 >
                                     <img
-                                        src="assets/images/bg/aperitivo1.png"
+                                        src="assets/images/bg/p.png"
                                         alt=""
                                     />
                                 </button>
@@ -402,7 +403,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/aperitivo3.png"
+                                        src="assets/images/bg/p.png"
                                         alt=""
                                     />
                                 </button>
@@ -417,7 +418,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/aperitivo4.png"
+                                        src="assets/images/bg/p.png"
                                         alt=""
                                     />
                                 </button>
@@ -432,7 +433,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/aperitivo2.png"
+                                        src="assets/images/bg/p.png"
                                         alt=""
                                     />
                                 </button>
@@ -518,7 +519,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                     <div className="gallery-big-image">
                                         <img
                                             className="img-fluid"
-                                            src="assets/images/bg/card-big-01.png"
+                                            src="assets/images/bg/aperitivo1.png"
                                             alt=""
                                         />
                                     </div>
@@ -531,7 +532,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                 >
                                     <img
                                         className="img-fluid"
-                                        src="assets/images/bg/card-big-02.png"
+                                        src="assets/images/bg/aperitivo2.png"
                                         alt=""
                                     />
                                 </div>
@@ -543,7 +544,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                 >
                                     <img
                                         className="img-fluid"
-                                        src="assets/images/bg/card-big-03.png"
+                                        src="assets/images/bg/aperitivo3.png"
                                         alt=""
                                     />
                                 </div>
@@ -555,7 +556,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                 >
                                     <img
                                         className="img-fluid"
-                                        src="assets/images/bg/card-big-04.png"
+                                        src="assets/images/bg/aperitivo4.png"
                                         alt=""
                                     />
                                 </div>
@@ -669,17 +670,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                                 src="assets/images/bg/h2-food-item-8.png"
                                                 alt="h2-food-item-1"
                                             />
-                                            <div className="cart-icon">
-                                                <Link
-                                                    legacyBehavior
-                                                    href="/cart"
-                                                >
-                                                    <a>
-                                                        <i className="bi bi-cart-plus" />
-                                                    </a>
-                                                </Link>
-                                            </div>
-                                           
+                                         
                                         </div>
                                         <div className="food-content">
                                             
@@ -702,17 +693,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                                 src="assets/images/bg/h2-food-item-5.png"
                                                 alt="h2-food-item-1"
                                             />
-                                            <div className="cart-icon">
-                                                <Link
-                                                    legacyBehavior
-                                                    href="/cart"
-                                                >
-                                                    <a>
-                                                        <i className="bi bi-cart-plus" />
-                                                    </a>
-                                                </Link>
-                                            </div>
-                                            
+                                        
                                         </div>
                                         <div className="food-content">
                                            
@@ -735,16 +716,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                                 src="assets/images/bg/h2-food-item-6.png"
                                                 alt="h2-food-item-1"
                                             />
-                                            <div className="cart-icon">
-                                                <Link
-                                                    href="/cart"
-                                                    legacyBehavior
-                                                >
-                                                    <a>
-                                                        <i className="bi bi-cart-plus" />
-                                                    </a>
-                                                </Link>
-                                            </div>
+                                           
                                            
                                         </div>
                                         <div className="food-content">
@@ -768,16 +740,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet√
                                                 src="assets/images/bg/h2-food-item-7.png"
                                                 alt="h2-food-item-1"
                                             />
-                                            <div className="cart-icon">
-                                                <Link
-                                                    legacyBehavior
-                                                    href="/cart"
-                                                >
-                                                    <a>
-                                                        <i className="bi bi-cart-plus" />
-                                                    </a>
-                                                </Link>
-                                            </div>
+                                           
                                             
                                         </div>
                                         <div className="food-content">
