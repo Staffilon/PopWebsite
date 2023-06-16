@@ -72,9 +72,9 @@ function ShopDetails() {
                                 <p>
                                     Ogni mattina, ti accogliamo con una selezione irresistibile di prodotti freschi e preparati con cura.
 
-Dalle classiche cornetti appena sfornati alle fragranti brioches farcite, dalle crostate artigianali alle golose torte fatte in casa, avrai l'imbarazzo della scelta per soddisfare i tuoi desideri golosi. Accompagna tutto con una tazza di caffè aromatizzato o un succo di frutta fresco per completare l'esperienza.
+                                    Dai classici cornetti appena sfornati alle fragranti brioches farcite, dalle crostate artigianali alle golose torte fatte in casa, avrai l'imbarazzo della scelta per soddisfare i tuoi desideri golosi. Accompagna tutto con una tazza di caffè aromatizzato o un succo di frutta fresco per completare l'esperienza.
 
-Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una varietà di opzioni per soddisfare anche i palati più esigenti. Dai croissant salati ai toast gourmet, potrai iniziare la giornata con una colazione salutare e gustosa.
+                                    Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una varietà di opzioni per soddisfare anche i palati più esigenti. Dai croissant salati ai toast gourmet, potrai iniziare la giornata con una colazione salutare e gustosa.
                                 </p>
                             </div>
                             <div
@@ -208,71 +208,13 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                 </div>
             </div>
             <hr />
-        
+
             <div className="shop-details pt-120 mb-120">
                 <div className="container">
                     <div className="row g-lg-5 gy-5">
-                        <div className="col-lg-6">
-                            <div
-                                className="tab-content tab-content1"
-                                id="v-pills-tabContent"
-                            >
-                                <div
-                                    className="tab-pane fade active show"
-                                    id="v-pills-img1"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img1-tab"
-                                >
-                                    <div className="gallery-big-image">
-                                        <img
-                                            className="img-fluid"
-                                            src="assets/images/bg/pranzo.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img2"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img2-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/pranzo2.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img3"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img3-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/pranzo3.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img4"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img4-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/pranzo4.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div className="col-lg-6">
+                    <div className="col-lg-6">
                             <div className="prod-details-content">
-                                <h2>Pranzi</h2>
+                            <h2>Pranzi</h2>
                                 <p>
                                 Al Pop Café, immergiti in un'atmosfera familiare e gustosa. Offriamo primi piatti veloci e curati 
                                 con prodotti locali e stagionali. I nostri piatti unici sono autentici e ricchi di sapori.
@@ -331,7 +273,7 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/pranzo5p.png"
+                                        src="assets/images/bg/pranzo3p.png"
                                         alt=""
                                     />
                                 </button>
@@ -346,15 +288,76 @@ Se invece preferisci una colazione salata, non preoccuparti! Abbiamo una variet�
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/pranzo4p.png"
+                                        src="assets/images/bg/pranzo5p.png"
                                         alt=""
                                     />
                                 </button>
                             </div>
                         </div>
+                        <div className="col-lg-6">
+                            <div
+                                className="tab-content tab-content1"
+                                id="v-pills-tabContent"
+                            >
+                                <div
+                                    className="tab-pane fade active show"
+                                    id="v-pills-img1"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img1-tab"
+                                >
+                                    <div className="gallery-big-image">
+                                        <img
+                                            className="img-fluid"
+                                            src="assets/images/bg/pranzo.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img2"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img2-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/pranzo3.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img3"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img3-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/pranzo3.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img4"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img4-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/pranzo4.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            
+                        </div>
+                       
                     </div>
                 </div>
             </div>
+
+           
             <hr />
             <div className="shop-details pt-120 mb-120">
                 <div className="container">
