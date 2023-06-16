@@ -505,69 +505,12 @@ function ShopDetails() {
                 </div>
             </div>
             < hr />
+
             <div className="shop-details pt-120 mb-120">
                 <div className="container">
                     <div className="row g-lg-5 gy-5">
-                        <div className="col-lg-6">
-                            <div
-                                className="tab-content tab-content1"
-                                id="v-pills-tabContent"
-                            >
-                                <div
-                                    className="tab-pane fade active show"
-                                    id="v-pills-img1"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img1-tab"
-                                >
-                                    <div className="gallery-big-image">
-                                        <img
-                                            className="img-fluid"
-                                            src="assets/images/bg/aperitivo1.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img2"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img2-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/aperitivo2.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img3"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img3-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/aperitivo3.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img4"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img4-tab"
-                                >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/aperitivo4.png"
-                                        alt=""
-                                    />
-                                </div>
-                            </div>
-                           
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="prod-details-content">
+                    <div className="col-lg-6">
+                    <div className="prod-details-content">
                                 <h2>Aperitivi</h2>
                                 <p>
                                     Per rilassarsi al  termine di una giornata lavorativa, prima di un pranzo di lavoro, 
@@ -596,7 +539,7 @@ function ShopDetails() {
                                     aria-selected="true"
                                 >
                                     <img
-                                        src="assets/images/bg/card-sm-01.png"
+                                        src="assets/images/bg/p.png"
                                         alt=""
                                     />
                                 </button>
@@ -611,7 +554,7 @@ function ShopDetails() {
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/card-sm-02.png"
+                                        src="assets/images/bg/p.png"
                                         alt=""
                                     />
                                 </button>
@@ -626,7 +569,7 @@ function ShopDetails() {
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/card-sm-03.png"
+                                        src="assets/images/bg/p.png"
                                         alt=""
                                     />
                                 </button>
@@ -641,15 +584,75 @@ function ShopDetails() {
                                     aria-selected="false"
                                 >
                                     <img
-                                        src="assets/images/bg/card-sm-04.png"
+                                        src="assets/images/bg/p.png"
                                         alt=""
                                     />
                                 </button>
                             </div>
                         </div>
+                        <div className="col-lg-6">
+                            <div
+                                className="tab-content tab-content1"
+                                id="v-pills-tabContent"
+                            >
+                                <div
+                                    className="tab-pane fade active show"
+                                    id="v-pills-img1"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img1-tab"
+                                >
+                                    <div className="gallery-big-image">
+                                        <img
+                                            className="img-fluid"
+                                            src="assets/images/bg/card-big-01.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img2"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img2-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/card-big-02.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img3"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img3-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/card-big-03.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    className="tab-pane fade"
+                                    id="v-pills-img4"
+                                    role="tabpanel"
+                                    aria-labelledby="v-pills-img4-tab"
+                                >
+                                    <img
+                                        className="img-fluid"
+                                        src="assets/images/bg/card-big-04.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
                     </div>
                 </div>
             </div>
+           
 
             <hr />
             <div className="related-items-area mb-120">
