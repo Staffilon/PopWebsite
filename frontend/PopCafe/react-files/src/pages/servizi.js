@@ -66,7 +66,7 @@ function ShopDetails() {
             <div className="shop-details pt-120 mb-120">
                 <div className="container">
                     <div className="row g-lg-5 gy-5">
-                    <div className="col-lg-6">
+                        <div className="col-lg-6">
                             <div className="prod-details-content">
                                 <h2>Colazioni</h2>
                                 <p>
@@ -201,9 +201,9 @@ function ShopDetails() {
                                     />
                                 </div>
                             </div>
-                            
+
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -212,166 +212,157 @@ function ShopDetails() {
             <div className="shop-details pt-120 mb-120">
                 <div className="container">
                     <div className="row g-lg-5 gy-5">
-                    <div className="col-lg-6">
+                        <div className="col-lg-6">
                             <div className="prod-details-content">
-                            <h2>Pranzi</h2>
+                                <h2>Pranzi</h2>
                                 <p>
-                                Al Pop Café, immergiti in un'atmosfera familiare e gustosa. Offriamo primi piatti veloci e curati 
-                                con prodotti locali e stagionali. I nostri piatti unici sono autentici e ricchi di sapori.
-                                 Scegli tra panini gourmet, contorni e insalate per un pasto sano.
-                                <br>
-                                </br> 
-                                Opta per il<br>
-                                </br> <b>MENU EASY</b> a 11 euro, che comprende un primo o un secondo a scelta, un contorno, una bevanda e il caffè, oppure il nostro<br></br>
-                                
-                               <b> MENU EASY&GO </b>a 7,50 euro, con panino del giorno, acqua e caffè inclusi!</p>
+                                    Al Pop Café, immergiti in un'atmosfera familiare e gustosa. Offriamo primi piatti veloci e curati con prodotti locali e stagionali. I nostri piatti unici sono autentici e ricchi di sapori. Scegli tra panini gourmet, contorni e insalate per un pasto sano.<br /> Opta per il <br /> <b>MENU EASY</b> a 11 euro, che comprende un primo o un secondo a scelta, un contorno, una bevanda e il caffè, oppure il nostro<br /> <b> MENU EASY&GO </b>a 7,50 euro, con panino del giorno, acqua e caffè inclusi!
+                                </p>
                             </div>
-                            <div
-                                className="nav nav1 nav-pills"
-                                id="v-pills-tab"
-                                role="tablist"
+                            <div 
+                                className="nav nav1 nav-pills" 
+                                id="v-pills-tab" 
+                                role="tablist" 
                                 aria-orientation="vertical"
                             >
-                                <button
-                                    className="nav-link active"
-                                    id="v-pills-img1-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img1"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img1"
+                                <button 
+                                    className="nav-link active" 
+                                    id="v-pills-pranzo-img1-tab" 
+                                    data-bs-toggle="pill" 
+                                    data-bs-target="#v-pills-pranzo-img1" 
+                                    type="button" role="tab" 
+                                    aria-controls="v-pills-pranzo-img1" 
                                     aria-selected="true"
                                 >
-                                    <img
-                                        src="assets/images/bg/pranzop.png"
+                                <img 
+                                    src="assets/images/bg/pranzop.png"
+                                     alt="" 
+                                />
+                                </button>
+                                <button 
+                                className="nav-link" 
+                                id="v-pills-pranzo-img2-tab" 
+                                data-bs-toggle="pill" 
+                                data-bs-target="#v-pills-pranzo-img2" 
+                                type="button" role="tab" 
+                                aria-controls="v-pills-pranzo-img2" 
+                                aria-selected="false"
+                                >
+                                    <img 
+                                        src="assets/images/bg/pranzo2p.png" 
+                                        alt="" 
+                                    />
+                                </button>
+                                <button 
+                                    className="nav-link" 
+                                    id="v-pills-pranzo-img3-tab"
+                                    data-bs-toggle="pill" 
+                                    data-bs-target="#v-pills-pranzo-img3"
+                                    type="button" role="tab" 
+                                    aria-controls="v-pills-pranzo-img3" 
+                                    aria-selected="false"
+                                >
+                                    <img 
+                                        src="assets/images/bg/pranzo4p.png" 
                                         alt=""
                                     />
                                 </button>
-                                <button
-                                    className="nav-link"
-                                    id="v-pills-img2-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img2"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img2"
+                                <button 
+                                    className="nav-link" 
+                                    id="v-pills-pranzo-img4-tab" 
+                                    data-bs-toggle="pill" 
+                                    data-bs-target="#v-pills-pranzo-img4" 
+                                    type="button" role="tab" 
+                                    aria-controls="v-pills-pranzo-img4" 
                                     aria-selected="false"
                                 >
-                                    <img
-                                        src="assets/images/bg/pranzo2p.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    className="nav-link"
-                                    id="v-pills-img3-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img3"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img3"
-                                    aria-selected="false"
-                                >
-                                    <img
-                                        src="assets/images/bg/pranzo4p.png"
-                                        alt=""
-                                    />
-                                </button>
-                                <button
-                                    className="nav-link"
-                                    id="v-pills-img4-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#v-pills-img4"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="v-pills-img4"
-                                    aria-selected="false"
-                                >
-                                    <img
-                                        src="assets/images/bg/pranzo5p.png"
-                                        alt=""
+                                    <img 
+                                        src="assets/images/bg/pranzo5p.png" 
+                                        alt="" 
                                     />
                                 </button>
                             </div>
                         </div>
-                        <div className="col-lg-6">
-                            <div
-                                className="tab-content tab-content1"
+                        <div 
+                         className="col-lg-6"
+                        >
+                            <div 
+                                className="tab-content tab-content1" 
                                 id="v-pills-tabContent"
                             >
-                                <div
-                                    className="tab-pane fade active show"
-                                    id="v-pills-img1"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img1-tab"
+                                <div 
+                                    className="tab-pane fade active show" 
+                                    id="v-pills-pranzo-img1" 
+                                    role="tabpanel" 
+                                    aria-labelledby="v-pills-pranzo-img1-tab"
                                 >
-                                    <div className="gallery-big-image">
-                                        <img
-                                            className="img-fluid"
-                                            src="assets/images/bg/pranzo.png"
-                                            alt=""
+                                    <div 
+                                        className="gallery-big-image"
+                                    >
+                                        <img 
+                                            className="img-fluid" 
+                                            src="assets/images/bg/pranzo.png" 
+                                            alt="" 
                                         />
                                     </div>
                                 </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img2"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img2-tab"
+                                <div 
+                                    className="tab-pane fade" 
+                                    id="v-pills-pranzo-img2" 
+                                    role="tabpanel" 
+                                    aria-labelledby="v-pills-pranzo-img2-tab"
                                 >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/pranzo2.png"
-                                        alt=""
+                                    <img 
+                                        className="img-fluid" 
+                                        src="assets/images/bg/pranzo2.png" 
+                                        alt="" 
                                     />
                                 </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img3"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img3-tab"
+                                <div 
+                                    className="tab-pane fade" 
+                                    id="v-pills-pranzo-img3" 
+                                    role="tabpanel" 
+                                    aria-labelledby="v-pills-pranzo-img3-tab"
                                 >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/pranzo3.png"
-                                        alt=""
+                                    <img 
+                                        className="img-fluid" 
+                                        src="assets/images/bg/pranzo3.png" 
+                                        alt=""  
                                     />
                                 </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="v-pills-img4"
-                                    role="tabpanel"
-                                    aria-labelledby="v-pills-img4-tab"
+                                <div 
+                                    className="tab-pane fade" 
+                                    id="v-pills-pranzo-img4" 
+                                    role="tabpanel" 
+                                    aria-labelledby="v-pills-pranzo-img4-tab"
                                 >
-                                    <img
-                                        className="img-fluid"
-                                        src="assets/images/bg/pranzo4.png"
-                                        alt=""
+                                    <img 
+                                        className="img-fluid" 
+                                        src="assets/images/bg/pranzo4.png" 
+                                        alt="" 
                                     />
                                 </div>
                             </div>
-                            
                         </div>
-                       
                     </div>
                 </div>
             </div>
 
-           
+
             <hr />
             <div className="shop-details pt-120 mb-120">
                 <div className="container">
                     <div className="row g-lg-5 gy-5">
-                    <div className="col-lg-6">
+                        <div className="col-lg-6">
                             <div className="prod-details-content">
                                 <h2>Gelateria</h2>
                                 <p>
-                               
-                                Al Pop Cafè, troverai il gelato artigianale della Gelateria <b>Oasi del Gusto di San Severino Marche</b>. 
-                                Oltre ai gusti classici, offriamo anche semifreddi, per rendere i tuoi momenti speciali ancora più memorabili. 
-                                La Gelateria Oasi del Gusto è rinomata per la qualità dei suoi ingredienti, garantendo un'esperienza gustativa straordinaria. 
-                                Vieni al PopCafé per un'ottima merenda, fresca e gustosa!
-                                
+
+                                    Al Pop Cafè, troverai il gelato artigianale della Gelateria <b>Oasi del Gusto di San Severino Marche</b>.
+                                    Oltre ai gusti classici, offriamo anche semifreddi, per rendere i tuoi momenti speciali ancora più memorabili.
+                                    La Gelateria Oasi del Gusto è rinomata per la qualità dei suoi ingredienti, garantendo un'esperienza gustativa straordinaria.
+                                    Vieni al PopCafé per un'ottima merenda, fresca e gustosa!
+
                                 </p>
                             </div>
                             <div
@@ -498,9 +489,9 @@ function ShopDetails() {
                                     />
                                 </div>
                             </div>
-                            
+
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -509,12 +500,12 @@ function ShopDetails() {
             <div className="shop-details pt-120 mb-120">
                 <div className="container">
                     <div className="row g-lg-5 gy-5">
-                    <div className="col-lg-6">
-                    <div className="prod-details-content">
+                        <div className="col-lg-6">
+                            <div className="prod-details-content">
                                 <h2>Aperitivi</h2>
                                 <p>
-                                    Per rilassarsi al  termine di una giornata lavorativa, prima di un pranzo di lavoro, 
-                                    per celebrare occasioni o solo per godere della compagnia di amici e persone care proponiamo interessanti 
+                                    Per rilassarsi al  termine di una giornata lavorativa, prima di un pranzo di lavoro,
+                                    per celebrare occasioni o solo per godere della compagnia di amici e persone care proponiamo interessanti
                                     finger food da abbinare a una lista di <b>cocktails</b> e <b>vini</b> in una piacevole atmosfera.
                                     Troverete una ricca selezione vini e bollicine, una vasta scelta di <b>birre artigianali</b>,
                                     dai classici miscelati o più estrosi e stravaganti cocktail proposti dal nostro Staff.
@@ -646,13 +637,13 @@ function ShopDetails() {
                                     />
                                 </div>
                             </div>
-                            
+
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
-           
+
 
             <hr />
             <div className="related-items-area mb-120">
@@ -676,10 +667,10 @@ function ShopDetails() {
                                                 src="assets/images/bg/h2-food-item-8.png"
                                                 alt="h2-food-item-1"
                                             />
-                                         
+
                                         </div>
                                         <div className="food-content">
-                                            
+
                                             <h3>
                                                 <Link
                                                     legacyBehavior
@@ -699,10 +690,10 @@ function ShopDetails() {
                                                 src="assets/images/bg/h2-food-item-5.png"
                                                 alt="h2-food-item-1"
                                             />
-                                        
+
                                         </div>
                                         <div className="food-content">
-                                           
+
                                             <h3>
                                                 <Link
                                                     href="/shop-details"
@@ -722,11 +713,11 @@ function ShopDetails() {
                                                 src="assets/images/bg/h2-food-item-6.png"
                                                 alt="h2-food-item-1"
                                             />
-                                           
-                                           
+
+
                                         </div>
                                         <div className="food-content">
-                                            
+
                                             <h3>
                                                 <Link
                                                     href="/shop-details"
@@ -746,11 +737,11 @@ function ShopDetails() {
                                                 src="assets/images/bg/h2-food-item-7.png"
                                                 alt="h2-food-item-1"
                                             />
-                                           
-                                            
+
+
                                         </div>
                                         <div className="food-content">
-                                          
+
                                             <h3>
                                                 <Link
                                                     href="/shop-details"
