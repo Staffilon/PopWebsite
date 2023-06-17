@@ -1,12 +1,14 @@
 const nodemailer = require("nodemailer");
+const email = process.env.USER_EMAIL;
+const password = process.env.PASSWORD_EMAIL;
 
 // Configura il trasportatore di Nodemailer con le credenziali del tuo servizio di invio email
 const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-        user: "popcamerino@gmail.com",
-        pass: "pzbbnyfovonenzvg", //2NXk#Cl6j5Fv
+        user: email,
+        pass: password,
     },
     tls: {
         rejectUnauthorized: false, // Accetta certificati SSL auto-firmati
