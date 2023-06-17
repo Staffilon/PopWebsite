@@ -8,6 +8,7 @@ import { createLunchDishes } from "../../../services/lunchDishesService";
 const PranzoDishes = () => {
     const [dishes, setDishes] = useState([]);
     const [selectedDishes, setSelectedDishes] = useState([]);
+    const [searchTerm, setSearchTerm] = useState("");
     const router = useRouter();
 
     useEffect(() => {
@@ -84,6 +85,12 @@ const PranzoDishes = () => {
         <div className="dish-table">
             <ToastContainer />
             <h2>Piatti del pranzo</h2>
+            <input
+                type="text"
+                placeholder="Cerca piatto..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                />
             <table>
                 <thead>
                     <tr>
@@ -96,7 +103,9 @@ const PranzoDishes = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {dishes.map((dish) => (
+                    {dishes.filter((dish) =>
+                            dish.name.toLowerCase().includes(searchTerm.toLowerCase())
+                        ).map((dish) => (
                         <tr key={dish._id}>
                             <td>
                                 <input
