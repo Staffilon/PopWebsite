@@ -20,6 +20,35 @@ function Index3Page() {
         <title>PopCafè</title>
         <meta name="description" content="Pop Cafè"/>
         <link rel="icon" type="image/vnd.icon" href="favicon.ico" />
+        <script type="text/javascript">
+          {`
+          var _iub = _iub || [];
+          _iub.csConfiguration = {
+            "askConsentAtCookiePolicyUpdate": true,
+            "floatingPreferencesButtonDisplay": "bottom-right",
+            "gdprAppliesGlobally": false,
+            "perPurposeConsent": true,
+            "siteId": 3182875,
+            "whitelabel": false,
+            "cookiePolicyId": 93217328,
+            "lang": "it",
+            "banner": {
+              "acceptButtonDisplay": true,
+              "closeButtonRejects": true,
+              "customizeButtonDisplay": true,
+              "explicitWithdrawal": true,
+              "listPurposes": true,
+              "position": "float-bottom-center"
+            }
+          };
+          `}
+        </script>
+        <script
+          type="text/javascript"
+          src="//cdn.iubenda.com/cs/iubenda_cs.js"
+          charset="UTF-8"
+          async
+        ></script>
       </Head>
       <Header3 />
       <Banner3 />

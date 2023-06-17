@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useReducer, useRef } from "react";
+
 const initialState = {
   activeMenu: "",
   mobileMenuState: false,
   navState: false,
   scrollY: 0,
 };
+
 function reducer(state, action) {
   switch (action.type) {
     case "homeOne":
@@ -33,6 +35,7 @@ function reducer(state, action) {
       throw new Error();
   }
 }
+
 function Header3() {
   const currentRoute = useRouter().pathname;
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -50,34 +53,34 @@ function Header3() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  
   return (
     <>
       <header
         ref={headerRef}
         className={
-          state.scrollY > 10
-            ? "sticky header-area style-3"
-            : "header-area style-3"
+          state.scrollY > 10 
+          ? "sticky header-area style-3" 
+          : "header-area style-3"
         }
       >
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <div className="header-logo">
             <Link legacyBehavior href="/">
               <a>
-                <img
-                  alt="image"
-                  className="img-fluid"
-                  src="assets/images/header2-logo.svg"
+                <img 
+                alt="image" 
+                className="img-fluid" 
+                src="assets/images/header2-logo.svg"
                 />
               </a>
             </Link>
           </div>
           <div
             className={
-              state.mobileMenuState == true
-                ? "main-menu show-menu"
-                : "main-menu"
+              state.mobileMenuState == true 
+              ? "main-menu show-menu" 
+              : "main-menu"
             }
           >
             <div className="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
@@ -90,7 +93,7 @@ function Header3() {
               </div>
               <div
                 className="menu-close-btn"
-                onClick={() =>
+                onClick={() => 
                   dispatch({ type: "mobileMenu", isMobileMenu: false })
                 }
               >
@@ -98,40 +101,39 @@ function Header3() {
               </div>
             </div>
             <ul className="menu-list">
-            <li>
-                <Link
-                  href="/index"
-                  className={currentRoute === "/index" ? "active" : ""}
+              <li>
+                <Link 
+                href="/index" 
+                className={currentRoute === "/index" ? "active" : ""}
                 >
                   Home
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/servizi"
-                  className={currentRoute === "/servizi" ? "active" : ""}
+                <Link 
+                href="/servizi" 
+                className={currentRoute === "/servizi" ? "active" : ""}
                 >
                   Servizi
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/about"
-                  className={currentRoute === "/about" ? "active" : ""}
+                <Link 
+                href="/about" 
+                className={currentRoute === "/about" ? "active" : ""}
                 >
                   Chi siamo
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/menu2"
-                  className={currentRoute === "/menu2" ? "active" : ""}
+                <Link 
+                href="/menu2" 
+                className={currentRoute === "/menu2" ? "active" : ""}
                 >
                   Menu
                 </Link>
               </li>
-             
-            <li>
+              <li>
                 <Link
                   href="/contact"
                   className={currentRoute === "/contact" ? "active" : "disable"}
