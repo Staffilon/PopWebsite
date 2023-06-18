@@ -51,9 +51,9 @@
   },
   {
     "id": 6,
-    "imageBig": "assets/images/bg/sixgal.png",
-    "sliderImage": "assets/images/bg/sixgal.png",
-    "imageSmalll": "assets/images/bg/sixgal.png",
+    "imageBig": "assets/images/bg/ottogal.png",
+    "sliderImage": "assets/images/bg/ottogal.png",
+    "imageSmalll": "assets/images/bg/ottogal.png",
     "category": "Interior",
     "categorySlug": "interior",
     "slideCategoryTitle": "Interior",
@@ -61,9 +61,9 @@
   },
   {
     "id": 7,
-    "imageBig": "assets/images/bg/sixgal.png",
-    "sliderImage": "assets/images/bg/sixgal.png",
-    "imageSmalll": "assets/images/bg/sixgal.png",
+    "imageBig": "assets/images/bg/novegal.png",
+    "sliderImage": "assets/images/bg/novegal.png",
+    "imageSmalll": "assets/images/bg/novegal.png",
     "category": "Interior",
     "categorySlug": "interior",
     "slideCategoryTitle": "Interior",
@@ -71,9 +71,9 @@
   },
   {
     "id": 8,
-    "imageBig": "assets/images/bg/sixgal.png",
-    "sliderImage": "assets/images/bg/sixgal.png",
-    "imageSmalll": "assets/images/bg/sixgal.png",
+    "imageBig": "assets/images/bg/ottogal.png",
+    "sliderImage": "assets/images/bg/ottogal.png",
+    "imageSmalll": "assets/images/bg/ottogal.png",
     "category": "Interior",
     "categorySlug": "interior",
     "slideCategoryTitle": "Interior",
@@ -81,9 +81,9 @@
   },
   {
     "id": 9,
-    "imageBig": "assets/images/bg/sixgal.png",
-    "sliderImage": "assets/images/bg/sixgal.png",
-    "imageSmalll": "assets/images/bg/sixgal.png",
+    "imageBig": "assets/images/bg/undicigal.jpg",
+    "sliderImage": "assets/images/bg/undicigal.jpg",
+    "imageSmalll": "assets/images/bg/undicigal.jpg",
     "category": "Interior",
     "categorySlug": "interior",
     "slideCategoryTitle": "Interior",
@@ -91,33 +91,12 @@
   },
   {
     "id": 10,
-    "imageBig": "assets/images/bg/sixgal.png",
-    "sliderImage": "assets/images/bg/sixgal.png",
-    "imageSmalll": "assets/images/bg/sixgal.png",
+    "imageBig": "assets/images/bg/tredicigal.png",
+    "sliderImage": "assets/images/bg/tredicigal.png",
+    "imageSmalll": "assets/images/bg/tredicigal.png",
     "category": "Interior",
     "categorySlug": "interior",
     "slideCategoryTitle": "Interior",
     "slideTitle": "Interior"
-  }
-  ,
-  {
-    "id": 11,
-    "imageBig": "assets/images/bg/sixgal.png",
-    "sliderImage": "assets/images/bg/sixgal.png",
-    "imageSmalll": "assets/images/bg/sixgal.png",
-    "category": "Interior",
-    "categorySlug": "interior",
-    "slideCategoryTitle": "Interior",
-    "slideTitle": "Interior"
-  } ,
-  {
-    "id": 12,
-    "imageBig": "assets/images/bg/sixgal.png",
-    "sliderImage": "assets/images/bg/sixgal.png",
-    "imageSmalll": "assets/images/bg/sixgal.png",
-    "category": "Interior",
-    "categorySlug": "interior",
-    "slideCategoryTitle": "Interior",
-    "slideTitle": "Interior"
-  }
+  } 
 ]
