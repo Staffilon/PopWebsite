@@ -81,9 +81,9 @@
   },
   {
     "id": 9,
-    "imageBig": "assets/images/bg/undicigal.jpg",
-    "sliderImage": "assets/images/bg/undicigal.jpg",
-    "imageSmalll": "assets/images/bg/undicigal.jpg",
+    "imageBig": "assets/images/bg/undicigal.png",
+    "sliderImage": "assets/images/bg/undicigal.png",
+    "imageSmalll": "assets/images/bg/undicigal.png",
     "category": "Interior",
     "categorySlug": "interior",
     "slideCategoryTitle": "Interior",
