@@ -40,7 +40,7 @@ function Banner3() {
           
           </span>
           <h1>BAR &amp; more.</h1>
-          <Link legacyBehavior href="menu2">
+          <Link legacyBehavior href="menu">
             <a className="primary-btn7 btn-md2">
               <i className="bi bi-arrow-up-right-circle" /> Scopri il menù
             </a>
