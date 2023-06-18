@@ -4,10 +4,10 @@
     "imageBig": "assets/images/bg/onegal.png",
     "imageSmalll": "assets/images/bg/onegal.png",
     "sliderImage": "assets/images/bg/onegal.png",
-    "category": "Food",
-    "slideCategoryTitle": "Cooking",
-    "slideTitle": "Chef Cooking Vegetarian",
-    "categorySlug": "food"
+    "category": "Interior",
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior",
+    "categorySlug": "Interior"
   },
   {
     "id": 2,
@@ -16,28 +16,28 @@
     "sliderImage": "assets/images/bg/twogal.png",
     "category": "Interior",
     "categorySlug": "interior",
-    "slideCategoryTitle": "Cooking",
-    "slideTitle": "Spicy Beef"
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
   },
   {
     "id": 3,
     "imageBig": "assets/images/bg/threegal.png",
     "sliderImage": "assets/images/bg/threegal.png",
     "imageSmalll": "assets/images/bg/threegal.png",
-    "category": "Traditions",
-    "categorySlug": "traditions",
-    "slideCategoryTitle": "Cooking",
-    "slideTitle": "Delicious Food"
+    "category": "Interior",
+    "categorySlug": "interior",
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
   },
   {
     "id": 4,
     "imageBig": "assets/images/bg/fivegal.png",
     "sliderImage": "assets/images/bg/fivegal.png",
     "imageSmalll": "assets/images/bg/fivegal.png",
-    "category": "Eatingplace",
-    "categorySlug": "eatingplace",
-    "slideCategoryTitle": "Cooking",
-    "slideTitle": "Chef Cooking Vegetarian"
+    "category": "Interior",
+    "categorySlug": "interior",
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
   },
   {
     "id": 5,
@@ -46,7 +46,78 @@
     "imageSmalll": "assets/images/bg/sixgal.png",
     "category": "Interior",
     "categorySlug": "interior",
-    "slideCategoryTitle": "Cooking",
-    "slideTitle": "Chef Cooking Vegetarian"
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
+  },
+  {
+    "id": 6,
+    "imageBig": "assets/images/bg/sixgal.png",
+    "sliderImage": "assets/images/bg/sixgal.png",
+    "imageSmalll": "assets/images/bg/sixgal.png",
+    "category": "Interior",
+    "categorySlug": "interior",
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
+  },
+  {
+    "id": 7,
+    "imageBig": "assets/images/bg/sixgal.png",
+    "sliderImage": "assets/images/bg/sixgal.png",
+    "imageSmalll": "assets/images/bg/sixgal.png",
+    "category": "Interior",
+    "categorySlug": "interior",
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
+  },
+  {
+    "id": 8,
+    "imageBig": "assets/images/bg/sixgal.png",
+    "sliderImage": "assets/images/bg/sixgal.png",
+    "imageSmalll": "assets/images/bg/sixgal.png",
+    "category": "Interior",
+    "categorySlug": "interior",
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
+  },
+  {
+    "id": 9,
+    "imageBig": "assets/images/bg/sixgal.png",
+    "sliderImage": "assets/images/bg/sixgal.png",
+    "imageSmalll": "assets/images/bg/sixgal.png",
+    "category": "Interior",
+    "categorySlug": "interior",
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
+  },
+  {
+    "id": 10,
+    "imageBig": "assets/images/bg/sixgal.png",
+    "sliderImage": "assets/images/bg/sixgal.png",
+    "imageSmalll": "assets/images/bg/sixgal.png",
+    "category": "Interior",
+    "categorySlug": "interior",
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
+  }
+  ,
+  {
+    "id": 11,
+    "imageBig": "assets/images/bg/sixgal.png",
+    "sliderImage": "assets/images/bg/sixgal.png",
+    "imageSmalll": "assets/images/bg/sixgal.png",
+    "category": "Interior",
+    "categorySlug": "interior",
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
+  } ,
+  {
+    "id": 12,
+    "imageBig": "assets/images/bg/sixgal.png",
+    "sliderImage": "assets/images/bg/sixgal.png",
+    "imageSmalll": "assets/images/bg/sixgal.png",
+    "category": "Interior",
+    "categorySlug": "interior",
+    "slideCategoryTitle": "Interior",
+    "slideTitle": "Interior"
   }
 ]

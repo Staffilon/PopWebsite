@@ -127,10 +127,18 @@ function Header3() {
               </li>
               <li>
                 <Link 
-                href="/menu2" 
-                className={currentRoute === "/menu2" ? "active" : ""}
+                href="/menu" 
+                className={currentRoute === "/menu" ? "active" : ""}
                 >
                   Menu
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gallery"
+                  className={currentRoute === "/gallery" ? "active" : "disable"}
+                >
+                  Galleria
                 </Link>
               </li>
               <li>

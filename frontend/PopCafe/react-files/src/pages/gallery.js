@@ -34,7 +34,7 @@ function GalleryThreeColumnLayout() {
 
   return (
     <Layout>
-      <Breadcrumb pageName="3 Columns Gallery" pageTitle="3 Columns Gallery" />
+      <Breadcrumb pageName="Galleria" pageTitle="Galleria" />
       <div className="columns2-gallery-area pt-120 mb-120">
         <div className="container">
           <div className="row">
