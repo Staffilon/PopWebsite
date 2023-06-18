@@ -17,7 +17,11 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Enable CORS
-app.use(cors());
+const corsOptions = {
+    origin: "https://popcafecamerino.it", // Specifica il dominio consentito
+};
+
+app.use(cors(corsOptions));
 
 // Middleware for rate limiting
 const limiter = rateLimit({
