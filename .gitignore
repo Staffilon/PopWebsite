@@ -20,3 +20,6 @@ out/
 # macOS
 .DS_Store
 __MACOSX/
+
+#File used to insert users
+backend/services/insertUser.js
