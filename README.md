@@ -19,7 +19,7 @@ La separazione poi porta la modularità: i componenti suddividono l’interfacci
 
 Il front-end è responsive grazie all’utilizzo di Bootstrap5 (mobile first).
 
-Coem fogli di stile è presente sia il css che l’scss:
+Come fogli di stile è presente sia il css che l’scss:
 
 - (CSS (Cascading Style Sheets) è un linguaggio di stile utilizzato per definire l'aspetto e il layout degli elementi HTML in una pagina web. CSS definisce le proprietà di stile come il colore, la dimensione del testo, il margine, il padding e molte altre per personalizzare l'aspetto dei componenti della pagina.
 
@@ -29,13 +29,13 @@ In entrambi sono definite delle variabili globali per i colori di default, alcun
 
 Il backend è realizzato in Node.js e Express. Il file "index.js" è responsabile di far partire il server. Sono presenti sottocartelle che racchiudono al loro interno file aventi scopo comune, come ad esempio i controller, i middleware, le routes, ecc.
 
-Il backend gestisce le chiamate CRUD per quanto riguarda le prenotazioni, tutti i piatti del bar, i piatti del menu giornaliero e il login dell'utente, al quale conferisce un token JWT. È anche presente una task che elimina giornalmente le prenotazioni scadute.
+Il backend gestisce le chiamate CRUD per le prenotazioni, tutti i piatti del bar, i piatti del menu giornaliero e il login dell'utente, al quale conferisce un token JWT. È anche presente una task che elimina giornalmente le prenotazioni scadute.
 
 Il database scelto è stato MongoDB, per la sua flessibilità e integrazione con Express.
 
 Per quanto riguarda la sicurezza, abbiamo integrato:
 
-    - Token JWT per quanto riguarda gli accessi non autorizzati alle informazioni sensibili del backoffice.
+    - Token JWT per gli accessi non autorizzati alle informazioni sensibili del backoffice.
     - Input sanitization sia lato frontend (dompurify) che backend (xss-clean) per quanto riguarda l'input dell'utente nelle prenotazioni e il login per il backoffice.
     - Limite di richieste per IP per mitigare il carico sui server, utilizzando la libreria express-rate-limit.
     - Sanitizzazione dell'input per MongoDB con la libreria express-mongo-sanitize.
