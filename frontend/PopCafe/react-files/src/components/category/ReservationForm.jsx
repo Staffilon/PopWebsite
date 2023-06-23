@@ -6,6 +6,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { createBooking } from "../../services/bookingsService";
 
+const dinnerTimeRange = { start: 18, end: 20 };
+const aperitifTimeRange = { start: 17, end: 20.5 };
+const lunchTimeRange = { start: 12, end: 14.5 };
+
 function ReservationForm() {
     const [bookingData, setBookingData] = useState({
         type: "",
@@ -35,11 +39,46 @@ function ReservationForm() {
 
     const handleHourChange = (event) => {
         const { value } = event.target;
-        setBookingData((prevData) => ({
-            ...prevData,
-            time: `${value}:${prevData.time.split(":")[1] || ""}`,
-        }));
+        const selectedHour = parseFloat(value);
+        let validTimeRange = { start: 0, end: 24 };
+    
+        if (bookingData.type === "Apericena") {
+            validTimeRange = dinnerTimeRange;
+        } else if (bookingData.type === "Aperitivo") {
+            validTimeRange = aperitifTimeRange;
+        } else if (bookingData.type === "Pranzo") {
+            validTimeRange = lunchTimeRange;
+        }
+    
+        const selectedMinutes = bookingData.time.split(":")[1] || ""; // Ottieni i minuti selezionati
+    
+        if (
+            selectedHour < validTimeRange.start ||
+            selectedHour > validTimeRange.end
+        ) {
+            const validOptions = generateOptions(
+                validTimeRange.start,
+                validTimeRange.end
+            );
+            const defaultOption = validOptions[0].props.value;
+            const updatedTime = `${defaultOption}:${selectedMinutes}`;
+    
+            setBookingData((prevData) => ({
+                ...prevData,
+                time: updatedTime, // Imposta l'opzione di default per l'ora e mantieni i minuti selezionati
+            }));
+        } else {
+            const updatedTime = `${value}:${selectedMinutes}`;
+    
+            setBookingData((prevData) => ({
+                ...prevData,
+                time: updatedTime, // Mantieni l'ora selezionata e mantieni i minuti selezionati
+            }));
+        }
     };
+    
+    
+      
 
     const handleMinuteChange = (event) => {
         const { value } = event.target;
@@ -52,20 +91,21 @@ function ReservationForm() {
     const generateOptions = (start, end) => {
         const options = [];
         options.push(
-            <option key="" value="">
-                Ora
-            </option>
+          <option key="" value="">
+            Ora
+          </option>
         );
         for (let i = start; i <= end; i++) {
-            const value = i.toString().padStart(2, "0");
-            options.push(
-                <option key={value} value={value}>
-                    {value}
-                </option>
-            );
+          const value = i.toString().padStart(2, "0");
+          options.push(
+            <option key={value} value={value}>
+              {value}
+            </option>
+          );
         }
         return options;
-    };
+      };
+      
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
