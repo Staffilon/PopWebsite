@@ -16,6 +16,7 @@ const Dish = ({ dish, onDelete, onUpdate }) => {
             setIsEditing(true);
         }
     };
+    //ciao
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
